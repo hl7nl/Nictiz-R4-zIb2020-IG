@@ -35,7 +35,7 @@ The answer codes must be selected from the subselection of the code system corre
   <name value="ZibFunctionalOrMentalStatus"/>
   <title value="zib FunctionalOrMentalStatus"/>
   <status value="draft"/>
-  <date value="2023-10-17T15:52:40+02:00"/>
+  <date value="2023-10-17T18:06:34+02:00"/>
   <publisher value="HL7NL"/>
   <contact>
     <name value="HL7NL"/>

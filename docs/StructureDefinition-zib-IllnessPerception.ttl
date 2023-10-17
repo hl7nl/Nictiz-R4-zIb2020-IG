@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "ZibIllnessPerception"] ; # 
   fhir:title [ fhir:v "zib IllnessPerception"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T15:52:40+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-17T18:06:34+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7NL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7NL" ] ;

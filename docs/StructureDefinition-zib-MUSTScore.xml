@@ -41,7 +41,7 @@ The IllnessScore concept is used to indicate that the patient is seriously ill a
   <name value="ZibMUSTScore"/>
   <title value="zib MUSTScore"/>
   <status value="draft"/>
-  <date value="2023-10-17T15:52:40+02:00"/>
+  <date value="2023-10-17T18:06:34+02:00"/>
   <publisher value="HL7NL"/>
   <contact>
     <name value="HL7NL"/>
