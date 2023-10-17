@@ -1,6 +1,6 @@
 Used https://github.com/Nictiz/Nictiz-R4-zibs2020 as a basis.
 
-Output is here: https://hl7nl.github.io/Nictiz-R4-zibs2020-IG
+Output is here: https://hl7nl.github.io/Nictiz-R4-zib2020-IG
 
 Questions:
 1. What to use for packageId = nictiz.fhir.nl.r4.zib2020
