@@ -17,14 +17,13 @@
   fhir:name [ fhir:v "NlcoreTimeInterval"] ; # 
   fhir:title [ fhir:v "nl core TimeInterval"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T14:25:12+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:date [ fhir:v "2023-10-17T15:52:40+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7NL"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:name [ fhir:v "HL7NL" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.nictiz.nl" ] ;
-       fhir:use [ fhir:v "work" ]
+       fhir:value [ fhir:v "https://hl7.nl" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "A time interval indicates the time between two moments in time. Interval can be defined by a start time and end time , start time and duration or duration and end time."] ; # 

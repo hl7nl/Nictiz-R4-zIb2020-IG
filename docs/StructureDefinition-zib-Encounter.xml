@@ -37,14 +37,13 @@
   <name value="ZibEncounter"/>
   <title value="zib Encounter"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="A contact is any interaction, regardless of the situation, between a patient and the healthcare provider, in which the healthcare provider has primary responsibility for diagnosing, evaluating and treating the patient’s condition and informing the patient. These can be visits, appointments or non face-to-face interactions.&#xD;&#xA;&#xD;&#xA;Contacts can be visits to the general practitioner or other practices, home visits, admissions (in hospitals, nursing homes or care homes, psychiatric institutions or convalescent homes) or other relevant contacts. This includes past and future contacts."/>

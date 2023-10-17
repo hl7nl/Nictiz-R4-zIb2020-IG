@@ -18,14 +18,13 @@
   fhir:name [ fhir:v "ZibComfortScale"] ; # 
   fhir:title [ fhir:v "zib ComfortScale"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T14:25:12+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:date [ fhir:v "2023-10-17T15:52:40+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7NL"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:name [ fhir:v "HL7NL" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.nictiz.nl" ] ;
-       fhir:use [ fhir:v "work" ]
+       fhir:value [ fhir:v "https://hl7.nl" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "The Comfort Behaviour scale/ComfortNeo scale is an assessment tool, that is used to assess the pain behaviour of neonates (newborn).\r\nThe Comfort Behaviour scale has 7 observation points that need to be addressed. For each observation a value is assigned from a 5-point scale, the final score indicates whether the observed child suffers pain and 'how much'. The score is combined with an NRS score that is completed by the nurses on basis of clinical experience."] ; # 

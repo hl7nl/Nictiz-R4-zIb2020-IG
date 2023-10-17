@@ -10,14 +10,13 @@
   "name" : "ZibTextResultVisualResult",
   "title" : "zib TextResult.VisualResult",
   "status" : "draft",
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "Visual examination results that are the starting point and reason for the textual report as represented by the zib TextResult. These results include visual material - e.g. radiological images, scopy images, medical photos and videos - as well as graphic recordings - e.g. ECGs, EEGs etc.",

@@ -10,14 +10,13 @@
   "name" : "NlcoreO2Saturation",
   "title" : "nl core O2Saturation",
   "status" : "draft",
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "Arterial oxygen saturation, also referred to as saturation, is an indicator for the amount of oxygen bound to the hemoglobin in the red blood cells of the arteries. The measurement is usually carried out as a transcutaneous measurement with a blood oxygen monitor or pulse oximeter. The saturation level is expressed as a percentage and should be over 95% in healthy people.",

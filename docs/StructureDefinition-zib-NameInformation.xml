@@ -28,14 +28,13 @@
   <name value="ZibNameInformation"/>
   <title value="zib NameInformation"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="A person's official name information, including given names, last name and possibly the partner's last name."/>

@@ -10,14 +10,13 @@
   "name" : "NlcoreEncounter",
   "title" : "nl core Encounter",
   "status" : "draft",
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "A contact is any interaction, regardless of the situation, between a patient and the healthcare provider, in which the healthcare provider has primary responsibility for diagnosing, evaluating and treating the patient’s condition and informing the patient. These can be visits, appointments or non face-to-face interactions.\r\n\r\nContacts can be visits to the general practitioner or other practices, home visits, admissions (in hospitals, nursing homes or care homes, psychiatric institutions or convalescent homes) or other relevant contacts. This includes past and future contacts.",

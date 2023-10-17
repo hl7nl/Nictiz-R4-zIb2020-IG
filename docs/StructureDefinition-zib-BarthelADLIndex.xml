@@ -140,14 +140,13 @@ In this scale, the following interpretations are used:
   <name value="ZibBarthelADLIndex"/>
   <title value="zib BarthelADLIndex"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="The Barthel ADL index is a validated scale used to measure and track patients’ activities of daily living (ADL) and indirectly, the extent to which they are dependent on help.&#xD;&#xA;The list comprises 10 variables: bowels, bladder, grooming, toilet use, feeding, transfers (from chair to bed and vice versa), mobility, dressing, climbing stairs and bathing, which are all given a score.&#xD;&#xA;The total score is the sum of the scores of the 10 variables."/>

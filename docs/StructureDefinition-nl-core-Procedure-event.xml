@@ -19,14 +19,13 @@
   <name value="NlcoreProcedureevent"/>
   <title value="nl core Procedure event"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="Therapeutic or diagnostic procedure undergone by the patient (the complementary profile [nl-core-Procedure-request](&lt;http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-request&gt;) can be used for therapeutic or diagnostics procedures that the patient will undergo). A procedure can be a simple blood pressure measurement, but also a complex heart surgery.&#xD;&#xA;In some care settings, the term treatment is used instead of the term procedure."/>

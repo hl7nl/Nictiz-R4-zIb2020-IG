@@ -18,14 +18,13 @@
   fhir:name [ fhir:v "NlcoreStrongKidsScore"] ; # 
   fhir:title [ fhir:v "nl core StrongKidsScore"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T14:25:12+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:date [ fhir:v "2023-10-17T15:52:40+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7NL"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:name [ fhir:v "HL7NL" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.nictiz.nl" ] ;
-       fhir:use [ fhir:v "work" ]
+       fhir:value [ fhir:v "https://hl7.nl" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "The StrongKids score is a (validated) measuring tool for determining the extent of a child’s malnutrition.\r\nStrongKids is developed to recognize and treat malnutrition in children aged > 1 month to 18 years in a hospital setting.\r\nThe tool comprises four questions, each of which is assigned a score. The total score determines the extent of malnutrition.\r\n(STRONGkids= Screening Tool Risk On Nutritional Status and Growth)"] ; # 

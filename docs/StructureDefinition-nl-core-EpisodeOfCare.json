@@ -10,14 +10,13 @@
   "name" : "NlcoreEpisodeOfCare",
   "title" : "nl core EpisodeOfCare",
   "status" : "draft",
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "The period in which a health problem, such as a complaint or illness, receives attention from a care provider. During this period the designation of this health problem can change due to evolving insight and/or the progress of the illness. An episode of care serves as a context for all data related to the health problem.",

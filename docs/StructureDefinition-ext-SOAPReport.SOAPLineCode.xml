@@ -15,14 +15,13 @@ In a SOAP report an ICPC code may be assigned, but only to the S and A line.">va
   <name value="ExtSOAPReportSOAPLineCode"/>
   <title value="ext SOAPReport.SOAPLineCode"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="An extension to provide the SOAPLine code. The extension can be seen as an addition to the SOAPLineHeader and SOAPLineText concept mapped to the code and text element."/>

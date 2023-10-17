@@ -17,14 +17,13 @@
   fhir:name [ fhir:v "NlcoreAllergyIntolerance"] ; # 
   fhir:title [ fhir:v "nl core AllergyIntolerance"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T14:25:12+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:date [ fhir:v "2023-10-17T15:52:40+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7NL"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:name [ fhir:v "HL7NL" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.nictiz.nl" ] ;
-       fhir:use [ fhir:v "work" ]
+       fhir:value [ fhir:v "https://hl7.nl" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "An allergy or intolerance describes a patient’s tendency towards hypersensitivity to a certain substance, so that an unwanted physiological reaction is expected after exposure to the substance, while most people would not exhibit such a reaction to that amount. The observed physiological changes are usually the result of an immunological reaction.\r\nThe substances can be categorized as follows:\r\n* Medicine\r\n* Medicine category\r\n* Ingredient/addition\r\n* Nutrition\r\n* Environmental factor\r\n* Animal\r\n* Plants\r\n* Chemicals\r\n* Inhaled allergenic"] ; # 

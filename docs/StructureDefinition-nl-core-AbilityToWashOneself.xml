@@ -12,14 +12,13 @@
   <name value="NlcoreAbilityToWashOneself"/>
   <title value="nl core AbilityToWashOneself"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="Being able to bathe independently is part of self-care. Limitations in this ability indicate a reduced ability to cope for oneself.&#xD;&#xA;This activity and activities such as those including eating, drinking, and dressing are also known as activities of daily living (ADL). These are the activities people go through in daily life. The extent to which a person is able to do all these activities by themselves is a measure for their total ability to do things independently."/>

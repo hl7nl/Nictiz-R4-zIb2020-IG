@@ -17,14 +17,13 @@
   fhir:name [ fhir:v "ZibSOAPReportSOAPLine"] ; # 
   fhir:title [ fhir:v "zib SOAPReport.SOAPLine"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T14:25:12+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:date [ fhir:v "2023-10-17T15:52:40+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7NL"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:name [ fhir:v "HL7NL" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.nictiz.nl" ] ;
-       fhir:use [ fhir:v "work" ]
+       fhir:value [ fhir:v "https://hl7.nl" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "A SOAP report is a textual report of a (partial) consult with relation to a single problem according to the SOAP structure. SOAP (acronym for subjective, objective, assessment, plan) is a method used by health professionals to structurally record information that comes up during contact between the patient and a health professionals in the patient's record. The following standardized format is used for reporting:\r\n\r\n* Subjective: the patient's complaint and request for help and the amnesic data\r\n* Objective: the findings from the physical and supplementary examination.\r\n* Assessment: the working hypothesis and the thinking process, for example a differential diagnosis of the healthcare professional.\r\n* Plan: the diagnostic plan or treatment plan and what has been discussed or agreed with the patient.\r\n\r\nThe SOAP report is mainly used in general practice care.\r\n\r\nNote: the zib doesn't state explicitly if zib SOAPReport pertains a consult or a partial consult, but it has become clear that the zib, and thus this profile, should be interpreted as a partial consult with relation to a single problem (see <https://bits.nictiz.nl/browse/ZIB-1474>). The text above has been adjusted according to this insight."] ; # 

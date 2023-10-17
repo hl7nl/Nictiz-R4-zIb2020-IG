@@ -43,14 +43,13 @@ Note: the zib formally defines this relation as a reference to zib HealthcarePro
   <name value="ZibLaboratoryTestResult"/>
   <title value="zib LaboratoryTestResult"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="A laboratory result describes the result of a laboratory analysis.&#xD;&#xA;These are specimen-oriented tests as performed in laboratories such as Clinical Chemistry, Serology, Microbiology, etc.&#xD;&#xA;In addition to the results of tests with a singular result, this concept can also contain the results of more complex tests with multiple results or a ‘panel’."/>

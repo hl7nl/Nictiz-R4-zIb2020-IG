@@ -10,14 +10,13 @@
   "name" : "ZibLegalSituationRepresentation",
   "title" : "zib LegalSituation Representation",
   "status" : "draft",
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "A legal situation can concern a legal status and/or representation.\r\n\r\nRepresentation is important in situations where a person is legally not competent to give permission and/or factually (partly) incapable of doing so. A representative supports and takes decisions in the interest of the representee when they cannot do so themselves (temporarily or permanently).",

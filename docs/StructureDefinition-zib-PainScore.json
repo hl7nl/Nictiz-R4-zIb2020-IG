@@ -10,14 +10,13 @@
   "name" : "ZibPainScore",
   "title" : "zib PainScore",
   "status" : "draft",
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "The pain score is a general measurement for pain experience, not a description of specific, localized pain.\r\n\r\nThe following are used as an easily reproducible measurement for pain experience:\r\nNRS (Numeric Rating Scale) in which the patient gives the pain a number on a scale of 1 (no pain) to 10 (unbearable pain).\r\nVAS (Visual Analogue Score), in which the patient points to a bar with a line to indicate the pain they feel. The back of the bar has a scale from 0 (no pain) to 10 (unbearable pain) on it.\r\n\r\nThe results of both scores have the same meaning, but the visual analogue method (VAS) is seen as more reliable than the NRS pain score.",

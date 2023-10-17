@@ -18,14 +18,13 @@
   fhir:name [ fhir:v "ZibLegalSituationRepresentation"] ; # 
   fhir:title [ fhir:v "zib LegalSituation Representation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T14:25:12+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:date [ fhir:v "2023-10-17T15:52:40+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7NL"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:name [ fhir:v "HL7NL" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.nictiz.nl" ] ;
-       fhir:use [ fhir:v "work" ]
+       fhir:value [ fhir:v "https://hl7.nl" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "A legal situation can concern a legal status and/or representation.\r\n\r\nRepresentation is important in situations where a person is legally not competent to give permission and/or factually (partly) incapable of doing so. A representative supports and takes decisions in the interest of the representee when they cannot do so themselves (temporarily or permanently)."] ; # 

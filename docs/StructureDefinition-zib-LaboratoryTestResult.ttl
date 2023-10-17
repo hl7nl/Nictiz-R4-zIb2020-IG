@@ -17,14 +17,13 @@
   fhir:name [ fhir:v "ZibLaboratoryTestResult"] ; # 
   fhir:title [ fhir:v "zib LaboratoryTestResult"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T14:25:12+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:date [ fhir:v "2023-10-17T15:52:40+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7NL"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:name [ fhir:v "HL7NL" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.nictiz.nl" ] ;
-       fhir:use [ fhir:v "work" ]
+       fhir:value [ fhir:v "https://hl7.nl" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "A laboratory result describes the result of a laboratory analysis.\r\nThese are specimen-oriented tests as performed in laboratories such as Clinical Chemistry, Serology, Microbiology, etc.\r\nIn addition to the results of tests with a singular result, this concept can also contain the results of more complex tests with multiple results or a ‘panel’."] ; # 

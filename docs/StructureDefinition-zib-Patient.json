@@ -11,14 +11,13 @@
   "title" : "zib Patient",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "A person who receives medical, psychological, paramedical or nursing care. In some care settings, the term client or participant is used instead of the term patient.\r\nNationality is used as an indication of the country of citizenship. \r\nMarital status is a person’s formal position as defined by the Dutch civil code. There is a distinction between marriage and civil union.\r\nLinguistic proficiency is the ability to express oneself in a certain language and understand statements made in that language. This includes both oral and written communication.",

@@ -11,8 +11,15 @@
   "title" : "Nictiz FHIR NL R4 Zib2020",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
+  "contact" : [{
+    "name" : "HL7NL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hl7.nl"
+    }]
+  }],
   "packageId" : "zibs2020",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],

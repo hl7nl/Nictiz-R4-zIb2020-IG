@@ -11,14 +11,13 @@
   <name value="PatternZibHealthProfessionalReference"/>
   <title value="Reference"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="A Reference datatype profile for referring [zib HealthProfessional](https://zibs.nl/wiki/HealthProfessional-v3.5(2020EN)) from other zib profiles. This datatype profile is used in various resource profiles and is never instantiated directly."/>

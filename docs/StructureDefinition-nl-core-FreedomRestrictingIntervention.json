@@ -10,14 +10,13 @@
   "name" : "NlcoreFreedomRestrictingIntervention",
   "title" : "nl core FreedomRestrictingIntervention",
   "status" : "draft",
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "Freedom restricting interventions are interventions that are used against the will of the person concerned and that consciously restrict the person's freedom to protect the person or his environment. This definition includes many forms of freedom restriction, such as (not exhaustive)\r\n\r\n* Forced administration of fluid and nutrition\r\n* Forced administration of medication\r\n* Performing medical checks or other medical procedures\r\n* Restricting freedom of movement\r\n* Admitting to an accommodation and secluding when admitted to an accommodation.\r\n* Exercising supervision\r\n* Searching of clothing or body\r\n* Restriction of visitors and the use of communication means\r\n\r\nIn the hospital, it is usually about restricting the freedom of movement, for example by using bed rails, moving a chair near to the table or using an arm splint for infusion. In combination with freedom-restricting interventions, soothing medication can be administered. In the case of small children, it is often a question of fixing hands, for example, to prevent a stomach tube from being pulled out.\r\nFor nurses to use it in hospitals, Dutch Nurses Association (V&VN) published a guideline [ref. 3].\r\nIn mental health care, care for the disabled and psychogeriatric care, it always concerns care that is used against the will of the patient.\r\nThe legal framework for using these interventions is (per 1-1-2020) governed by two laws, namely:\r\n\r\n* The Wet verplichte ggz (Wvggz: Mandatory Care In Mental Health Act) for people with psychiatric disorders\r\n* The Wet zorg en dwang (Wzd: Care and Compulsion Act) for people with intellectual disabilities and people with a psychogeriatric disorder, such as dementia.\r\n\r\nThe Wvggz refers to the term compulsory care, while the Wzd uses the term involuntary care.\r\nA national registration system, the Argus registration, is used to register the interventions in the context of the Wvggz.",

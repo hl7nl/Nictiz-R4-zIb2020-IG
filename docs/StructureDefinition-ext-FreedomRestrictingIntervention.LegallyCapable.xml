@@ -20,14 +20,13 @@
   <name value="ExtFreedomRestrictingInterventionLegallyCapable"/>
   <title value="ext FreedomRestrictingIntervention.LegallyCapable"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="An extension to indicate whether the patient is deemed capable of overseeing the consequences of a certain procedure, situation or decision, and to provide a comment on the decisions which the patient is legally capable of making."/>

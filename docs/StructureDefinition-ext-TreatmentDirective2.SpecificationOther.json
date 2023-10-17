@@ -10,14 +10,13 @@
   "name" : "ExtTreatmentDirective2SpecificationOther",
   "title" : "ext TreatmentDirective2.SpecificationOther",
   "status" : "draft",
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "An extension to provide the specification of the treatment decision when the decision is 'Other'.",

@@ -10,14 +10,13 @@
   "name" : "ZibProcedurerequest",
   "title" : "zib Procedure request",
   "status" : "draft",
-  "date" : "2023-10-17T14:25:12+02:00",
-  "publisher" : "HL7 Netherlands",
+  "date" : "2023-10-17T15:52:40+02:00",
+  "publisher" : "HL7NL",
   "contact" : [{
-    "name" : "Nictiz",
+    "name" : "HL7NL",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.nictiz.nl",
-      "use" : "work"
+      "value" : "https://hl7.nl"
     }]
   }],
   "description" : "Therapeutic or diagnostic procedure the patient will undergo (the complementary profile [zib-Procedure-event](http://nictiz.nl/fhir/StructureDefinition/zib-Procedure-event) can be used for therapeutic or diagnostic procedures that the patient has undergone). A procedure can be a simple blood pressure measurement, but also a complex heart surgery.\r\nIn some care settings, the term treatment is used instead of the term procedure.",

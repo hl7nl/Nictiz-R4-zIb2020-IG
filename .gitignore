@@ -5,3 +5,5 @@ template
 input-cache
 output
 docs/*.zip
+.index.db
+.index.json

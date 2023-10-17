@@ -13,14 +13,13 @@
   <name value="PatternGstdSimpleQuantity"/>
   <title value="G-Standard SimpleQuantity"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="A SimpleQuantity datatype profile to add a SimpleQuantity translation in G-Standard units using the HL7 core iso21090-PQ-translation extension. The extension MAY be used to additionally add translations expressed in a different unit from a different unit code system (e.g. NHG table Gebruiksvoorschriften (Table 25))."/>

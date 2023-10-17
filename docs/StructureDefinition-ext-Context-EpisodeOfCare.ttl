@@ -17,14 +17,13 @@
   fhir:name [ fhir:v "ExtContextEpisodeOfCare"] ; # 
   fhir:title [ fhir:v "ext Context EpisodeOfCare"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T14:25:12+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:date [ fhir:v "2023-10-17T15:52:40+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7NL"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:name [ fhir:v "HL7NL" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.nictiz.nl" ] ;
-       fhir:use [ fhir:v "work" ]
+       fhir:value [ fhir:v "https://hl7.nl" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "`Observation.context` and `MedicationRequest.context` have been renamed and remodeled in R4 to only contain a reference to Encounter. `MedicationStatement.context` and `MedicationAdministration.context` are a 0..1 reference to Encounter|EpisodeOfCare. This extension allows to add a reference to EpisodeOfCare (potentially next to a reference to an Encounter). From R5 onwards, this extension will likely be replaced by an HL7 core extension."] ; # 

@@ -12,14 +12,13 @@
   <name value="NlcoreComfortScale"/>
   <title value="nl core ComfortScale"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="The Comfort Behaviour scale /Comfortneo scale is an assessment tool, that is used to assess the pain behaviour of neonates (new born).&#xD;&#xA;The Comfort Behaviour scale has 7 observation points that that need to be addressed. For each on observation is value is assigned from a 5-point scale, the final score indicates whether the observed child suffers pain and 'how much'. The score is combined with an NRS score that is completed by the nurses on basis of clinical experience."/>

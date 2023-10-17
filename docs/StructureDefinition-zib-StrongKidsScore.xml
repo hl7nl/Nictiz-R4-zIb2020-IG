@@ -50,14 +50,13 @@
   <name value="ZibStrongKidsScore"/>
   <title value="zib StrongKidsScore"/>
   <status value="draft"/>
-  <date value="2023-10-17T14:25:12+02:00"/>
-  <publisher value="HL7 Netherlands"/>
+  <date value="2023-10-17T15:52:40+02:00"/>
+  <publisher value="HL7NL"/>
   <contact>
-    <name value="Nictiz"/>
+    <name value="HL7NL"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <value value="https://hl7.nl"/>
     </telecom>
   </contact>
   <description value="The StrongKids score is a (validated) measuring tool for determining the extent of a child’s malnutrition.&#xD;&#xA;StrongKids is developed to recognize and treat malnutrition in children aged &gt; 1 month to 18 years in a hospital setting.&#xD;&#xA;The tool comprises four questions, each of which is assigned a score. The total score determines the extent of malnutrition.&#xD;&#xA;(STRONGkids= Screening Tool Risk On Nutritional Status and Growth)"/>
