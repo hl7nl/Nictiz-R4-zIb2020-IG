@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/nl-core-BowelFunction-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-BowelFunction-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-BowelFunction"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-BowelFunction>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-BowelFunction-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-BowelFunction-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-BowelFunction.html\">nl core BowelFunction</a></p></div><p><b>ext StomaReference</b>: <a href=\"Condition-nl-core-BowelFunction-01-Condition-01.html\">Condition/nl-core-BowelFunction-01-Condition-01: Stoma, type: dubbelloops colostoma</a></p><p><b>status</b>: final</p><p><b>code</b>: defecatie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#111989001)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><blockquote><p><b>component</b></p><p><b>code</b>: frequentie van defecatie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#162098000)</span></p><p><b>value</b>: 3 /d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code /d = '/d')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: score op Bristol Stoelgangschaal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#443172007)</span></p><p><b>value</b>: Als een worst of slang, glad en zacht <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Type 4)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Color of Stool <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9397-1)</span></p><p><b>value</b>: kleur van feces normaal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#167605001)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-StomaReference"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Condition/nl-core-BowelFunction-01-Condition-01> ;
+       fhir:reference [ fhir:v "Condition/nl-core-BowelFunction-01-Condition-01" ] ;
+       fhir:type [ fhir:v "Condition"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Stoma, type: dubbelloops colostoma" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:111989001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "111989001" ] ;
+       fhir:display [ fhir:v "defecatie" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:162098000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "162098000" ] ;
+         fhir:display [ fhir:v "frequentie van defecatie" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "/d" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "/d" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:443172007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "443172007" ] ;
+         fhir:display [ fhir:v "score op Bristol Stoelgangschaal" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.3.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Type 4" ] ;
+         fhir:display [ fhir:v "Als een worst of slang, glad en zacht" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:9397-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "9397-1" ] ;
+         fhir:display [ fhir:v "Color of Stool" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:167605001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "167605001" ] ;
+         fhir:display [ fhir:v "kleur van feces normaal" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

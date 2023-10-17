@@ -1,0 +1,109 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-ApgarScore-10Minute-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-ApgarScore-10Minute"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-ApgarScore-10Minute-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-ApgarScore-10Minute-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-ApgarScore-10Minute.html\">nl core ApgarScore 10Minute</a></p></div><p><b>status</b>: final</p><p><b>code</b>: 10 minute Apgar Score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9271-8)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2016-12-19 09:00:00+0100</p><p><b>value</b>: 8</p><p><b>note</b>: Geen medisch onderzoek kinderarts nodig</p><blockquote><p><b>component</b></p><p><b>code</b>: 10 minute Apgar Respiratory effort <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#32405-3)</span></p><p><b>value</b>: Good, strong cry; normal rate and effort of breathing <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6727-7)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 10 minute Apgar Color <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#32401-2)</span></p><p><b>value</b>: Good color in body with bluish hands or feet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6723-6)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 10 minute Apgar Heart rate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#32402-0)</span></p><p><b>value</b>: Fewer than 100 beats per minute <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6717-8)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 10 minute Apgar Reflex irritability <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#32404-6)</span></p><p><b>value</b>: Grimace and pulling away, cough, or sneeze during suctioning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6721-0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: 10 minute Apgar Muscle tone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#32403-8)</span></p><p><b>value</b>: Active motion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6715-2)</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "9271-8",
+      "display" : "10 minute Apgar Score"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "effectiveDateTime" : "2016-12-19T09:00:00+01:00",
+  "valueInteger" : 8,
+  "note" : [{
+    "text" : "Geen medisch onderzoek kinderarts nodig"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "32405-3",
+        "display" : "10 minute Apgar Respiratory effort"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6727-7",
+        "display" : "Good, strong cry; normal rate and effort of breathing"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "32401-2",
+        "display" : "10 minute Apgar Color"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6723-6",
+        "display" : "Good color in body with bluish hands or feet"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "32402-0",
+        "display" : "10 minute Apgar Heart rate"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6717-8",
+        "display" : "Fewer than 100 beats per minute"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "32404-6",
+        "display" : "10 minute Apgar Reflex irritability"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6721-0",
+        "display" : "Grimace and pulling away, cough, or sneeze during suctioning"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "32403-8",
+        "display" : "10 minute Apgar Muscle tone"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LA6715-2",
+        "display" : "Active motion"
+      }]
+    }
+  }]
+}

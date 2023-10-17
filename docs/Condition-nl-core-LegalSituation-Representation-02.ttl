@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Condition/nl-core-LegalSituation-Representation-02> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-LegalSituation-Representation-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-LegalSituation-Representation"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-LegalSituation-Representation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"nl-core-LegalSituation-Representation-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;nl-core-LegalSituation-Representation-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-LegalSituation-Representation.html\">nl core LegalSituation Representation</a></p></div><p><b>clinicalStatus</b>: Inactive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>category</b>: type voogd <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#151701000146105)</span></p><p><b>code</b>: Bewindvoering <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#7)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>onset</b>: 2018-01-01</p><p><b>abatement</b>: 2020-01-01</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inactive" ] ;
+       fhir:display [ fhir:v "Inactive" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:151701000146105 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "151701000146105" ] ;
+       fhir:display [ fhir:v "type voogd" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.23.3"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "7" ] ;
+       fhir:display [ fhir:v "Bewindvoering" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2018-01-01"^^xsd:date] ; # 
+  fhir:abatement [ fhir:v "2020-01-01"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

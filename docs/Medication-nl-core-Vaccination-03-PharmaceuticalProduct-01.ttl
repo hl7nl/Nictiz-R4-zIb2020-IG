@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Medication/nl-core-Vaccination-03-PharmaceuticalProduct-01> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-Vaccination-03-PharmaceuticalProduct-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"nl-core-Vaccination-03-PharmaceuticalProduct-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;nl-core-Vaccination-03-PharmaceuticalProduct-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-PharmaceuticalProduct.html\">nl core PharmaceuticalProduct</a></p></div><p><b>ext PharmaceuticalProduct.Description</b>: HEPATITIS A, GEINACTIVEERD, INTACT VIRUS</p><p><b>code</b>: HEPATITIS A, GEINACTIVEERD, INTACT VIRUS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-WC.html\">WHO ATC</a>#J07BC02)</span></p><p><b>form</b>: SUSPENSIE VOOR INJECTIE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#21)</span></p><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>AW1898</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalProduct.Description"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HEPATITIS A, GEINACTIVEERD, INTACT VIRUS" ] #  add description 
+  ] ) ; #  Omschrijving 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J07BC02" ] ;
+       fhir:display [ fhir:v "HEPATITIS A, GEINACTIVEERD, INTACT VIRUS" ] #  ProductNaam 
+     ] )
+  ] ; #  Serienummer ,    <identifier> <!-\- Add serialnumber -\-> </identifier>,  ProductCode 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.11"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21" ] ;
+       fhir:display [ fhir:v "SUSPENSIE VOOR INJECTIE" ] #  ProductNaam 
+     ] )
+  ] ; #  FarmaceutischeVorm 
+  fhir:batch [
+     fhir:lotNumber [ fhir:v "AW1898" ]
+  ] . #  Batchnummer 
+
+# -------------------------------------------------------------------------------------
+

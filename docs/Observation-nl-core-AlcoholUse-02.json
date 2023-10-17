@@ -1,0 +1,49 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-AlcoholUse-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-AlcoholUse"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-AlcoholUse-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-AlcoholUse-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-AlcoholUse.html\">nl core AlcoholUse</a></p></div><p><b>status</b>: final</p><p><b>code</b>: bevinding betreffende alcoholgebruik <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#228273003)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 1995-01-01 --&gt; (ongoing)</p><p><b>value</b>: Drinkt alcohol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#219006)</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>inname van alcoholische drank <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#897148007)</span></td><td>3 eenheden per dag<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {eenheden per dag} = '{eenheden per dag}')</span></td></tr></table></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "228273003",
+      "display" : "bevinding betreffende alcoholgebruik"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "effectivePeriod" : {
+    "start" : "1995-01-01"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "219006",
+      "display" : "Drinkt alcohol"
+    }]
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "897148007",
+        "display" : "inname van alcoholische drank"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 3,
+      "unit" : "eenheden per dag",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{eenheden per dag}"
+    }
+  }]
+}

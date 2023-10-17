@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Immunization/nl-core-Vaccination-event-03> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-Vaccination-event-03"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-Vaccination-event"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-Vaccination-event>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Immunization</b><a name=\"nl-core-Vaccination-event-03\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Immunization &quot;nl-core-Vaccination-event-03&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-Vaccination-event.html\">nl core Vaccination event</a></p></div><p><b>ext Vaccination.PharmaceuticalProduct</b>: <a href=\"Medication-nl-core-Vaccination-03-PharmaceuticalProduct-01.html\">Medication/nl-core-Vaccination-03-PharmaceuticalProduct-01: HEPATITIS A, GEINACTIVEERD, INTACT VIRUS</a></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: HEPATITIS A, GEINACTIVEERD, INTACT VIRUS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-WC.html\">WHO ATC</a>#J07BC02)</span></p><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>occurrence</b>: 2012-06-03</p><p><b>site</b>: gehele rechter bovenarm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#59126009)</span></p><p><b>route</b>: INTRAMUSCULAIR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#2)</span></p><p><b>doseQuantity</b>: 1 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td>Administering Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0443.html\">providerRole</a>#AP)</span></td><td><a href=\"PractitionerRole-nl-core-Vaccination-02-PractitionerRole-01.html\">PractitionerRole/nl-core-Vaccination-02-PractitionerRole-01: Healthcare professional (role)</a></td></tr></table><p><b>note</b>: Bezoek aan Guatemala.</p><p><b>reasonCode</b>: Kwetsbare oudere (bevinding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#404904002)</span>, Immunisatie nodig vanuit rijksvaccinatieprogramma (situatie) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#159731000146104)</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>hepatitis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#128241005)</span></td><td>n/a</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-Vaccination.PharmaceuticalProduct"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Medication/nl-core-Vaccination-03-PharmaceuticalProduct-01> ;
+       fhir:reference [ fhir:v "Medication/nl-core-Vaccination-03-PharmaceuticalProduct-01" ] ;
+       fhir:display [ fhir:v "HEPATITIS A, GEINACTIVEERD, INTACT VIRUS" ]
+     ]
+  ] ) ; #  FarmaceutischProduct 
+  fhir:status [ fhir:v "completed"] ; #  StatusToediening 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J07BC02" ] ;
+       fhir:display [ fhir:v "HEPATITIS A, GEINACTIVEERD, INTACT VIRUS" ]
+     ] )
+  ] ; #  VaccineCode reflects the ProductCode in the PharmaceuticalProduct reference 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; #  Referentie Patient 
+  fhir:occurrence [ fhir:v "2012-06-03"^^xsd:date] ; #  VaccinatieDatumTijd 
+  fhir:site [
+     fhir:coding ( [
+       a sct:59126009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59126009" ] ;
+       fhir:display [ fhir:v "gehele rechter bovenarm" ]
+     ] )
+  ] ; #  AnatomischeLocatie 
+  fhir:route [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "INTRAMUSCULAIR" ]
+     ] )
+  ] ; #  Toedieningsweg 
+  fhir:doseQuantity [
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "milliliter" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mL" ]
+  ] ; #  Dosis 
+  fhir:performer ( [
+     fhir:function [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AP" ] ;
+         fhir:display [ fhir:v "Administering Provider" ]
+       ] )
+     ] ;
+     fhir:actor [
+       fhir:link <http://nictiz.nl/fhir/PractitionerRole/nl-core-Vaccination-02-PractitionerRole-01> ;
+       fhir:reference [ fhir:v "PractitionerRole/nl-core-Vaccination-02-PractitionerRole-01" ] ;
+       fhir:type [ fhir:v "PractitionerRole"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Healthcare professional (role)" ]
+     ]
+  ] ) ; #  Toediener::Zorgverlener 
+  fhir:note ( [
+     fhir:text [ fhir:v "Bezoek aan Guatemala." ]
+  ] ) ; #  Toelichting 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:404904002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "404904002" ] ;
+       fhir:display [ fhir:v "Kwetsbare oudere (bevinding)" ]
+     ] ) #  reasonCode:vaccinationIndication 
+  ] [
+     fhir:coding ( [
+       a sct:159731000146104 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "159731000146104" ] ;
+       fhir:display [ fhir:v "Immunisatie nodig vanuit rijksvaccinatieprogramma (situatie)" ]
+     ] ) #  reasonCode:vaccinationMotive 
+  ] ) ; #  VaccinatieIntentie 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:128241005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "128241005" ] ;
+         fhir:display [ fhir:v "hepatitis" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [ fhir:v "n/a" ]
+  ] ) . #  VaccinatieZiekteverwekker 
+
+# -------------------------------------------------------------------------------------
+

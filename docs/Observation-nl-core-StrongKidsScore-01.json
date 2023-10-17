@@ -1,0 +1,90 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-StrongKidsScore-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-StrongKidsScore"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-StrongKidsScore-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-StrongKidsScore-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-StrongKidsScore.html\">nl core StrongKidsScore</a></p></div><p><b>status</b>: final</p><p><b>code</b>: STRONGkids-screeningsinstrument <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108341000146107)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2016-12-12</p><p><b>value</b>: 2</p><blockquote><p><b>component</b></p><p><b>code</b>: StrongKidsScore GewichtsverliesScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4028003)</span></p><p><b>value</b>: NoLoss <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#G0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: StrongKidsScore ZiekteBeeldScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4028004)</span></p><p><b>value</b>: IncreasedRisk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#R1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: StrongKidsScore VoedingsScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4028005)</span></p><p><b>value</b>: Normaal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Z0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: StrongKidsScore VoedingstoestandScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4028008)</span></p><p><b>value</b>: Goed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#T0)</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108341000146107",
+      "display" : "STRONGkids-screeningsinstrument"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "effectiveDateTime" : "2016-12-12",
+  "valueInteger" : 2,
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4028003",
+        "display" : "StrongKidsScore GewichtsverliesScore"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.1",
+        "code" : "G0",
+        "display" : "NoLoss"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4028004",
+        "display" : "StrongKidsScore ZiekteBeeldScore"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.2",
+        "code" : "R1",
+        "display" : "IncreasedRisk"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4028005",
+        "display" : "StrongKidsScore VoedingsScore"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.3",
+        "code" : "Z0",
+        "display" : "Normaal"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4028008",
+        "display" : "StrongKidsScore VoedingstoestandScore"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.4",
+        "code" : "T0",
+        "display" : "Goed"
+      }]
+    }
+  }]
+}

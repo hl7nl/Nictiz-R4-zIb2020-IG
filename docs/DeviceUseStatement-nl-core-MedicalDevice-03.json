@@ -1,0 +1,65 @@
+{
+  "resourceType" : "DeviceUseStatement",
+  "id" : "nl-core-MedicalDevice-03",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DeviceUseStatement</b><a name=\"nl-core-MedicalDevice-03\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DeviceUseStatement &quot;nl-core-MedicalDevice-03&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-MedicalDevice.html\">nl core MedicalDevice</a></p></div><p><b>ext MedicalDevice.HealthProfessional</b>: <a href=\"PractitionerRole-nl-core-MedicalDevice-03-PractitionerRole-01.html\">PractitionerRole/nl-core-MedicalDevice-03-PractitionerRole-01: Healthcare professional (role), Karel Janssen, Medisch specialisten, cardiologie</a></p><p><b>ext MedicalDevice.Location</b>: <a href=\"Location-nl-core-MedicalDevice-03-Location-01.html\">Location/nl-core-MedicalDevice-03-Location-01: Healthcare provider (location), Academisch Medisch Centrum</a></p><p><b>status</b>: active</p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>timing</b>: 2004-02-10 --&gt; (ongoing)</p><p><b>device</b>: <a href=\"Device-nl-core-MedicalDevice.Product-03.html\">Device/nl-core-MedicalDevice.Product-03</a></p><p><b>reasonReference</b>: <a href=\"Condition-nl-core-MedicalDevice-03-Condition-01.html\">Condition/nl-core-MedicalDevice-03-Condition-01: Problem</a></p><p><b>bodySite</b>: subclavian pouch <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#9454009)</span></p><p><b>note</b>: Laatst doorgemeten in 2011</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.HealthProfessional",
+    "valueReference" : {
+      "reference" : "PractitionerRole/nl-core-MedicalDevice-03-PractitionerRole-01",
+      "type" : "PractitionerRole",
+      "display" : "Healthcare professional (role), Karel Janssen, Medisch specialisten, cardiologie"
+    }
+  },
+  {
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.Location",
+    "valueReference" : {
+      "reference" : "Location/nl-core-MedicalDevice-03-Location-01",
+      "type" : "Location",
+      "display" : "Healthcare provider (location), Academisch Medisch Centrum"
+    }
+  }],
+  "status" : "active",
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "timingPeriod" : {
+    "start" : "2004-02-10"
+  },
+  "device" : {
+    "reference" : "Device/nl-core-MedicalDevice.Product-03",
+    "type" : "Device"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/nl-core-MedicalDevice-03-Condition-01",
+    "type" : "Condition",
+    "display" : "Problem"
+  }],
+  "bodySite" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Links"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "9454009",
+      "display" : "subclavian pouch"
+    }]
+  },
+  "note" : [{
+    "text" : "Laatst doorgemeten in 2011"
+  }]
+}

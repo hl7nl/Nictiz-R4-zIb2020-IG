@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="nl-core-HealthProfessional-Practitioner-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="nl-core-HealthProfessional-Practitioner-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;nl-core-HealthProfessional-Practitioner-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-HealthProfessional-Practitioner.html">nl core HealthProfessional Practitioner</a></p></div><p><b>identifier</b>: id: 21870932</p><p><b>name</b>: J.H.R. Peters(OFFICIAL)</p><p><b>telecom</b>: <a href="tel:+3715828282">+3715828282</a>, <a href="mailto:j.peters@hospital.nl">j.peters@hospital.nl</a></p><p><b>address</b>: Simon Smitweg 1 Leiderdorp 2353 GA Nederland (WORK)</p></div>
+  </text>
+  <identifier>
+    <system value="http://fhir.nl/fhir/NamingSystem/big"/>
+    <value value="21870932"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <text value="J.H.R. Peters"/>
+    <family value="Peters">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Peters"/>
+      </extension>
+    </family>
+    <given value="J.">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="IN"/>
+      </extension>
+    </given>
+    <given value="H.">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="IN"/>
+      </extension>
+    </given>
+    <given value="R.">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="IN"/>
+      </extension>
+    </given>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+3715828282"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="j.peters@hospital.nl"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-AddressUse"/>
+          <code value="WP"/>
+          <display value="Work Place"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <use value="work"/>
+    <line value="Simon Smitweg 1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Simon Smitweg"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="1"/>
+      </extension>
+    </line>
+    <city value="Leiderdorp"/>
+    <postalCode value="2353 GA"/>
+    <country value="Nederland">
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <version value="2020-10-26T00:00:00"/>
+            <code value="NL"/>
+            <display value="Nederland"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </country>
+  </address>
+</Practitioner>

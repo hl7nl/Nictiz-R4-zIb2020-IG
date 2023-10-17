@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-Education-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-Education"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-Education-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-Education-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-Education.html\">nl core Education</a></p></div><p><b>status</b>: final</p><p><b>code</b>: opleidingsniveau <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#105421008)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>value</b>: Hbo-, wo-master, doctor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#321)</span></p><p><b>note</b>: Patiënt heeft Geneeskunde gestudeerd.</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "105421008",
+      "display" : "opleidingsniveau"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.24.1",
+      "code" : "321",
+      "display" : "Hbo-, wo-master, doctor"
+    }]
+  },
+  "note" : [{
+    "text" : "Patiënt heeft Geneeskunde gestudeerd."
+  }]
+}

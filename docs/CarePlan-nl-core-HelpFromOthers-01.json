@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "nl-core-HelpFromOthers-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-HelpFromOthers"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"nl-core-HelpFromOthers-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;nl-core-HelpFromOthers-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-HelpFromOthers.html\">nl core HelpFromOthers</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>category</b>: ondersteuning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#243114000)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>ondersteuning voor verzorger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#386229000)</span></td><td>in-progress</td><td>1 keer per week</td><td><a href=\"RelatedPerson-nl-core-HelpFromOthers-01-RelatedPerson-01.html\">RelatedPerson/nl-core-HelpFromOthers-01-RelatedPerson-01: Contact person, de Boer</a> &quot; DE BOER&quot;</td><td>Boodschappen doen</td></tr></table></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "plan",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "243114000",
+      "display" : "ondersteuning"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "activity" : [{
+    "detail" : {
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "386229000",
+          "display" : "ondersteuning voor verzorger"
+        }]
+      },
+      "status" : "in-progress",
+      "scheduledString" : "1 keer per week",
+      "performer" : [{
+        "reference" : "RelatedPerson/nl-core-HelpFromOthers-01-RelatedPerson-01",
+        "type" : "RelatedPerson",
+        "display" : "Contact person, de Boer"
+      }],
+      "description" : "Boodschappen doen"
+    }
+  }]
+}

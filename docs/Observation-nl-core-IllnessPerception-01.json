@@ -1,0 +1,54 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-IllnessPerception-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-IllnessPerception"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-IllnessPerception-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-IllnessPerception-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-IllnessPerception.html\">nl core IllnessPerception</a></p></div><p><b>status</b>: final</p><p><b>code</b>: kenmerk van psychosociaal functioneren <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#363910003)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><blockquote><p><b>component</b></p><p><b>code</b>: inzicht <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#27026000)</span></p><p><b>value</b>: Kan niet overzien wat de ziekte betekent in het dagelijks leven.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: vermogen tot coping <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#364667003)</span></p><p><b>value</b>: Patiënt wil niet praten over de toekomst.</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: copinggedrag van familie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#405199009)</span></p><p><b>value</b>: Partner heeft veel vragen over hoe de toekomst er uit ziet.</p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "363910003",
+      "display" : "kenmerk van psychosociaal functioneren"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "27026000",
+        "display" : "inzicht"
+      }]
+    },
+    "valueString" : "Kan niet overzien wat de ziekte betekent in het dagelijks leven."
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "364667003",
+        "display" : "vermogen tot coping"
+      }]
+    },
+    "valueString" : "Patiënt wil niet praten over de toekomst."
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "405199009",
+        "display" : "copinggedrag van familie"
+      }]
+    },
+    "valueString" : "Partner heeft veel vragen over hoe de toekomst er uit ziet."
+  }]
+}

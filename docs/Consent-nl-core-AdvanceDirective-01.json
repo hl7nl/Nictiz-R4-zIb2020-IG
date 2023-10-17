@@ -1,0 +1,70 @@
+{
+  "resourceType" : "Consent",
+  "id" : "nl-core-AdvanceDirective-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-AdvanceDirective"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"nl-core-AdvanceDirective-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;nl-core-AdvanceDirective-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-AdvanceDirective.html\">nl core AdvanceDirective</a></p></div><p><b>ext AdvanceDirective.Disorder</b>: <a href=\"Condition-nl-core-AdvanceDirective-01-Condition-01.html\">Condition/nl-core-AdvanceDirective-01-Condition-01: Problem</a></p><p><b>ext Comment</b>: Niet-reanimerenpenning</p><p><b>status</b>: active</p><p><b>scope</b>: Advanced Care Directive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#adr)</span></p><p><b>category</b>: Advance Directive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentcategorycodes.html\">Consent Category Codes</a>#acd)</span></p><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>dateTime</b>: 2011-08-15</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://wetten.overheid.nl/\">https://wetten.overheid.nl/</a></td></tr></table><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td>responsible party <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#RESPRSN)</span></td><td><a href=\"RelatedPerson-nl-core-AdvanceDirective-01-RelatedPerson-01.html\">RelatedPerson/nl-core-AdvanceDirective-01-RelatedPerson-01: Contact person, J.P.M. Pietersen</a> &quot; PIETERSEN&quot;</td></tr></table><p><b>code</b>: Niet reanimeren verklaring <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#NR)</span></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-AdvanceDirective.Disorder",
+    "valueReference" : {
+      "reference" : "Condition/nl-core-AdvanceDirective-01-Condition-01",
+      "type" : "Condition",
+      "display" : "Problem"
+    }
+  },
+  {
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+    "valueString" : "Niet-reanimerenpenning"
+  }],
+  "status" : "active",
+  "scope" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "adr",
+      "display" : "Advanced Care Directive"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "code" : "acd",
+      "display" : "Advance Directive"
+    }]
+  }],
+  "patient" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "dateTime" : "2011-08-15",
+  "policy" : [{
+    "uri" : "https://wetten.overheid.nl/"
+  }],
+  "provision" : {
+    "actor" : [{
+      "role" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RESPRSN",
+          "display" : "responsible party"
+        }]
+      },
+      "reference" : {
+        "reference" : "RelatedPerson/nl-core-AdvanceDirective-01-RelatedPerson-01",
+        "type" : "RelatedPerson",
+        "display" : "Contact person, J.P.M. Pietersen"
+      }
+    }],
+    "code" : [{
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1",
+        "code" : "NR",
+        "display" : "Niet reanimeren verklaring"
+      }]
+    }]
+  }
+}

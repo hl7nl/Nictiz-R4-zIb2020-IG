@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+#  An example of a complete name, with:
+#* official first names (voornamen)
+#* a given name (roepnaam)
+#* a family name built from the person's last name and the last name of her partner
+#* a scientific title.
+#
+#This example is about Ms. Johanna Petronelle Maria van Putten, commonly known as "Jo", who has a PhD. When she married
+#Mr. van der Giessen, she adopted the last name of her partner, and added her own last name to it.
+#
+
+<http://nictiz.nl/fhir/Patient/nl-core-NameInformation-complete> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-NameInformation-complete"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jo </b> (no stated gender), DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Johanna Petronella Maria (Jo) van der Giessen-van Putten(OFFICIAL)</td></tr></table></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "NL3" ]
+     ] ) ; #  The extension is used to indicate that the person's family name is built up from the partner's last name \n           followed by the person's own last name 
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Johanna Petronella Maria (Jo) van der Giessen-van Putten" ] ; #  The rendered name of the person 
+     fhir:family [
+       fhir:v "van der Giessen-van Putten" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "van" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Putten" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "van der" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Giessen" ]
+       ] ) #  The person's own last name prefix 
+     ] ; #  The person's combined family name. The individual parts are repeated using the appropriate extensions. 
+     fhir:given ( [
+       fhir:v "Johanna" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BR" ]
+       ] )
+     ] [
+       fhir:v "Petronella" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BR" ]
+       ] )
+     ] [
+       fhir:v "Maria" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BR" ]
+       ] )
+     ] ) ; #  Each official first name is communicated individually, augmented with the iso21090-EN-qualifier\n           extension set to \"BR\" (Birth) to indicate that it is a complete and official first name. 
+     fhir:prefix ( [ fhir:v "PhD" ] ) #  The scientific title of the person. 
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:given ( [ fhir:v "Jo" ] )
+  ] ) . #  The information about the offical names is communicated using a .name instance where .name.use is 
+#        set to "official". 
+
+# -------------------------------------------------------------------------------------
+

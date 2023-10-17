@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Procedure/nl-core-Procedure-event-01> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-Procedure-event-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-event"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-event>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"nl-core-Procedure-event-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;nl-core-Procedure-event-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-Procedure-event.html\">nl core Procedure event</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Prothese implantatie kniegewricht <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#038663)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>performed</b>: 2012-06-05</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-nl-core-Procedure-01-PractitionerRole-01.html\">PractitionerRole/nl-core-Procedure-01-PractitionerRole-01: Healthcare professional (role), Orthoptisten</a></td></tr></table><p><b>location</b>: <a href=\"Location-nl-core-Procedure-01-Location-01.html\">Location/nl-core-Procedure-01-Location-01: Healthcare provider (location), UMCG</a></p><p><b>reasonReference</b>: <a href=\"Condition-nl-core-Procedure-01-Condition-01.html\">Condition/nl-core-Procedure-01-Condition-01: Problem</a></p><p><b>bodySite</b>: structuur van knieregio <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#72696002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.120.5.2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "038663" ] ;
+       fhir:display [ fhir:v "Prothese implantatie kniegewricht" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:performed [ fhir:v "2012-06-05"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://nictiz.nl/fhir/PractitionerRole/nl-core-Procedure-01-PractitionerRole-01> ;
+       fhir:reference [ fhir:v "PractitionerRole/nl-core-Procedure-01-PractitionerRole-01" ] ;
+       fhir:type [ fhir:v "PractitionerRole"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Healthcare professional (role), Orthoptisten" ]
+     ]
+  ] ) ; # 
+  fhir:location [
+     fhir:link <http://nictiz.nl/fhir/Location/nl-core-Procedure-01-Location-01> ;
+     fhir:reference [ fhir:v "Location/nl-core-Procedure-01-Location-01" ] ;
+     fhir:type [ fhir:v "Location"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Healthcare provider (location), UMCG" ]
+  ] ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://nictiz.nl/fhir/Condition/nl-core-Procedure-01-Condition-01> ;
+     fhir:reference [ fhir:v "Condition/nl-core-Procedure-01-Condition-01" ] ;
+     fhir:type [ fhir:v "Condition"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Problem" ]
+  ] ) ; # 
+  fhir:bodySite ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:7771000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "7771000" ] ;
+           fhir:display [ fhir:v "Links" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:72696002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "72696002" ] ;
+       fhir:display [ fhir:v "structuur van knieregio" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Organization/nl-core-Payer-Organization-02> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-Payer-Organization-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"nl-core-Payer-Organization-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;nl-core-Payer-Organization-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-Payer-Organization.html\">nl core Payer Organization</a></p></div><p><b>identifier</b>: id: 3332</p><p><b>name</b>: Menzis Zorgverzekeraar N.V.</p><p><b>telecom</b>: <a href=\"tel:+311725233111\">+311725233111</a></p><p><b>address</b>: De Ruyterlaan 25 Enschede 7511 JH (WORK)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/uzovi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3332" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Menzis Zorgverzekeraar N.V."] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+311725233111" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-AddressUse"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "WP" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:line ( [
+       fhir:v "De Ruyterlaan 25" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "De Ruyterlaan" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "25" ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Enschede" ] ;
+     fhir:district [ fhir:v "Enschede" ] ;
+     fhir:postalCode [ fhir:v "7511 JH" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

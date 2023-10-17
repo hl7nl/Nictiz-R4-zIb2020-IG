@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-LaboratoryTestResult-03",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-LaboratoryTestResult"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-LaboratoryTestResult-03\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-LaboratoryTestResult-03&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-LaboratoryTestResult.html\">nl core LaboratoryTestResult</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span>, Virologisch onderzoek <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#395124008)</span></p><p><b>code</b>: Hepatitis A virus IgM Ab [Presence] in Serum <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#22314-9)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2012-01-16 10:12:00+0000</p><p><b>value</b>: hepatitis A-test negatief <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#165996008)</span></p><p><b>specimen</b>: <a href=\"Specimen-nl-core-LaboratoryTestResult.Specimen-03.html\">Specimen/nl-core-LaboratoryTestResult.Specimen-03: monster</a></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "395124008",
+      "display" : "Virologisch onderzoek"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "22314-9",
+      "display" : "Hepatitis A virus IgM Ab [Presence] in Serum"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "effectiveDateTime" : "2012-01-16T10:12:00+00:00",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "165996008",
+      "display" : "hepatitis A-test negatief"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Specimen/nl-core-LaboratoryTestResult.Specimen-03",
+    "type" : "Specimen",
+    "display" : "monster"
+  }
+}

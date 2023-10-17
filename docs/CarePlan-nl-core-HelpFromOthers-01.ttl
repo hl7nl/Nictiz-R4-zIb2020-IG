@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/CarePlan/nl-core-HelpFromOthers-01> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-HelpFromOthers-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-HelpFromOthers"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-HelpFromOthers>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"nl-core-HelpFromOthers-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;nl-core-HelpFromOthers-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-HelpFromOthers.html\">nl core HelpFromOthers</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>category</b>: ondersteuning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#243114000)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>ondersteuning voor verzorger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#386229000)</span></td><td>in-progress</td><td>1 keer per week</td><td><a href=\"RelatedPerson-nl-core-HelpFromOthers-01-RelatedPerson-01.html\">RelatedPerson/nl-core-HelpFromOthers-01-RelatedPerson-01: Contact person, de Boer</a> &quot; DE BOER&quot;</td><td>Boodschappen doen</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:243114000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "243114000" ] ;
+       fhir:display [ fhir:v "ondersteuning" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:code [
+         fhir:coding ( [
+           a sct:386229000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "386229000" ] ;
+           fhir:display [ fhir:v "ondersteuning voor verzorger" ]
+         ] )
+       ] ;
+       fhir:status [ fhir:v "in-progress" ] ;
+       fhir:scheduled [ fhir:v "1 keer per week" ] ;
+       fhir:performer ( [
+         fhir:link <http://nictiz.nl/fhir/RelatedPerson/nl-core-HelpFromOthers-01-RelatedPerson-01> ;
+         fhir:reference [ fhir:v "RelatedPerson/nl-core-HelpFromOthers-01-RelatedPerson-01" ] ;
+         fhir:type [ fhir:v "RelatedPerson"^^xsd:anyURI ] ;
+         fhir:display [ fhir:v "Contact person, de Boer" ]
+       ] ) ;
+       fhir:description [ fhir:v "Boodschappen doen" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

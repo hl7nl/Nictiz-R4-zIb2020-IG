@@ -1,0 +1,7 @@
+input/examples
+input/resources
+temp
+template
+input-cache
+output
+docs/*.zip

@@ -1,0 +1,159 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-DOSScore-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-DOSScore"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-DOSScore-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-DOSScore-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-DOSScore.html\">nl core DOSScore</a></p></div><p><b>status</b>: final</p><p><b>code</b>: 'Delirium observation screening'-beoordelingsschaal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#160591000146109)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2016-12-19 10:35:00+0100</p><p><b>value</b>: 4</p><p><b>note</b>: Patiënt is mogelijk delirant.</p><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore ZaktWeg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007006)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore SnelAfgeleid <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007007)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore HeeftAandacht <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007008)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore VraagAntwoordNietAf <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007009)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore AntwoordenNietPassend <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007010)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore ReageertTraag <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007011)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore DenktErgensAnders <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007012)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore BeseftDagdeel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007013)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore HerinnertRecent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007014)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore Rusteloos <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007015)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore TrektDraden <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007016)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore SnelGeemotioneerd <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007017)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore Hallucinaties <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#18007018)</span></p><p><b>value</b>: 0</p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "160591000146109",
+      "display" : "'Delirium observation screening'-beoordelingsschaal"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "effectiveDateTime" : "2016-12-19T10:35:00+01:00",
+  "valueInteger" : 4,
+  "note" : [{
+    "text" : "Patiënt is mogelijk delirant."
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007006",
+        "display" : "DOSScore ZaktWeg"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007007",
+        "display" : "DOSScore SnelAfgeleid"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007008",
+        "display" : "DOSScore HeeftAandacht"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007009",
+        "display" : "DOSScore VraagAntwoordNietAf"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007010",
+        "display" : "DOSScore AntwoordenNietPassend"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007011",
+        "display" : "DOSScore ReageertTraag"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007012",
+        "display" : "DOSScore DenktErgensAnders"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007013",
+        "display" : "DOSScore BeseftDagdeel"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007014",
+        "display" : "DOSScore HerinnertRecent"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007015",
+        "display" : "DOSScore Rusteloos"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007016",
+        "display" : "DOSScore TrektDraden"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007017",
+        "display" : "DOSScore SnelGeemotioneerd"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "18007018",
+        "display" : "DOSScore Hallucinaties"
+      }]
+    },
+    "valueInteger" : 0
+  }]
+}

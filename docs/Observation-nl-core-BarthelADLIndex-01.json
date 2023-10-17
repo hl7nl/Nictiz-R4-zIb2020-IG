@@ -1,0 +1,185 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-BarthelADLIndex-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-BarthelADLIndex"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-BarthelADLIndex-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-BarthelADLIndex-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-BarthelADLIndex.html\">nl core BarthelADLIndex</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Barthel-index <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#273302005)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>value</b>: 14</p><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Darm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002004)</span></p><p><b>value</b>: Continent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#FECAL2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Blaas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002003)</span></p><p><b>value</b>: Ongelukje <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#URIN1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex UiterlijkeVerzorging <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002005)</span></p><p><b>value</b>: Onafhankelijk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#GROOM1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Toiletgebruik <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002006)</span></p><p><b>value</b>: Onafhankelijk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#TOIL2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Eten <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002007)</span></p><p><b>value</b>: Onafhankelijk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#FEED2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Transfers <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002008)</span></p><p><b>value</b>: Veel hulp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#TRANS1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Mobiliteit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002009)</span></p><p><b>value</b>: Onafhankelijk met rolstoel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#MOBIL1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex AanUitkleden <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002010)</span></p><p><b>value</b>: Hulp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#DRESS1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex TrappenLopen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002011)</span></p><p><b>value</b>: Onafhankelijk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#CLIMB2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex BadenDouchen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4002012)</span></p><p><b>value</b>: Onafhankelijk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#BATH1)</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "273302005",
+      "display" : "Barthel-index"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "valueInteger" : 14,
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002004",
+        "display" : "BarthelIndex Darm"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.1",
+        "code" : "FECAL2",
+        "display" : "Continent"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002003",
+        "display" : "BarthelIndex Blaas"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.2",
+        "code" : "URIN1",
+        "display" : "Ongelukje"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002005",
+        "display" : "BarthelIndex UiterlijkeVerzorging"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.3",
+        "code" : "GROOM1",
+        "display" : "Onafhankelijk"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002006",
+        "display" : "BarthelIndex Toiletgebruik"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.4",
+        "code" : "TOIL2",
+        "display" : "Onafhankelijk"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002007",
+        "display" : "BarthelIndex Eten"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.5",
+        "code" : "FEED2",
+        "display" : "Onafhankelijk"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002008",
+        "display" : "BarthelIndex Transfers"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.6",
+        "code" : "TRANS1",
+        "display" : "Veel hulp"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002009",
+        "display" : "BarthelIndex Mobiliteit"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.7",
+        "code" : "MOBIL1",
+        "display" : "Onafhankelijk met rolstoel"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002010",
+        "display" : "BarthelIndex AanUitkleden"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.8",
+        "code" : "DRESS1",
+        "display" : "Hulp"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002011",
+        "display" : "BarthelIndex TrappenLopen"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.9",
+        "code" : "CLIMB2",
+        "display" : "Onafhankelijk"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "4002012",
+        "display" : "BarthelIndex BadenDouchen"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.10",
+        "code" : "BATH1",
+        "display" : "Onafhankelijk"
+      }]
+    }
+  }]
+}

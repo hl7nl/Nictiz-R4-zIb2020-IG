@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/nl-core-SOAPReport.SOAPLine-03> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-SOAPReport.SOAPLine-03"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-SOAPReport.SOAPLine"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-SOAPReport.SOAPLine>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-SOAPReport.SOAPLine-03\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-SOAPReport.SOAPLine-03&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-SOAPReport.SOAPLine.html\">nl core SOAPReport.SOAPLine</a></p></div><p><b>ext SOAPReport.SOAPLineCode</b>: Geneesmiddelbijwerking <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (icpc-1-nl#A85)</span></p><p><b>status</b>: final</p><p><b>code</b>: Evaluatie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#129265001)</span></p><p><b>value</b>: bijwerking ACE-remmer</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-SOAPReport.SOAPLineCode"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/icpc-1-nl"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A85" ] ;
+         fhir:display [ fhir:v "Geneesmiddelbijwerking" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:129265001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "129265001" ] ;
+       fhir:display [ fhir:v "Evaluatie" ]
+     ] )
+  ] ; # 
+  fhir:value [ fhir:v "bijwerking ACE-remmer"] . # 
+
+# -------------------------------------------------------------------------------------
+

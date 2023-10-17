@@ -1,0 +1,19 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "nl-core-Procedure-01-PractitionerRole-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"nl-core-Procedure-01-PractitionerRole-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;nl-core-Procedure-01-PractitionerRole-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-HealthProfessional-PractitionerRole.html\">nl core HealthProfessional PractitionerRole</a></p></div><p><b>specialty</b>: Orthoptisten <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[2020-10-23T00:00:00]#4402)</span></p></div>"
+  },
+  "specialty" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.6.7",
+      "version" : "2020-10-23T00:00:00",
+      "code" : "4402",
+      "display" : "Orthoptisten"
+    }]
+  }]
+}

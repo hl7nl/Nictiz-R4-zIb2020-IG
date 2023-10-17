@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-Pregnancy.EstimatedDateOfDelivery-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Pregnancy.EstimatedDateOfDelivery"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-Pregnancy.EstimatedDateOfDelivery-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-Pregnancy.EstimatedDateOfDelivery-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-Pregnancy.EstimatedDateOfDelivery.html">nl core Pregnancy.EstimatedDateOfDelivery</a></p></div><p><b>status</b>: final</p><p><b>code</b>: geschatte bevallingsdatum <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#161714006)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>focus</b>: <a href="Condition-nl-core-Pregnancy-01.html">Condition/nl-core-Pregnancy-01: Pregnancy</a></p><p><b>effective</b>: 2014-07-15</p><p><b>value</b>: 2015-01-08</p><p><b>method</b>: aterme datum berekend door middel van diagnostische ultrasonografie <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#31541000146106)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="161714006"/>
+      <display value="geschatte bevallingsdatum"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <focus>
+    <reference value="Condition/nl-core-Pregnancy-01"/>
+    <type value="Condition"/>
+    <display value="Pregnancy"/>
+  </focus>
+  <effectiveDateTime value="2014-07-15"/>
+  <valueDateTime value="2015-01-08"/>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="31541000146106"/>
+      <display value="aterme datum berekend door middel van diagnostische ultrasonografie"/>
+    </coding>
+  </method>
+</Observation>

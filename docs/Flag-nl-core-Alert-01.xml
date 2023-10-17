@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Flag xmlns="http://hl7.org/fhir">
+  <id value="nl-core-Alert-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Alert"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Flag</b><a name="nl-core-Alert-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Flag &quot;nl-core-Alert-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-Alert.html">nl core Alert</a></p></div><p><b>Flag details</b>: <a href="Condition-nl-core-Alert-01-Condition-01.html">Condition/nl-core-Alert-01-Condition-01: Problem, type: Klinische bevinding</a></p><p><b>status</b>: inactive</p><p><b>category</b>: condition <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#75323-6)</span></p><p><b>code</b>: Not Applicable <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-data-absent-reason.html">DataAbsentReason</a>#not-applicable)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>period</b>: 2012-09-15 --&gt; 2012-12-30</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/flag-detail">
+    <valueReference>
+      <reference value="Condition/nl-core-Alert-01-Condition-01"/>
+      <type value="Condition"/>
+      <display value="Problem, type: Klinische bevinding"/>
+    </valueReference>
+  </extension>
+  <status value="inactive"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="75323-6"/>
+      <display value="condition"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+      <code value="not-applicable"/>
+      <display value="Not Applicable"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <period>
+    <start value="2012-09-15"/>
+    <end value="2012-12-30"/>
+  </period>
+</Flag>

@@ -1,0 +1,31 @@
+{
+  "resourceType" : "EpisodeOfCare",
+  "id" : "nl-core-EpisodeOfCare-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-EpisodeOfCare"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: EpisodeOfCare</b><a name=\"nl-core-EpisodeOfCare-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource EpisodeOfCare &quot;nl-core-EpisodeOfCare-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-EpisodeOfCare.html\">nl core EpisodeOfCare</a></p></div><p><b>ext EpisodeOfCare.EpisodeOfCareName</b>: gestoorde glucose</p><p><b>status</b>: active</p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition-nl-core-EpisodeOfCare-01-Condition-01.html\">Condition/nl-core-EpisodeOfCare-01-Condition-01: Problem, type: Klinische bevinding</a></td></tr></table><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>period</b>: 2014-04-05 --&gt; (ongoing)</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-EpisodeOfCare.EpisodeOfCareName",
+    "valueString" : "gestoorde glucose"
+  }],
+  "status" : "active",
+  "diagnosis" : [{
+    "condition" : {
+      "reference" : "Condition/nl-core-EpisodeOfCare-01-Condition-01",
+      "type" : "Condition",
+      "display" : "Problem, type: Klinische bevinding"
+    }
+  }],
+  "patient" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "period" : {
+    "start" : "2014-04-05"
+  }
+}

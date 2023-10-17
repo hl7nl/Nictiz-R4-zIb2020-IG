@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="nl-core-Vaccination-event-03"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Vaccination-event"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Immunization</b><a name="nl-core-Vaccination-event-03"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Immunization &quot;nl-core-Vaccination-event-03&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-Vaccination-event.html">nl core Vaccination event</a></p></div><p><b>ext Vaccination.PharmaceuticalProduct</b>: <a href="Medication-nl-core-Vaccination-03-PharmaceuticalProduct-01.html">Medication/nl-core-Vaccination-03-PharmaceuticalProduct-01: HEPATITIS A, GEINACTIVEERD, INTACT VIRUS</a></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: HEPATITIS A, GEINACTIVEERD, INTACT VIRUS <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-WC.html">WHO ATC</a>#J07BC02)</span></p><p><b>patient</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>occurrence</b>: 2012-06-03</p><p><b>site</b>: gehele rechter bovenarm <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#59126009)</span></p><p><b>route</b>: INTRAMUSCULAIR <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#2)</span></p><p><b>doseQuantity</b>: 1 milliliter<span style="background: LightGoldenRodYellow"> (Details: UCUM code mL = 'mL')</span></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td>Administering Provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0443.html">providerRole</a>#AP)</span></td><td><a href="PractitionerRole-nl-core-Vaccination-02-PractitionerRole-01.html">PractitionerRole/nl-core-Vaccination-02-PractitionerRole-01: Healthcare professional (role)</a></td></tr></table><p><b>note</b>: Bezoek aan Guatemala.</p><p><b>reasonCode</b>: Kwetsbare oudere (bevinding) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#404904002)</span>, Immunisatie nodig vanuit rijksvaccinatieprogramma (situatie) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#159731000146104)</span></p><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style="display: none">*</td><td>hepatitis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#128241005)</span></td><td>n/a</td></tr></table></div>
+  </text>
+  <!--  FarmaceutischProduct  -->
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-Vaccination.PharmaceuticalProduct">
+    <valueReference>
+      <reference value="Medication/nl-core-Vaccination-03-PharmaceuticalProduct-01"/>
+      <display value="HEPATITIS A, GEINACTIVEERD, INTACT VIRUS"/>
+    </valueReference>
+  </extension>
+  <!--  StatusToediening  -->
+  <status value="completed"/>
+  <!--  VaccineCode reflects the ProductCode in the PharmaceuticalProduct reference  -->
+  <vaccineCode>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="J07BC02"/>
+      <display value="HEPATITIS A, GEINACTIVEERD, INTACT VIRUS"/>
+    </coding>
+  </vaccineCode>
+  <!--  Referentie Patient  -->
+  <patient>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </patient>
+  <!--  VaccinatieDatumTijd  -->
+  <occurrenceDateTime value="2012-06-03"/>
+  <!--  AnatomischeLocatie  -->
+  <site>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="59126009"/>
+      <display value="gehele rechter bovenarm"/>
+    </coding>
+  </site>
+  <!--  Toedieningsweg  -->
+  <route>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2"/>
+      <code value="2"/>
+      <display value="INTRAMUSCULAIR"/>
+    </coding>
+  </route>
+  <!--  Dosis  -->
+  <doseQuantity>
+    <value value="1"/>
+    <unit value="milliliter"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mL"/>
+  </doseQuantity>
+  <!--  Toediener::Zorgverlener  -->
+  <performer>
+    <function>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0443"/>
+        <code value="AP"/>
+        <display value="Administering Provider"/>
+      </coding>
+    </function>
+    <actor>
+      <reference value="PractitionerRole/nl-core-Vaccination-02-PractitionerRole-01"/>
+      <type value="PractitionerRole"/>
+      <display value="Healthcare professional (role)"/>
+    </actor>
+  </performer>
+  <!--  Toelichting  -->
+  <note>
+    <text value="Bezoek aan Guatemala."/>
+  </note>
+  <!--  VaccinatieIntentie  -->
+  <reasonCode>
+    <!--  reasonCode:vaccinationIndication  -->
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="404904002"/>
+      <display value="Kwetsbare oudere (bevinding)"/>
+    </coding>
+  </reasonCode>
+  <!--  VaccinatieAanleiding  -->
+  <reasonCode>
+    <!--  reasonCode:vaccinationMotive  -->
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="159731000146104"/>
+      <display value="Immunisatie nodig vanuit rijksvaccinatieprogramma (situatie)"/>
+    </coding>
+  </reasonCode>
+  <!--  VaccinatieZiekteverwekker  -->
+  <protocolApplied>
+    <targetDisease>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="128241005"/>
+        <display value="hepatitis"/>
+      </coding>
+    </targetDisease>
+    <doseNumberString value="n/a"/>
+  </protocolApplied>
+</Immunization>

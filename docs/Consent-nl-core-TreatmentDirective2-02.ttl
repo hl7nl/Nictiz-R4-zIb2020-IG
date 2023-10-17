@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Consent/nl-core-TreatmentDirective2-02> a fhir:_Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-TreatmentDirective2-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentDirective2"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentDirective2>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"nl-core-TreatmentDirective2-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;nl-core-TreatmentDirective2-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-TreatmentDirective2.html\">nl core TreatmentDirective2</a></p></div><blockquote><p><b>modifierExtension[http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.SpecificationOther]</b></p></blockquote><p><b>status</b>: active</p><p><b>scope</b>: Treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#treatment)</span></p><p><b>category</b>: verrichting met expliciete context <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#129125009)</span></p><p><b>patient</b>: <a href=\"Patient-nl-core-TreatmentDirective2-02-Patient-01.html\">Patient/nl-core-TreatmentDirective2-02-Patient-01: Patient, Jan Pieter Mark (Piet) Pietersen</a> &quot; PIETERSEN&quot;</p><p><b>dateTime</b>: 2012-09-11</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://wetten.overheid.nl/\">https://wetten.overheid.nl/</a></td></tr></table><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td>consenter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#CONSENTER)</span></td><td><a href=\"Patient-nl-core-TreatmentDirective2-02-Patient-01.html\">Patient/nl-core-TreatmentDirective2-02-Patient-01: Patient, Jan Pieter Mark (Piet) Pietersen</a> &quot; PIETERSEN&quot;</td></tr></table><p><b>code</b>: Cardiopulmonale resuscitatie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#89666000)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:modifierExtension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.SpecificationOther"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "eerst overleg met echtgenote" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "treatment" ] ;
+       fhir:display [ fhir:v "Treatment" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:129125009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "129125009" ] ;
+       fhir:display [ fhir:v "verrichting met expliciete context" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-TreatmentDirective2-02-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-TreatmentDirective2-02-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Jan Pieter Mark (Piet) Pietersen" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2012-09-11"^^xsd:date] ; # 
+  fhir:policy ( [
+     fhir:uri [ fhir:v "https://wetten.overheid.nl/"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:provision [
+     fhir:actor ( [
+       fhir:role [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CONSENTER" ] ;
+           fhir:display [ fhir:v "consenter" ]
+         ] )
+       ] ;
+       fhir:reference [
+         fhir:link <http://nictiz.nl/fhir/Patient/nl-core-TreatmentDirective2-02-Patient-01> ;
+         fhir:reference [ fhir:v "Patient/nl-core-TreatmentDirective2-02-Patient-01" ] ;
+         fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+         fhir:display [ fhir:v "Patient, Jan Pieter Mark (Piet) Pietersen" ]
+       ]
+     ] ) ;
+     fhir:code ( [
+       fhir:coding ( [
+         a sct:89666000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "89666000" ] ;
+         fhir:display [ fhir:v "Cardiopulmonale resuscitatie" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

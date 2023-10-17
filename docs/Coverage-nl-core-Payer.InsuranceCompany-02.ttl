@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Coverage/nl-core-Payer.InsuranceCompany-02> a fhir:Coverage ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-Payer.InsuranceCompany-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"nl-core-Payer.InsuranceCompany-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;nl-core-Payer.InsuranceCompany-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-Payer.InsuranceCompany.html\">nl core Payer.InsuranceCompany</a></p></div><p><b>status</b>: cancelled</p><p><b>type</b>: Basis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#B)</span></p><p><b>subscriberId</b>: 12345678</p><p><b>beneficiary</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>period</b>: 2012-01-01 --&gt; 2013-01-31</p><p><b>payor</b>: <a href=\"Organization-nl-core-Payer-Organization-02.html\">Organization/nl-core-Payer-Organization-02: Payer-Organization, Menzis Zorgverzekeraar N.V., UZOVI 3332</a> &quot;Menzis Zorgverzekeraar N.V.&quot;</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "cancelled"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "B" ] ;
+       fhir:display [ fhir:v "Basis" ]
+     ] )
+  ] ; # 
+  fhir:subscriberId [ fhir:v "12345678"] ; # 
+  fhir:beneficiary [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2012-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2013-01-31"^^xsd:date ]
+  ] ; # 
+  fhir:payor ( [
+     fhir:link <http://nictiz.nl/fhir/Organization/nl-core-Payer-Organization-02> ;
+     fhir:reference [ fhir:v "Organization/nl-core-Payer-Organization-02" ] ;
+     fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Payer-Organization, Menzis Zorgverzekeraar N.V., UZOVI 3332" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

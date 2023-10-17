@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="nl-core-Procedure-01-Device-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Device</b><a name="nl-core-Procedure-01-Device-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Device &quot;nl-core-Procedure-01-Device-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-MedicalDevice.Product.html">nl core MedicalDevice.Product</a></p></div><p><b>identifier</b>: id: {01}05050474530799{17}160131{21}1148130801</p><h3>UdiCarriers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Issuer</b></td><td><b>CarrierHRF</b></td></tr><tr><td style="display: none">*</td><td><a href="https://www.gs1.org/gtin">https://www.gs1.org/gtin</a></td><td>{01}05050474530799{17}160131{21}1148130801</td></tr></table><p><b>type</b>: 109228008 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#109228008)</span></p><p><b>patient</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>note</b>: Implantant, Gen 2 Tibia Insert 5/6-9mm</p></div>
+  </text>
+  <identifier>
+    <system value="https://www.gs1.org/gtin"/>
+    <value value="{01}05050474530799{17}160131{21}1148130801"/>
+  </identifier>
+  <udiCarrier>
+    <issuer value="https://www.gs1.org/gtin"/>
+    <carrierHRF value="{01}05050474530799{17}160131{21}1148130801"/>
+  </udiCarrier>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="109228008"/>
+    </coding>
+  </type>
+  <patient>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </patient>
+  <note>
+    <text value="Implantant, Gen 2 Tibia Insert 5/6-9mm"/>
+  </note>
+</Device>

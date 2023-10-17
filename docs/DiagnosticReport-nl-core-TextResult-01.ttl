@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/DiagnosticReport/nl-core-TextResult-01> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-TextResult-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-TextResult"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-TextResult>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://snomed.info/sct 363680008}\">Radiografische beeldvormende verrichting</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Jo </b> female, DoB: 1934-04-28 ( id: 111222333)</td></tr><tr><td>When For</td><td>2014-12-05 17:00:00+0100</td></tr></table><p><b>Report Details</b></p><p>Klinische gegevens: Opname van het respiratoire insufficiëntie bij pneumonie.\nVraagstelling: Afname infiltraat?\nVerslag: Liggende opname vergeleken met onderzoek van 31/10/2012. Hoogliggende positie van de trachea tube 7 cm boven de carina, idealiter 4-6 cm. Onveranderd goede positie van jugularislijn over rechts met tip in vena cava superior. Twee lijnstructuren te volgen over de oesophagus tot subdiafragmaal. Hoogstand van het rechter hemidiafragma conform. Pleuravocht rechts. Goede afgrensbaarheid linker diafragma en enige afname stuwingsbeeld. Iets afname van diffuse consolidatie rechter thoraxhelft. Verdichting in de fissura minor, passend bij plaatatelectase.\nConclusie: Hoge ligging trachea tube. Iets afname van diffuse consolidaties rechter thoraxhelft. Afname stuwingsbeeld.</p></div>"
+  ] ; # 
+  fhir:status [
+     fhir:v "preliminary" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "preliminary" ] ;
+           fhir:display [ fhir:v "Voorlopig" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:363680008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "363680008" ] ;
+       fhir:display [ fhir:v "Radiografische beeldvormende verrichting" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2014-12-05T17:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:media ( [
+     fhir:link [
+       fhir:link <http://nictiz.nl/fhir/Media/nl-core-TextResult.VisualResult-01> ;
+       fhir:reference [ fhir:v "Media/nl-core-TextResult.VisualResult-01" ] ;
+       fhir:type [ fhir:v "Media"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Text report, visual result" ]
+     ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Klinische gegevens: Opname van het respiratoire insufficiëntie bij pneumonie.\nVraagstelling: Afname infiltraat?\nVerslag: Liggende opname vergeleken met onderzoek van 31/10/2012. Hoogliggende positie van de trachea tube 7 cm boven de carina, idealiter 4-6 cm. Onveranderd goede positie van jugularislijn over rechts met tip in vena cava superior. Twee lijnstructuren te volgen over de oesophagus tot subdiafragmaal. Hoogstand van het rechter hemidiafragma conform. Pleuravocht rechts. Goede afgrensbaarheid linker diafragma en enige afname stuwingsbeeld. Iets afname van diffuse consolidatie rechter thoraxhelft. Verdichting in de fissura minor, passend bij plaatatelectase.\nConclusie: Hoge ligging trachea tube. Iets afname van diffuse consolidaties rechter thoraxhelft. Afname stuwingsbeeld."] . # 
+
+# -------------------------------------------------------------------------------------
+

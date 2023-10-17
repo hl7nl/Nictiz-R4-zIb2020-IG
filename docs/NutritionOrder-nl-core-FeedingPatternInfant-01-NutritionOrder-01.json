@@ -1,0 +1,29 @@
+{
+  "resourceType" : "NutritionOrder",
+  "id" : "nl-core-FeedingPatternInfant-01-NutritionOrder-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-NutritionAdvice"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: NutritionOrder</b><a name=\"nl-core-FeedingPatternInfant-01-NutritionOrder-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource NutritionOrder &quot;nl-core-FeedingPatternInfant-01-NutritionOrder-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-NutritionAdvice.html\">nl core NutritionAdvice</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>dateTime</b>: 2023-06-23 14:38:16+0200</p><blockquote><p><b>oralDiet</b></p><p><b>type</b>: Energieverrijkt <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><h3>Textures</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Modifier</b></td></tr><tr><td style=\"display: none\">*</td><td>Vloeibaar <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "patient" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "dateTime" : "2023-06-23T14:38:16.625919+02:00",
+  "oralDiet" : {
+    "type" : [{
+      "text" : "Energieverrijkt"
+    }],
+    "texture" : [{
+      "modifier" : {
+        "text" : "Vloeibaar"
+      }
+    }]
+  }
+}

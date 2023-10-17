@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="nl-core-PharmaceuticalProduct-02"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="nl-core-PharmaceuticalProduct-02"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;nl-core-PharmaceuticalProduct-02&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-PharmaceuticalProduct.html">nl core PharmaceuticalProduct</a></p></div><p><b>code</b>: Methotrexaat injvlst 25mg/ml 0,6 ml <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#89907)</span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.1"/>
+      <code value="89907"/>
+      <display value="Methotrexaat injvlst 25mg/ml 0,6 ml"/>
+      <userSelected value="true"/>
+    </coding>
+    <text value="Methotrexaat injvlst 25mg/ml 0,6 ml"/>
+  </code>
+</Medication>

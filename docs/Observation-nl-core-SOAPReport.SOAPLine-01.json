@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-SOAPReport.SOAPLine-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-SOAPReport.SOAPLine"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-SOAPReport.SOAPLine-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-SOAPReport.SOAPLine-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-SOAPReport.SOAPLine.html\">nl core SOAPReport.SOAPLine</a></p></div><p><b>ext SOAPReport.SOAPLineCode</b>: Hoesten <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (icpc-1-nl#R05)</span></p><p><b>status</b>: final</p><p><b>code</b>: Subjective <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#255362007)</span></p><p><b>value</b>: Sinds 2 maanden hoesten. Begonnen na start enalapril. Een weekje gestopt, klachten toen weg. Na hervatten klachten weer terug gekomen.</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-SOAPReport.SOAPLineCode",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+        "code" : "R05",
+        "display" : "Hoesten"
+      }]
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "255362007",
+      "display" : "Subjective"
+    }]
+  },
+  "valueString" : "Sinds 2 maanden hoesten. Begonnen na start enalapril. Een weekje gestopt, klachten toen weg. Na hervatten klachten weer terug gekomen."
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <!--  An example of a situation where just the first official name is fully known while for the additional first 
+        names just an initial is known. .  -->
+  <id value="nl-core-NameInformation-firstNamesAndInitials"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Henk </b> (no stated gender), DoB Unknown</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Alternate names (see the one above)">Alt. Name:</td><td colspan="3">Hendrik J.W. (Henk) Schemer(OFFICIAL)</td></tr></table></div>
+  </text>
+  <!--  Both full names and initials are communicated along with other official name information in a .name element
+        with .name.use set to "official".  -->
+  <name>
+    <use value="official"/>
+    <text value="Hendrik J.W. (Henk) Schemer"/>
+    <family value="Schemer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Schemer"/>
+      </extension>
+    </family>
+    <!--  Each official first name is communicated individually, augmented with the iso21090-EN-qualifier
+           extension set to "BR" (Birth) for complete names or "IN" for initials.  -->
+    <given value="Hendrik">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="BR"/>
+      </extension>
+    </given>
+    <given value="J.">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="IN"/>
+      </extension>
+    </given>
+    <given value="W.">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="IN"/>
+      </extension>
+    </given>
+  </name>
+  <!--  The given name (roepnaam) is communicated using an additional .name instance with .name.use set to usual  -->
+  <name>
+    <use value="usual"/>
+    <given value="Henk"/>
+  </name>
+</Patient>

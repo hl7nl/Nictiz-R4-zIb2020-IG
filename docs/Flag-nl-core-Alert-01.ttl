@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Flag/nl-core-Alert-01> a fhir:Flag ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-Alert-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-Alert"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-Alert>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Flag</b><a name=\"nl-core-Alert-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Flag &quot;nl-core-Alert-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-Alert.html\">nl core Alert</a></p></div><p><b>Flag details</b>: <a href=\"Condition-nl-core-Alert-01-Condition-01.html\">Condition/nl-core-Alert-01-Condition-01: Problem, type: Klinische bevinding</a></p><p><b>status</b>: inactive</p><p><b>category</b>: condition <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#75323-6)</span></p><p><b>code</b>: Not Applicable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-data-absent-reason.html\">DataAbsentReason</a>#not-applicable)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>period</b>: 2012-09-15 --&gt; 2012-12-30</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/flag-detail"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Condition/nl-core-Alert-01-Condition-01> ;
+       fhir:reference [ fhir:v "Condition/nl-core-Alert-01-Condition-01" ] ;
+       fhir:type [ fhir:v "Condition"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Problem, type: Klinische bevinding" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "inactive"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:75323-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "75323-6" ] ;
+       fhir:display [ fhir:v "condition" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "not-applicable" ] ;
+       fhir:display [ fhir:v "Not Applicable" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2012-09-15"^^xsd:date ] ;
+     fhir:end [ fhir:v "2012-12-30"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

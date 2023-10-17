@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-BowelFunction-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BowelFunction"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-BowelFunction-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-BowelFunction-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-BowelFunction.html">nl core BowelFunction</a></p></div><p><b>ext StomaReference</b>: <a href="Condition-nl-core-BowelFunction-01-Condition-01.html">Condition/nl-core-BowelFunction-01-Condition-01: Stoma, type: dubbelloops colostoma</a></p><p><b>status</b>: final</p><p><b>code</b>: defecatie <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#111989001)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><blockquote><p><b>component</b></p><p><b>code</b>: frequentie van defecatie <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#162098000)</span></p><p><b>value</b>: 3 /d<span style="background: LightGoldenRodYellow"> (Details: UCUM code /d = '/d')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: score op Bristol Stoelgangschaal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#443172007)</span></p><p><b>value</b>: Als een worst of slang, glad en zacht <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#Type 4)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Color of Stool <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#9397-1)</span></p><p><b>value</b>: kleur van feces normaal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#167605001)</span></p></blockquote></div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-StomaReference">
+    <valueReference>
+      <reference value="Condition/nl-core-BowelFunction-01-Condition-01"/>
+      <type value="Condition"/>
+      <display value="Stoma, type: dubbelloops colostoma"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="111989001"/>
+      <display value="defecatie"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="162098000"/>
+        <display value="frequentie van defecatie"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="/d"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="/d"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="443172007"/>
+        <display value="score op Bristol Stoelgangschaal"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.3.1"/>
+        <code value="Type 4"/>
+        <display value="Als een worst of slang, glad en zacht"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="9397-1"/>
+        <display value="Color of Stool"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="167605001"/>
+        <display value="kleur van feces normaal"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

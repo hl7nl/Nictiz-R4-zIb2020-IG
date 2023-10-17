@@ -1,0 +1,118 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Composition/nl-core-SOAPReport-01> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-SOAPReport-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-SOAPReport"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-SOAPReport>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"nl-core-SOAPReport-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;nl-core-SOAPReport-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-SOAPReport.html\">nl core SOAPReport</a></p></div><p><b>status</b>: final</p><p><b>type</b>: patiëntcontactverslag <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#11591000146107)</span></p><p><b>date</b>: 2019-07-21</p><p><b>author</b>: <a href=\"PractitionerRole-nl-core-SOAPReport-01-PractitionerRole-01.html\">PractitionerRole/nl-core-SOAPReport-01-PractitionerRole-01: Healthcare professional (role), H.A. Janszens</a></p><p><b>title</b>: Geneesmiddelbijwerking</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:11591000146107 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11591000146107" ] ;
+       fhir:display [ fhir:v "patiëntcontactverslag" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2019-07-21"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <http://nictiz.nl/fhir/PractitionerRole/nl-core-SOAPReport-01-PractitionerRole-01> ;
+     fhir:reference [ fhir:v "PractitionerRole/nl-core-SOAPReport-01-PractitionerRole-01" ] ;
+     fhir:type [ fhir:v "PractitionerRole"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Healthcare professional (role), H.A. Janszens" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Geneesmiddelbijwerking"] ; # 
+  fhir:section ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:255362007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "255362007" ] ;
+         fhir:display [ fhir:v "Subjective" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">SOAPLineText: Sinds 2 maanden hoesten. Begonnen na start enalapril. Een weekje gestopt, klachten toen weg. Na hervatten klachten weer terug gekomen. (SOAPLineCode: Hoesten)</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://nictiz.nl/fhir/Observation/nl-core-SOAPReport.SOAPLine-01> ;
+       fhir:reference [ fhir:v "Observation/nl-core-SOAPReport.SOAPLine-01" ] ;
+       fhir:type [ fhir:v "Observation"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "SOAP line observation, Subjective, code Hoesten" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:260224007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "260224007" ] ;
+         fhir:display [ fhir:v "Objective" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">SOAPLineText: Keelinspectie geen bijzonderheden, pulmonaal vesiculair ademgeruis (VAG)</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://nictiz.nl/fhir/Observation/nl-core-SOAPReport.SOAPLine-02> ;
+       fhir:reference [ fhir:v "Observation/nl-core-SOAPReport.SOAPLine-02" ] ;
+       fhir:type [ fhir:v "Observation"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "SOAP line observation, Objective" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:129265001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "129265001" ] ;
+         fhir:display [ fhir:v "Evaluatie" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">SOAPLineText: bijwerking ACE-remmer (SOAPLineCode: Geneesmiddelbijwerking)</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://nictiz.nl/fhir/Observation/nl-core-SOAPReport.SOAPLine-03> ;
+       fhir:reference [ fhir:v "Observation/nl-core-SOAPReport.SOAPLine-03" ] ;
+       fhir:type [ fhir:v "Observation"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "SOAP line observation, Evaluatie, code Geneesmiddelbijwerking" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:129271007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "129271007" ] ;
+         fhir:display [ fhir:v "Beleid" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">SOAPLineText: Overzetten van enalapril naar telmisartan. Evaluatie over 2 weken.</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://nictiz.nl/fhir/Observation/nl-core-SOAPReport.SOAPLine-04> ;
+       fhir:reference [ fhir:v "Observation/nl-core-SOAPReport.SOAPLine-04" ] ;
+       fhir:type [ fhir:v "Observation"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "SOAP line observation, Beleid" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

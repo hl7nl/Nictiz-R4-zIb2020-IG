@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Condition/nl-core-SkinDisorder-01> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-SkinDisorder-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-SkinDisorder"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-SkinDisorder>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"nl-core-SkinDisorder-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;nl-core-SkinDisorder-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-SkinDisorder.html\">nl core SkinDisorder</a></p></div><p><b>dueTo</b>: <a href=\"Condition-nl-core-SkinDisorder-01-Condition-01.html\">Condition/nl-core-SkinDisorder-01-Condition-01: Problem</a></p><p><b>category</b>: aandoening van huid <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#95320005)</span></p><p><b>code</b>: irritatief contacteczeem door incontinentie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#402276007)</span></p><p><b>bodySite</b>: lies <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#26893007)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>onset</b>: 2014-09-10</p><p><b>note</b>: Intacte velrode huid met glanzend aspect.</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/condition-dueTo"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Condition/nl-core-SkinDisorder-01-Condition-01> ;
+       fhir:reference [ fhir:v "Condition/nl-core-SkinDisorder-01-Condition-01" ] ;
+       fhir:type [ fhir:v "Condition"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Problem" ]
+     ]
+  ] ) ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:95320005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "95320005" ] ;
+       fhir:display [ fhir:v "aandoening van huid" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:402276007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "402276007" ] ;
+       fhir:display [ fhir:v "irritatief contacteczeem door incontinentie" ]
+     ] )
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:7771000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "7771000" ] ;
+           fhir:display [ fhir:v "links" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:26893007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "26893007" ] ;
+       fhir:display [ fhir:v "lies" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2014-09-10"^^xsd:date] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Intacte velrode huid met glanzend aspect." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

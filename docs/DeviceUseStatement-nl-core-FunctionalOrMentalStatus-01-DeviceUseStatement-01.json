@@ -1,0 +1,30 @@
+{
+  "resourceType" : "DeviceUseStatement",
+  "id" : "nl-core-FunctionalOrMentalStatus-01-DeviceUseStatement-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DeviceUseStatement</b><a name=\"nl-core-FunctionalOrMentalStatus-01-DeviceUseStatement-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DeviceUseStatement &quot;nl-core-FunctionalOrMentalStatus-01-DeviceUseStatement-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-MedicalDevice.html\">nl core MedicalDevice</a></p></div><p><b>status</b>: active</p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>timing</b>: 2015-02-23 --&gt; (ongoing)</p><p><b>device</b>: <a href=\"Device-nl-core-FunctionalOrMentalStatus-01-Device-01.html\">Device/nl-core-FunctionalOrMentalStatus-01-Device-01: Ergonomisch elektrisch scheerapparaat</a></p><p><b>reasonReference</b>: <a href=\"Observation-nl-core-FunctionalOrMentalStatus-01.html\">Observation/nl-core-FunctionalOrMentalStatus-01: Functional or mental status observation, measurement date 2015-02-23</a></p></div>"
+  },
+  "status" : "active",
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "timingPeriod" : {
+    "start" : "2015-02-23"
+  },
+  "device" : {
+    "reference" : "Device/nl-core-FunctionalOrMentalStatus-01-Device-01",
+    "type" : "Device",
+    "display" : "Ergonomisch elektrisch scheerapparaat"
+  },
+  "reasonReference" : [{
+    "reference" : "Observation/nl-core-FunctionalOrMentalStatus-01",
+    "type" : "Observation",
+    "display" : "Functional or mental status observation, measurement date 2015-02-23"
+  }]
+}

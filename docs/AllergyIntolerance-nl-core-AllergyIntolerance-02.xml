@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="nl-core-AllergyIntolerance-02"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AllergyIntolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AllergyIntolerance</b><a name="nl-core-AllergyIntolerance-02"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AllergyIntolerance &quot;nl-core-AllergyIntolerance-02&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-AllergyIntolerance.html">nl core AllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>category</b>: medication</p><p><b>criticality</b>: high</p><p><b>code</b>: Penicilline <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#764146007)</span></p><p><b>patient</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>onset</b>: 1995-01-01</p><p><b>lastOccurrence</b>: 1998-06-02</p><p><b>note</b>: test toelichting</p><h3>Reactions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style="display: none">*</td><td>Penicilline <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#764146007)</span></td><td>Exantheem <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#271807003)</span></td><td>rode huiduitslag op armen</td><td>1998-06-02</td><td>moderate</td></tr></table></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <category value="medication">
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="419511003"/>
+          <display value="Neiging tot ongewenste reactie op geneesmiddel"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </category>
+  <criticality value="high">
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="24484000"/>
+          <display value="Ernstig"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </criticality>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="764146007"/>
+      <display value="Penicilline"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </patient>
+  <onsetDateTime value="1995-01-01"/>
+  <lastOccurrence value="1998-06-02"/>
+  <note>
+    <text value="test toelichting"/>
+  </note>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="764146007"/>
+        <display value="Penicilline"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271807003"/>
+        <display value="Exantheem"/>
+      </coding>
+    </manifestation>
+    <description value="rode huiduitslag op armen"/>
+    <onset value="1998-06-02"/>
+    <severity value="moderate"/>
+  </reaction>
+</AllergyIntolerance>

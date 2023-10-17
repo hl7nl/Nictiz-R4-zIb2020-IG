@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-BarthelADLIndex-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BarthelADLIndex"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-BarthelADLIndex-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-BarthelADLIndex-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-BarthelADLIndex.html">nl core BarthelADLIndex</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Barthel-index <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#273302005)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>value</b>: 14</p><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Darm <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002004)</span></p><p><b>value</b>: Continent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#FECAL2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Blaas <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002003)</span></p><p><b>value</b>: Ongelukje <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#URIN1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex UiterlijkeVerzorging <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002005)</span></p><p><b>value</b>: Onafhankelijk <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#GROOM1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Toiletgebruik <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002006)</span></p><p><b>value</b>: Onafhankelijk <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#TOIL2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Eten <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002007)</span></p><p><b>value</b>: Onafhankelijk <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#FEED2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Transfers <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002008)</span></p><p><b>value</b>: Veel hulp <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#TRANS1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex Mobiliteit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002009)</span></p><p><b>value</b>: Onafhankelijk met rolstoel <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#MOBIL1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex AanUitkleden <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002010)</span></p><p><b>value</b>: Hulp <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#DRESS1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex TrappenLopen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002011)</span></p><p><b>value</b>: Onafhankelijk <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#CLIMB2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BarthelIndex BadenDouchen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4002012)</span></p><p><b>value</b>: Onafhankelijk <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#BATH1)</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="273302005"/>
+      <display value="Barthel-index"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <valueInteger value="14"/>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002004"/>
+        <display value="BarthelIndex Darm"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.1"/>
+        <code value="FECAL2"/>
+        <display value="Continent"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002003"/>
+        <display value="BarthelIndex Blaas"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.2"/>
+        <code value="URIN1"/>
+        <display value="Ongelukje"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002005"/>
+        <display value="BarthelIndex UiterlijkeVerzorging"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.3"/>
+        <code value="GROOM1"/>
+        <display value="Onafhankelijk"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002006"/>
+        <display value="BarthelIndex Toiletgebruik"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.4"/>
+        <code value="TOIL2"/>
+        <display value="Onafhankelijk"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002007"/>
+        <display value="BarthelIndex Eten"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.5"/>
+        <code value="FEED2"/>
+        <display value="Onafhankelijk"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002008"/>
+        <display value="BarthelIndex Transfers"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.6"/>
+        <code value="TRANS1"/>
+        <display value="Veel hulp"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002009"/>
+        <display value="BarthelIndex Mobiliteit"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.7"/>
+        <code value="MOBIL1"/>
+        <display value="Onafhankelijk met rolstoel"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002010"/>
+        <display value="BarthelIndex AanUitkleden"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.8"/>
+        <code value="DRESS1"/>
+        <display value="Hulp"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002011"/>
+        <display value="BarthelIndex TrappenLopen"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.9"/>
+        <code value="CLIMB2"/>
+        <display value="Onafhankelijk"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="4002012"/>
+        <display value="BarthelIndex BadenDouchen"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.1.10"/>
+        <code value="BATH1"/>
+        <display value="Onafhankelijk"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

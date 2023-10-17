@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="nl-core-HelpFromOthers-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HelpFromOthers"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="nl-core-HelpFromOthers-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;nl-core-HelpFromOthers-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-HelpFromOthers.html">nl core HelpFromOthers</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>category</b>: ondersteuning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#243114000)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>ondersteuning voor verzorger <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#386229000)</span></td><td>in-progress</td><td>1 keer per week</td><td><a href="RelatedPerson-nl-core-HelpFromOthers-01-RelatedPerson-01.html">RelatedPerson/nl-core-HelpFromOthers-01-RelatedPerson-01: Contact person, de Boer</a> &quot; DE BOER&quot;</td><td>Boodschappen doen</td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="plan"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="243114000"/>
+      <display value="ondersteuning"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="386229000"/>
+          <display value="ondersteuning voor verzorger"/>
+        </coding>
+      </code>
+      <status value="in-progress"/>
+      <scheduledString value="1 keer per week"/>
+      <performer>
+        <reference value="RelatedPerson/nl-core-HelpFromOthers-01-RelatedPerson-01"/>
+        <type value="RelatedPerson"/>
+        <display value="Contact person, de Boer"/>
+      </performer>
+      <description value="Boodschappen doen"/>
+    </detail>
+  </activity>
+</CarePlan>

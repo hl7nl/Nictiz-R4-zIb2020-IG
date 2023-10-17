@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Medication/nl-core-PharmaceuticalProduct-01> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-PharmaceuticalProduct-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"nl-core-PharmaceuticalProduct-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;nl-core-PharmaceuticalProduct-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-PharmaceuticalProduct.html\">nl core PharmaceuticalProduct</a></p></div><p><b>code</b>: LISINOPRIL 10MG TABLET <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#71587)</span></p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "71587" ] ;
+       fhir:display [ fhir:v "LISINOPRIL 10MG TABLET" ] ;
+       fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:text [ fhir:v "LISINOPRIL 10MG TABLET" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

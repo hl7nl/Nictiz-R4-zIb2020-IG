@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/DeviceUseStatement/nl-core-Procedure-01-DeviceUseStatement-01> a fhir:DeviceUseStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-Procedure-01-DeviceUseStatement-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DeviceUseStatement</b><a name=\"nl-core-Procedure-01-DeviceUseStatement-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DeviceUseStatement &quot;nl-core-Procedure-01-DeviceUseStatement-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-MedicalDevice.html\">nl core MedicalDevice</a></p></div><p><b>status</b>: active</p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>device</b>: <a href=\"Device-nl-core-Procedure-01-Device-01.html\">Device/nl-core-Procedure-01-Device-01: Implantant, Gen 2 Tibia Insert 5/6-9mm</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://nictiz.nl/fhir/Device/nl-core-Procedure-01-Device-01> ;
+     fhir:reference [ fhir:v "Device/nl-core-Procedure-01-Device-01" ] ;
+     fhir:type [ fhir:v "Device"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Implantant, Gen 2 Tibia Insert 5/6-9mm" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

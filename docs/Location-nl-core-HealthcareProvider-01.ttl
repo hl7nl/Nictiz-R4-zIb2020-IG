@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Location/nl-core-HealthcareProvider-01> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-HealthcareProvider-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"nl-core-HealthcareProvider-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;nl-core-HealthcareProvider-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-HealthcareProvider.html\">nl core HealthcareProvider</a></p></div><p><b>telecom</b>: <a href=\"tel:+31107040704\">+31107040704</a>, <a href=\"mailto:info@erasmus.nl\">info@erasmus.nl</a></p><p><b>address</b>: s-Gravendijkwal 230 Rotterdam 3015 CE (WORK)</p><p><b>managingOrganization</b>: <a href=\"Organization-nl-core-HealthcareProvider-Organization-01.html\">Organization/nl-core-HealthcareProvider-Organization-01: Healthcare provider (organization), Erasmus Universitair Medisch Centrum</a> &quot;Erasmus Universitair Medisch Centrum&quot;</p></div>"
+  ] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+31107040704" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "info@erasmus.nl" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-AddressUse"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "WP" ] ;
+           fhir:display [ fhir:v "Work Place" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:line ( [
+       fhir:v "s-Gravendijkwal 230" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "s-Gravendijkwal" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "230" ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Rotterdam" ] ;
+     fhir:postalCode [ fhir:v "3015 CE" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://nictiz.nl/fhir/Organization/nl-core-HealthcareProvider-Organization-01> ;
+     fhir:reference [ fhir:v "Organization/nl-core-HealthcareProvider-Organization-01" ] ;
+     fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Healthcare provider (organization), Erasmus Universitair Medisch Centrum" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

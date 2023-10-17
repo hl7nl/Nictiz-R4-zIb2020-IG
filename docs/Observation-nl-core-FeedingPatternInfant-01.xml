@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-FeedingPatternInfant-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-FeedingPatternInfant"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-FeedingPatternInfant-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-FeedingPatternInfant-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-FeedingPatternInfant.html">nl core FeedingPatternInfant</a></p></div><p><b>basedOn</b>: <a href="NutritionOrder-nl-core-FeedingPatternInfant-01-NutritionOrder-01.html">NutritionOrder/nl-core-FeedingPatternInfant-01-NutritionOrder-01: voedingsadvies</a></p><p><b>status</b>: final</p><p><b>code</b>: bevinding betreffende voedingspatroon van zuigeling <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#289145007)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2016-12-20 10:00:00+0100</p><p><b>note</b>: Heeft veel zuigbehoefte en krijgt fopspeen voor de nacht</p><blockquote><p><b>component</b></p><p><b>code</b>: voedingssupplement <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#373453009)</span></p><p><b>value</b>: Geen</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: frequentie van voeding van zuigeling <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#364653007)</span></p><p><b>value</b>: 6 /d<span style="background: LightGoldenRodYellow"> (Details: UCUM code /d = '/d')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>ext FeedingPatternInfant.FeedingMethod</b>: zuigeling krijgt voeding via borst <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#169741004)</span></p><p><b>code</b>: soort zuigelingenvoeding <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#109021000146107)</span></p><p><b>value</b>: moedermelk <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#226789007)</span></p></blockquote></div>
+  </text>
+  <basedOn>
+    <reference value="NutritionOrder/nl-core-FeedingPatternInfant-01-NutritionOrder-01"/>
+    <type value="NutritionOrder"/>
+    <display value="voedingsadvies"/>
+  </basedOn>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="289145007"/>
+      <display value="bevinding betreffende voedingspatroon van zuigeling"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <effectiveDateTime value="2016-12-20T10:00:00+01:00"/>
+  <note>
+    <text value="Heeft veel zuigbehoefte en krijgt fopspeen voor de nacht"/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="373453009"/>
+        <display value="voedingssupplement"/>
+      </coding>
+    </code>
+    <valueString value="Geen"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="364653007"/>
+        <display value="frequentie van voeding van zuigeling"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="6"/>
+      <unit value="/d"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="/d"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-FeedingPatternInfant.FeedingMethod">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="169741004"/>
+          <display value="zuigeling krijgt voeding via borst"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="109021000146107"/>
+        <display value="soort zuigelingenvoeding"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="226789007"/>
+        <display value="moedermelk"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

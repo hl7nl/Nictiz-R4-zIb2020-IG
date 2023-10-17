@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="nl-core-LaboratoryTestResult.Specimen-02"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-LaboratoryTestResult.Specimen"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Specimen</b><a name="nl-core-LaboratoryTestResult.Specimen-02"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Specimen &quot;nl-core-LaboratoryTestResult.Specimen-02&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-LaboratoryTestResult.Specimen.html">nl core LaboratoryTestResult.Specimen</a></p></div><p><b>type</b>: bloed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#87612001)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p></div>
+  </text>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="87612001"/>
+      <display value="bloed"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+</Specimen>

@@ -1,0 +1,38 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "nl-core-HelpFromOthers-01-RelatedPerson-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"nl-core-HelpFromOthers-01-RelatedPerson-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;nl-core-HelpFromOthers-01-RelatedPerson-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-ContactPerson.html\">nl core ContactPerson</a></p></div><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>relationship</b>: Buur <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#19)</span></p><p><b>name</b>: de Boer(OFFICIAL)</p></div>"
+  },
+  "patient" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+      "code" : "19",
+      "display" : "Buur"
+    }]
+  }],
+  "name" : [{
+    "use" : "official",
+    "text" : "de Boer",
+    "family" : "de Boer",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+        "valueString" : "de"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+        "valueString" : "Boer"
+      }]
+    }
+  }]
+}

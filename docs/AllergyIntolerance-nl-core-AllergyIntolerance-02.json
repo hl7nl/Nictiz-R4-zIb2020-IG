@@ -1,0 +1,80 @@
+{
+  "resourceType" : "AllergyIntolerance",
+  "id" : "nl-core-AllergyIntolerance-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-AllergyIntolerance"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AllergyIntolerance</b><a name=\"nl-core-AllergyIntolerance-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AllergyIntolerance &quot;nl-core-AllergyIntolerance-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-AllergyIntolerance.html\">nl core AllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>category</b>: medication</p><p><b>criticality</b>: high</p><p><b>code</b>: Penicilline <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#764146007)</span></p><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>onset</b>: 1995-01-01</p><p><b>lastOccurrence</b>: 1998-06-02</p><p><b>note</b>: test toelichting</p><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td>Penicilline <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#764146007)</span></td><td>Exantheem <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#271807003)</span></td><td>rode huiduitslag op armen</td><td>1998-06-02</td><td>moderate</td></tr></table></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "category" : ["medication"],
+  "_category" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419511003",
+          "display" : "Neiging tot ongewenste reactie op geneesmiddel"
+        }]
+      }
+    }]
+  }],
+  "criticality" : "high",
+  "_criticality" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "24484000",
+          "display" : "Ernstig"
+        }]
+      }
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "764146007",
+      "display" : "Penicilline"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "onsetDateTime" : "1995-01-01",
+  "lastOccurrence" : "1998-06-02",
+  "note" : [{
+    "text" : "test toelichting"
+  }],
+  "reaction" : [{
+    "substance" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "764146007",
+        "display" : "Penicilline"
+      }]
+    },
+    "manifestation" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "271807003",
+        "display" : "Exantheem"
+      }]
+    }],
+    "description" : "rode huiduitslag op armen",
+    "onset" : "1998-06-02",
+    "severity" : "moderate"
+  }]
+}

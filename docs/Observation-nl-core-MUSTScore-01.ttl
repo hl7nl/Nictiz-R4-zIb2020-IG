@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/nl-core-MUSTScore-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-MUSTScore-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-MUSTScore"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-MUSTScore>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-MUSTScore-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-MUSTScore-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-MUSTScore.html\">nl core MUSTScore</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Malnutrition Universal Screening Tool <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#414648004)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2013-01-27</p><p><b>value</b>: 3</p><p><b>note</b>: BMI verder afgenomen t.o.v. vorig meetmoment</p><blockquote><p><b>component</b></p><p><b>code</b>: MUSTScore BMIScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4005003)</span></p><p><b>value</b>: BMILow <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#B2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: MUSTScore GewichtsverliesScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4005004)</span></p><p><b>value</b>: LossAverage <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#G1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: MUSTScore ZiekteScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4005005)</span></p><p><b>value</b>: Niet ziek <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Z0)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:414648004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "414648004" ] ;
+       fhir:display [ fhir:v "Malnutrition Universal Screening Tool" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2013-01-27"^^xsd:date] ; # 
+  fhir:value [ fhir:v "3"^^xsd:integer] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "BMI verder afgenomen t.o.v. vorig meetmoment" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4005003" ] ;
+         fhir:display [ fhir:v "MUSTScore BMIScore" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.4.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "B2" ] ;
+         fhir:display [ fhir:v "BMILow" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4005004" ] ;
+         fhir:display [ fhir:v "MUSTScore GewichtsverliesScore" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.4.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "G1" ] ;
+         fhir:display [ fhir:v "LossAverage" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4005005" ] ;
+         fhir:display [ fhir:v "MUSTScore ZiekteScore" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.4.3"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Z0" ] ;
+         fhir:display [ fhir:v "Niet ziek" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,107 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Practitioner/nl-core-HealthProfessional-Practitioner-01> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-HealthProfessional-Practitioner-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"nl-core-HealthProfessional-Practitioner-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;nl-core-HealthProfessional-Practitioner-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-HealthProfessional-Practitioner.html\">nl core HealthProfessional Practitioner</a></p></div><p><b>identifier</b>: id: 21870932</p><p><b>name</b>: J.H.R. Peters(OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+3715828282\">+3715828282</a>, <a href=\"mailto:j.peters@hospital.nl\">j.peters@hospital.nl</a></p><p><b>address</b>: Simon Smitweg 1 Leiderdorp 2353 GA Nederland (WORK)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/big"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "21870932" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "J.H.R. Peters" ] ;
+     fhir:family [
+       fhir:v "Peters" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Peters" ]
+       ] )
+     ] ;
+     fhir:given ( [
+       fhir:v "J." ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "IN" ]
+       ] )
+     ] [
+       fhir:v "H." ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "IN" ]
+       ] )
+     ] [
+       fhir:v "R." ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "IN" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+3715828282" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "j.peters@hospital.nl" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-AddressUse"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "WP" ] ;
+           fhir:display [ fhir:v "Work Place" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:line ( [
+       fhir:v "Simon Smitweg 1" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Simon Smitweg" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1" ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Leiderdorp" ] ;
+     fhir:postalCode [ fhir:v "2353 GA" ] ;
+     fhir:country [
+       fhir:v "Nederland" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+             fhir:version [ fhir:v "2020-10-26T00:00:00" ] ;
+             fhir:code [ fhir:v "NL" ] ;
+             fhir:display [ fhir:v "Nederland" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

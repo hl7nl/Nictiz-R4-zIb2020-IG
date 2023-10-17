@@ -1,0 +1,175 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/nl-core-Refraction-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-Refraction-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-Refraction"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-Refraction>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-Refraction-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-Refraction-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-Refraction.html\">nl core Refraction</a></p></div><p><b>status</b>: final</p><p><b>code</b>: refractiesterkte <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#251718005)</span></p><p><b>effective</b>: 2020-01-01</p><p><b>bodySite</b>: oog <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#81745001)</span></p><p><b>method</b>: Objectieve refractiemeting <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#397276001)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: cillindersterkte <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#251797004)</span></p><p><b>value</b>: -0.75 dioptrie<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [diop] = '[diop]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: as van cilinder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#251799001)</span></p><p><b>value</b>: 90 graden<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code deg = 'deg')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: prismasterkte <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#251762001)</span></p><p><b>value</b>: 2.00 prisma dioptrie<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [p'diop] = '[p'diop]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: richting van basis van prisma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#246223004)</span></p><p><b>value</b>: 90 graden<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code deg = 'deg')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: sferische sterkte <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#251795007)</span></p><p><b>value</b>: 1.00 dioptrie<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [diop] = '[diop]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: sferisch equivalent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#112881000146107)</span></p><p><b>value</b>: 0.63 dioptrie<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [diop] = '[diop]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: refractiesterkte <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#251718005)</span></p><p><b>value</b>: 2.00 dioptrie<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [diop] = '[diop]')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:251718005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "251718005" ] ;
+       fhir:display [ fhir:v "refractiesterkte" ]
+     ] )
+  ] ; # 
+  fhir:effective [ fhir:v "2020-01-01"^^xsd:date] ; # 
+  fhir:bodySite [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:24028007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "24028007" ] ;
+           fhir:display [ fhir:v "Rechts" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:81745001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "81745001" ] ;
+       fhir:display [ fhir:v "oog" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:397276001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "397276001" ] ;
+       fhir:display [ fhir:v "Objectieve refractiemeting" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:251797004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "251797004" ] ;
+         fhir:display [ fhir:v "cillindersterkte" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "-0.75"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "dioptrie" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "[diop]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:251799001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "251799001" ] ;
+         fhir:display [ fhir:v "as van cilinder" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "90"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "graden" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "deg" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:251762001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "251762001" ] ;
+         fhir:display [ fhir:v "prismasterkte" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "2.00"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "prisma dioptrie" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "[p'diop]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:246223004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "246223004" ] ;
+         fhir:display [ fhir:v "richting van basis van prisma" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "90"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "graden" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "deg" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:251795007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "251795007" ] ;
+         fhir:display [ fhir:v "sferische sterkte" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "1.00"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "dioptrie" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "[diop]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:112881000146107 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "112881000146107" ] ;
+         fhir:display [ fhir:v "sferisch equivalent" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "0.63"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "dioptrie" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "[diop]" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:251718005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "251718005" ] ;
+         fhir:display [ fhir:v "refractiesterkte" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "2.00"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "dioptrie" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "[diop]" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

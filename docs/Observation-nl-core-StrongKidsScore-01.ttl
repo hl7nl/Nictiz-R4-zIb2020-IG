@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/nl-core-StrongKidsScore-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-StrongKidsScore-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-StrongKidsScore"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-StrongKidsScore>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-StrongKidsScore-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-StrongKidsScore-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-StrongKidsScore.html\">nl core StrongKidsScore</a></p></div><p><b>status</b>: final</p><p><b>code</b>: STRONGkids-screeningsinstrument <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108341000146107)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2016-12-12</p><p><b>value</b>: 2</p><blockquote><p><b>component</b></p><p><b>code</b>: StrongKidsScore GewichtsverliesScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4028003)</span></p><p><b>value</b>: NoLoss <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#G0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: StrongKidsScore ZiekteBeeldScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4028004)</span></p><p><b>value</b>: IncreasedRisk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#R1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: StrongKidsScore VoedingsScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4028005)</span></p><p><b>value</b>: Normaal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Z0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: StrongKidsScore VoedingstoestandScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4028008)</span></p><p><b>value</b>: Goed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#T0)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:108341000146107 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "108341000146107" ] ;
+       fhir:display [ fhir:v "STRONGkids-screeningsinstrument" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2016-12-12"^^xsd:date] ; # 
+  fhir:value [ fhir:v "2"^^xsd:integer] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4028003" ] ;
+         fhir:display [ fhir:v "StrongKidsScore GewichtsverliesScore" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "G0" ] ;
+         fhir:display [ fhir:v "NoLoss" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4028004" ] ;
+         fhir:display [ fhir:v "StrongKidsScore ZiekteBeeldScore" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "R1" ] ;
+         fhir:display [ fhir:v "IncreasedRisk" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4028005" ] ;
+         fhir:display [ fhir:v "StrongKidsScore VoedingsScore" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.3"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Z0" ] ;
+         fhir:display [ fhir:v "Normaal" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4028008" ] ;
+         fhir:display [ fhir:v "StrongKidsScore VoedingstoestandScore" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.4"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "T0" ] ;
+         fhir:display [ fhir:v "Goed" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

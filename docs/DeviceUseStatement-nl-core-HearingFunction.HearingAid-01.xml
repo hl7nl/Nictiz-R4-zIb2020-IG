@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceUseStatement xmlns="http://hl7.org/fhir">
+  <id value="nl-core-HearingFunction.HearingAid-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HearingFunction.HearingAid"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DeviceUseStatement</b><a name="nl-core-HearingFunction.HearingAid-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DeviceUseStatement &quot;nl-core-HearingFunction.HearingAid-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-HearingFunction.HearingAid.html">nl core HearingFunction.HearingAid</a></p></div><p><b>status</b>: active</p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>device</b>: <a href="Device-nl-core-HearingFunction.HearingAid.Product-01.html">Device/nl-core-HearingFunction.HearingAid.Product-01: Gehoorapparaat</a></p><p><b>reasonReference</b>: <a href="Observation-nl-core-HearingFunction-01.html">Observation/nl-core-HearingFunction-01: Hearing function observation, Gehoorverlies</a></p><p><b>bodySite</b>: Structuur van linker oor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#89644007)</span></p></div>
+  </text>
+  <status value="active"/>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <device>
+    <reference value="Device/nl-core-HearingFunction.HearingAid.Product-01"/>
+    <type value="Device"/>
+    <display value="Gehoorapparaat"/>
+  </device>
+  <reasonReference>
+    <reference value="Observation/nl-core-HearingFunction-01"/>
+    <type value="Observation"/>
+    <display value="Hearing function observation, Gehoorverlies"/>
+  </reasonReference>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="89644007"/>
+      <display value="Structuur van linker oor"/>
+    </coding>
+  </bodySite>
+</DeviceUseStatement>

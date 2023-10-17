@@ -1,0 +1,167 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/RelatedPerson/nl-core-TreatmentDirective2-01-RelatedPerson-01> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-TreatmentDirective2-01-RelatedPerson-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"nl-core-TreatmentDirective2-01-RelatedPerson-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;nl-core-TreatmentDirective2-01-RelatedPerson-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-ContactPerson.html\">nl core ContactPerson</a></p></div><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>relationship</b>: Eerste relatie/contactpersoon <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#01)</span>, Husband <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HUSB)</span></p><p><b>name</b>: Jan Pieter Mark (Piet) van Putten(OFFICIAL), Piet </p><p><b>telecom</b>: <a href=\"tel:+31611234567\">+31611234567</a>, <a href=\"mailto:giesput@myweb.nl\">giesput@myweb.nl</a></p><p><b>address</b>: 1e Jacob van Campenstr to 15 A 2e Hoogmade 1012 NX Nederland (HOME)</p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.22.472"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "01" ] ;
+       fhir:display [ fhir:v "Eerste relatie/contactpersoon" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HUSB" ] ;
+       fhir:display [ fhir:v "Husband" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "NL1" ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Jan Pieter Mark (Piet) van Putten" ] ;
+     fhir:family [
+       fhir:v "van Putten" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "van" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Putten" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "van" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Kleeff" ]
+       ] )
+     ] ;
+     fhir:given ( [
+       fhir:v "Jan" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BR" ]
+       ] )
+     ] [
+       fhir:v "Pieter" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BR" ]
+       ] )
+     ] [
+       fhir:v "Mark" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BR" ]
+       ] )
+     ] ) ;
+     fhir:prefix ( [ fhir:v "Dr." ] )
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:given ( [ fhir:v "Piet" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-Comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "test toelichting" ]
+     ] ) ;
+     fhir:system [
+       fhir:v "phone" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "MC" ] ;
+             fhir:display [ fhir:v "Mobile Phone" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "+31611234567" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "giesput@myweb.nl" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-AddressUse"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "HP" ] ;
+           fhir:display [ fhir:v "Primary Home" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [
+       fhir:v "1e Jacob van Campenstr to 15 A 2e" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1e Jacob van Campenstr" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "15" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "A 2e" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "to" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "test info" ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Hoogmade" ] ;
+     fhir:district [ fhir:v "Kaag en Braassem" ] ;
+     fhir:postalCode [ fhir:v "1012 NX" ] ;
+     fhir:country [
+       fhir:v "Nederland" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+             fhir:version [ fhir:v "2020-10-26T00:00:00" ] ;
+             fhir:code [ fhir:v "NL" ] ;
+             fhir:display [ fhir:v "Nederland" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

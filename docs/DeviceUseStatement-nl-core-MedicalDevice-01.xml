@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceUseStatement xmlns="http://hl7.org/fhir">
+  <id value="nl-core-MedicalDevice-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DeviceUseStatement</b><a name="nl-core-MedicalDevice-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DeviceUseStatement &quot;nl-core-MedicalDevice-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-MedicalDevice.html">nl core MedicalDevice</a></p></div><p><b>status</b>: active</p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>timing</b>: 2012-03-08 --&gt; (ongoing)</p><p><b>device</b>: <a href="Device-nl-core-MedicalDevice.Product-01.html">Device/nl-core-MedicalDevice.Product-01: Standaard rolstoel, 46 cm zitting</a></p><p><b>reasonReference</b>: <a href="Condition-nl-core-MedicalDevice-01-Condition-01.html">Condition/nl-core-MedicalDevice-01-Condition-01: Problem</a></p><p><b>note</b>: Kan korte afstanden lopen</p></div>
+  </text>
+  <status value="active"/>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <timingPeriod>
+    <start value="2012-03-08"/>
+  </timingPeriod>
+  <device>
+    <reference value="Device/nl-core-MedicalDevice.Product-01"/>
+    <type value="Device"/>
+    <display value="Standaard rolstoel, 46 cm zitting"/>
+  </device>
+  <reasonReference>
+    <reference value="Condition/nl-core-MedicalDevice-01-Condition-01"/>
+    <type value="Condition"/>
+    <display value="Problem"/>
+  </reasonReference>
+  <note>
+    <text value="Kan korte afstanden lopen"/>
+  </note>
+</DeviceUseStatement>

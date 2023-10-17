@@ -1,0 +1,46 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "nl-core-TreatmentDirective2-01-PractitionerRole-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"nl-core-TreatmentDirective2-01-PractitionerRole-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;nl-core-TreatmentDirective2-01-PractitionerRole-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-HealthProfessional-PractitionerRole.html\">nl core HealthProfessional PractitionerRole</a></p></div><p><b>practitioner</b>: <a href=\"Practitioner-nl-core-TreatmentDirective2-01-Practitioner-01.html\">Practitioner/nl-core-TreatmentDirective2-01-Practitioner-01: Healthcare professional (person), J.H.R. Peters</a> &quot; PETERS&quot;</p><p><b>specialty</b>: Arts <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (uzi-rolcode[2020-04-01T00:00:00]#01.000)</span></p><p><b>telecom</b>: <a href=\"tel:+3715828282\">+3715828282</a>, <a href=\"mailto:j.peters@hospital.nl\">j.peters@hospital.nl</a></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/nl-core-TreatmentDirective2-01-Practitioner-01",
+    "type" : "Practitioner",
+    "display" : "Healthcare professional (person), J.H.R. Peters"
+  },
+  "specialty" : [{
+    "coding" : [{
+      "system" : "http://fhir.nl/fhir/NamingSystem/uzi-rolcode",
+      "version" : "2020-04-01T00:00:00",
+      "code" : "01.000",
+      "display" : "Arts"
+    }]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "_system" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+            "code" : "LL",
+            "display" : "Land Line"
+          }]
+        }
+      }]
+    },
+    "value" : "+3715828282",
+    "use" : "work"
+  },
+  {
+    "system" : "email",
+    "value" : "j.peters@hospital.nl",
+    "use" : "work"
+  }]
+}

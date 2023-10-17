@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-LivingSituation-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-LivingSituation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-LivingSituation-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-LivingSituation-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-LivingSituation.html">nl core LivingSituation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Residence and accommodation circumstances - finding <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#365508006)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>value</b>: Bovenwoning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#BOVENW)</span></p><p><b>note</b>: De bovenwoning is een probleem vanwege ontbreken lift. De patiënt staat op de wachtlijst voor een benedenwoning</p><blockquote><p><b>component</b></p><p><b>code</b>: Type of home adaptation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#118871000146108)</span></p><p><b>value</b>: Aangepast toilet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#465302005)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Type of home adaptation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#118871000146108)</span></p><p><b>value</b>: Badstoel en/of douchestoel <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#467158009)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Type of home adaptation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#118871000146108)</span></p><p><b>value</b>: Wandbeugel <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#360303004)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Characteristics of home environment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#224249004)</span></p><p><b>value</b>: Access to residence by stairs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#715758005)</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="365508006"/>
+      <display value="Residence and accommodation circumstances - finding"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1"/>
+      <code value="BOVENW"/>
+      <display value="Bovenwoning"/>
+    </coding>
+  </valueCodeableConcept>
+  <note>
+    <text value="De bovenwoning is een probleem vanwege ontbreken lift. De patiënt staat op de wachtlijst voor een benedenwoning"/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="118871000146108"/>
+        <display value="Type of home adaptation"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="465302005"/>
+        <display value="Aangepast toilet"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="118871000146108"/>
+        <display value="Type of home adaptation"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="467158009"/>
+        <display value="Badstoel en/of douchestoel"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="118871000146108"/>
+        <display value="Type of home adaptation"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="360303004"/>
+        <display value="Wandbeugel"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="224249004"/>
+        <display value="Characteristics of home environment"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="715758005"/>
+        <display value="Access to residence by stairs"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

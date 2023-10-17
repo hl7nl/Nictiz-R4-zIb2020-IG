@@ -1,0 +1,809 @@
+{
+  "package": "zibs2020",
+  "version": "0.9.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory",
+      "title": "ext AdditionalCategory",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+      "title": "ext AddressInformation.AddressType",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AdvanceDirective.Disorder",
+      "title": "ext AdvanceDirective.Disorder",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+      "title": "ext AnatomicalLocation.Laterality",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CarePlan-MaterialUsed",
+      "title": "ext CarePlan MaterialUsed",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+      "title": "ext CodeSpecification",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+      "title": "ext Comment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Context-EpisodeOfCare",
+      "title": "ext Context EpisodeOfCare",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-CopyIndicator",
+      "title": "ext CopyIndicator",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-EdifactReferenceNumber",
+      "title": "ext EdifactReferenceNumber",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-EpisodeOfCare.EpisodeOfCareName",
+      "title": "ext EpisodeOfCare.EpisodeOfCareName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-FeedingPatternInfant.FeedingMethod",
+      "title": "ext FeedingPatternInfant.FeedingMethod",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-FreedomRestrictingIntervention.Assent",
+      "title": "ext FreedomRestrictingIntervention.Assent",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-FreedomRestrictingIntervention.LegallyCapable",
+      "title": "ext FreedomRestrictingIntervention.LegallyCapable",
+      "types": [
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-LaboratoryTestResult.Specimen.Morphology",
+      "title": "ext LaboratoryTestResult.Specimen.Morphology",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-LanguageProficiency.CommunicationDetails",
+      "title": "ext LanguageProficiency.CommunicationDetails",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.HealthProfessional",
+      "title": "ext MedicalDevice.HealthProfessional",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.Location",
+      "title": "ext MedicalDevice.Location",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicationContraIndication.ReasonClosure",
+      "title": "ext MedicationContraIndication.ReasonClosure",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-NursingIntervention-ContributorIsRequester",
+      "title": "ext NursingIntervention ContributorIsRequester",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-NursingInterventionReference",
+      "title": "ext NursingInterventionReference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation",
+      "title": "ext Payer.BankInformation",
+      "types": [
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalProduct.Description",
+      "title": "ext PharmaceuticalProduct.Description",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Problem.FurtherSpecificationProblemName",
+      "title": "ext Problem.FurtherSpecificationProblemName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod",
+      "title": "ext Procedure.ProcedureMethod",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-SOAPReport.SOAPLineCode",
+      "title": "ext SOAPReport.SOAPLineCode",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-StomaReference",
+      "title": "ext StomaReference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration",
+      "title": "ext TimeInterval.Duration",
+      "types": [
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period",
+      "title": "ext TimeInterval.Period",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.AdvanceDirective",
+      "title": "ext TreatmentDirective2.AdvanceDirective",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.ReasonForEnding",
+      "title": "ext TreatmentDirective2.ReasonForEnding",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.SpecificationOther",
+      "title": "ext TreatmentDirective2.SpecificationOther",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Vaccination.PharmaceuticalProduct",
+      "title": "ext Vaccination.PharmaceuticalProduct",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction",
+        "title": "zib VisualFunction"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective2",
+        "title": "zib TreatmentDirective2"
+      }
+    ],
+    "Flag": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationContraIndication",
+        "title": "zib MedicationContraIndication"
+      }
+    ],
+    "AllergyIntolerance": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance",
+        "title": "zib AllergyIntolerance"
+      }
+    ],
+    "CareTeam": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-CareTeam",
+        "title": "zib CareTeam"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-ContactPerson",
+        "title": "zib ContactPerson"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Encounter",
+        "title": "zib Encounter"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-EpisodeOfCare",
+        "title": "zib EpisodeOfCare"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Procedure-event",
+        "title": "zib Procedure event"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-HealthProfessional-Practitioner",
+        "title": "zib HealthProfessional Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-HealthProfessional-PractitionerRole",
+        "title": "zib HealthProfessional PractitionerRole"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-HealthcareProvider",
+        "title": "zib HealthcareProvider"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-Organization",
+        "title": "zib Payer Organization"
+      }
+    ],
+    "DeviceUseStatement": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction.VisualAid",
+        "title": "zib VisualFunction.VisualAid"
+      }
+    ],
+    "Device": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction.VisualAid.Product",
+        "title": "zib VisualFunction.VisualAid.Product"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-NursingIntervention",
+        "title": "zib NursingIntervention"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult.Specimen",
+        "title": "zib LaboratoryTestResult.Specimen"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-SkinDisorder",
+        "title": "zib SkinDisorder"
+      },
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Stoma",
+        "title": "zib Stoma"
+      }
+    ],
+    "NutritionOrder": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice",
+        "title": "zib NutritionAdvice"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Patient",
+        "title": "zib Patient"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Payer.InsuranceCompany",
+        "title": "zib Payer.InsuranceCompany"
+      },
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Payer.PayerPerson",
+        "title": "zib Payer.PayerPerson"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-PharmaceuticalProduct",
+        "title": "zib PharmaceuticalProduct"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Procedure-request",
+        "title": "zib Procedure request"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-SOAPReport",
+        "title": "zib SOAPReport"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TextResult",
+        "title": "zib TextResult"
+      }
+    ],
+    "Media": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-TextResult.VisualResult",
+        "title": "zib TextResult.VisualResult"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination-event",
+        "title": "zib Vaccination event"
+      }
+    ],
+    "ImmunizationRecommendation": [
+      {
+        "url": "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination-request",
+        "title": "zib Vaccination request"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/11179-permitted-value-conceptmap": [
+      "StructureDefinition.differential.element.binding.valueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/flag-detail": [
+      "Flag"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
+      "HumanName",
+      "Patient.name",
+      "RelatedPerson.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-name": [
+      "HumanName.family",
+      "Patient.contact.name.family",
+      "Patient.name.family",
+      "Practitioner.name.family",
+      "RelatedPerson.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "HumanName.family",
+      "Patient.contact.name.family",
+      "Patient.name.family",
+      "Practitioner.name.family",
+      "RelatedPerson.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-partner-name": [
+      "HumanName.family",
+      "Patient.contact.name.family",
+      "Patient.name.family",
+      "RelatedPerson.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix": [
+      "HumanName.family",
+      "Patient.contact.name.family",
+      "Patient.name.family",
+      "RelatedPerson.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Address.line",
+      "Patient.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix": [
+      "Address.line",
+      "Patient.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Address.line",
+      "Location.address.line",
+      "Organization.address.line",
+      "Patient.address.line",
+      "Patient.contact.address.line",
+      "Practitioner.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Address.line",
+      "Location.address.line",
+      "Organization.address.line",
+      "Patient.address.line",
+      "Patient.contact.address.line",
+      "Practitioner.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID": [
+      "Address.line",
+      "Patient.address.line",
+      "RelatedPerson.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier": [
+      "HumanName.given",
+      "Patient.contact.name.given",
+      "Patient.name.given",
+      "Practitioner.name.given",
+      "RelatedPerson.name.given"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation": [
+      "Quantity"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/observation-bodyPosition": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/observation-sequelTo": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-proficiency": [
+      "Patient.communication"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson": [
+      "Patient.contact"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/specimen-sequenceNumber": [
+      "Specimen.container"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-reasonReference": [
+      "NutritionOrder"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType": [
+      "Address",
+      "Location.address",
+      "Organization.address",
+      "Patient.address",
+      "Patient.contact.address",
+      "Practitioner.address",
+      "RelatedPerson.address"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-AdvanceDirective.Disorder": [
+      "Consent"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality": [
+      "CodeableConcept",
+      "Condition.bodySite",
+      "DeviceUseStatement.bodySite",
+      "Observation.bodySite",
+      "Procedure.bodySite",
+      "Specimen.collection.bodySite"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-CarePlan-MaterialUsed": [
+      "CarePlan.activity.detail"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification": [
+      "Address.country",
+      "AllergyIntolerance.category",
+      "AllergyIntolerance.criticality",
+      "ContactPoint.system",
+      "DiagnosticReport.status",
+      "Patient.address.country",
+      "Patient.contact.address.country",
+      "Patient.contact.telecom.system",
+      "Patient.gender",
+      "Patient.telecom.system",
+      "Practitioner.address.country",
+      "Practitioner.gender",
+      "Practitioner.telecom.system",
+      "PractitionerRole.telecom.system",
+      "RelatedPerson.address.country",
+      "RelatedPerson.telecom.system"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-Comment": [
+      "Consent",
+      "ContactPoint",
+      "Encounter.reasonCode",
+      "Encounter.reasonReference",
+      "EpisodeOfCare",
+      "Flag",
+      "Patient.communication",
+      "Patient.telecom",
+      "RelatedPerson.telecom"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-CopyIndicator": [
+      "Observation"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-EdifactReferenceNumber": [
+      "Observation"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-EpisodeOfCare.EpisodeOfCareName": [
+      "EpisodeOfCare"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-FeedingPatternInfant.FeedingMethod": [
+      "Observation.component"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-FreedomRestrictingIntervention.Assent": [
+      "Procedure"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-FreedomRestrictingIntervention.LegallyCapable": [
+      "Procedure"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-LaboratoryTestResult.Specimen.Morphology": [
+      "Specimen.collection.bodySite"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-LanguageProficiency.CommunicationDetails": [
+      "Patient.communication"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.HealthProfessional": [
+      "DeviceUseStatement"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.Location": [
+      "DeviceUseStatement"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-MedicationContraIndication.ReasonClosure": [
+      "Flag"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-NursingIntervention-ContributorIsRequester": [
+      "CarePlan.contributor"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation": [
+      "Coverage"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalProduct.Description": [
+      "Medication"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-Problem.FurtherSpecificationProblemName": [
+      "Condition.code"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod": [
+      "Procedure"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-SOAPReport.SOAPLineCode": [
+      "Observation"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-StomaReference": [
+      "Observation"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration": [
+      "Period"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.AdvanceDirective": [
+      "Consent"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.ReasonForEnding": [
+      "Consent.provision"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.SpecificationOther": [
+      "Consent"
+    ],
+    "http://nictiz.nl/fhir/StructureDefinition/ext-Vaccination.PharmaceuticalProduct": [
+      "Immunization"
+    ]
+  }
+}

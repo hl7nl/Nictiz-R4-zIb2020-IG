@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-FunctionalOrMentalStatus-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-FunctionalOrMentalStatus"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-FunctionalOrMentalStatus-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-FunctionalOrMentalStatus-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-FunctionalOrMentalStatus.html">nl core FunctionalOrMentalStatus</a></p></div><p><b>status</b>: final</p><p><b>category</b>: bevinding betreffende functioneren <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#118228005)</span></p><p><b>code</b>: kan zich scheren <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#284888003)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2015-02-23</p><p><b>value</b>: moeite met scheren <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#284892005)</span></p><p><b>note</b>: Door verminderde fijne motoriek niet mogelijk om het gezicht volledig glad te scheren</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="118228005"/>
+      <display value="bevinding betreffende functioneren"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="284888003"/>
+      <display value="kan zich scheren"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <effectiveDateTime value="2015-02-23"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="284892005"/>
+      <display value="moeite met scheren"/>
+    </coding>
+  </valueCodeableConcept>
+  <note>
+    <text value="Door verminderde fijne motoriek niet mogelijk om het gezicht volledig glad te scheren"/>
+  </note>
+</Observation>

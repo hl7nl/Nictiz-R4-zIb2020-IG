@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/PractitionerRole/nl-core-Procedure-01-PractitionerRole-01> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-Procedure-01-PractitionerRole-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"nl-core-Procedure-01-PractitionerRole-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;nl-core-Procedure-01-PractitionerRole-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-HealthProfessional-PractitionerRole.html\">nl core HealthProfessional PractitionerRole</a></p></div><p><b>specialty</b>: Orthoptisten <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[2020-10-23T00:00:00]#4402)</span></p></div>"
+  ] ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.6.7"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2020-10-23T00:00:00" ] ;
+       fhir:code [ fhir:v "4402" ] ;
+       fhir:display [ fhir:v "Orthoptisten" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

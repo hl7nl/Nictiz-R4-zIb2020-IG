@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="nl-core-Encounter-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="nl-core-Encounter-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;nl-core-Encounter-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-Encounter.html">nl core Encounter</a></p></div><p><b>status</b>: unknown</p><p><b>class</b>: Inpatient (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'Inpatient')</p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Individual</b></td></tr><tr><td style="display: none">*</td><td><a href="PractitionerRole-nl-core-Encounter-01-PractitionerRole-01.html">PractitionerRole/nl-core-Encounter-01-PractitionerRole-01: Healthcare professional (role), G.Z.M. de Wit</a></td></tr></table><p><b>period</b>: 2012-08-16 --&gt; 2012-08-19</p><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td>Thuis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#264362003)</span></td><td>Ziekenhuis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#22232009)</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td><a href="Location-nl-core-Encounter-01-Location-01.html">Location/nl-core-Encounter-01-Location-01: Healthcare provider (location), St. Lucas Andreas Ziekenhuis</a></td></tr></table></div>
+  </text>
+  <!-- .status: Dependent on outcome of https://github.com/Nictiz/Nictiz-R4-zib2020/issues/194 -->
+  <status value="unknown"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="IMP"/>
+    <display value="Inpatient"/>
+  </class>
+  <participant>
+    <individual>
+      <reference value="PractitionerRole/nl-core-Encounter-01-PractitionerRole-01"/>
+      <type value="PractitionerRole"/>
+      <display value="Healthcare professional (role), G.Z.M. de Wit"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2012-08-16"/>
+    <end value="2012-08-19"/>
+  </period>
+  <hospitalization>
+    <admitSource>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="264362003"/>
+        <display value="Thuis"/>
+      </coding>
+    </admitSource>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="22232009"/>
+        <display value="Ziekenhuis"/>
+      </coding>
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Location/nl-core-Encounter-01-Location-01"/>
+      <type value="Location"/>
+      <display value="Healthcare provider (location), St. Lucas Andreas Ziekenhuis"/>
+    </location>
+  </location>
+</Encounter>

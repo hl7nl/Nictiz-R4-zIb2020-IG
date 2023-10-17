@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="nl-core-LegalSituation-LegalStatus-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-LegalSituation-LegalStatus"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="nl-core-LegalSituation-LegalStatus-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;nl-core-LegalSituation-LegalStatus-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-LegalSituation-LegalStatus.html">nl core LegalSituation LegalStatus</a></p></div><p><b>clinicalStatus</b>: Inactive <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#inactive)</span></p><p><b>category</b>: juridische status van patiënt <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#303186005)</span></p><p><b>code</b>: Onder toezichtstelling (ots) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#OTS)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>onset</b>: 2018-01-01</p><p><b>abatement</b>: 2020-01-01</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="inactive"/>
+      <display value="Inactive"/>
+    </coding>
+  </clinicalStatus>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="303186005"/>
+      <display value="juridische status van patiënt"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.23.2"/>
+      <code value="OTS"/>
+      <display value="Onder toezichtstelling (ots)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <onsetDateTime value="2018-01-01"/>
+  <abatementDateTime value="2020-01-01"/>
+</Condition>

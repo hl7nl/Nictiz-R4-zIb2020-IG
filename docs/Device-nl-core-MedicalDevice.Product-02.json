@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Device",
+  "id" : "nl-core-MedicalDevice.Product-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"nl-core-MedicalDevice.Product-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;nl-core-MedicalDevice.Product-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-MedicalDevice.Product.html\">nl core MedicalDevice.Product</a></p></div><p><b>identifier</b>: id:\u00a0(01)00810323008108(17)231005(21)6789UV0</p><h3>UdiCarriers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Issuer</b></td><td><b>CarrierHRF</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://www.gs1.org/gtin\">https://www.gs1.org/gtin</a></td><td>(01)00810323008108(17)231005(21)6789UV0</td></tr></table><p><b>type</b>: gehoorapparaat <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#360283003)</span></p><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>note</b>: TuneAmp gehoortoestel</p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.gs1.org/gtin",
+    "value" : "(01)00810323008108(17)231005(21)6789UV0"
+  }],
+  "udiCarrier" : [{
+    "issuer" : "https://www.gs1.org/gtin",
+    "carrierHRF" : "(01)00810323008108(17)231005(21)6789UV0"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "360283003",
+      "display" : "gehoorapparaat"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "note" : [{
+    "text" : "TuneAmp gehoortoestel"
+  }]
+}

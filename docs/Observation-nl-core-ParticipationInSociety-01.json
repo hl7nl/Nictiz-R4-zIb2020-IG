@@ -1,0 +1,57 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-ParticipationInSociety-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-ParticipationInSociety"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-ParticipationInSociety-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-ParticipationInSociety-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-ParticipationInSociety.html\">nl core ParticipationInSociety</a></p></div><p><b>status</b>: final</p><p><b>code</b>: status van participatie van patiënt <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#314845004)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>note</b>: Bezoekt activiteitencentrum 2 maal per week.</p><blockquote><p><b>component</b></p><p><b>code</b>: bevinding betreffende netwerk van gezin, familie en ondersteuners <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#365469004)</span></p><p><b>value</b>: Heeft veel aanloop van buren</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: vrijetijdsgedrag <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#405081003)</span></p><p><b>value</b>: Nordic walking</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: arbeidssituatie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#364703007)</span></p><p><b>value</b>: ICT-er</p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "314845004",
+      "display" : "status van participatie van patiënt"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "note" : [{
+    "text" : "Bezoekt activiteitencentrum 2 maal per week."
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "365469004",
+        "display" : "bevinding betreffende netwerk van gezin, familie en ondersteuners"
+      }]
+    },
+    "valueString" : "Heeft veel aanloop van buren"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "405081003",
+        "display" : "vrijetijdsgedrag"
+      }]
+    },
+    "valueString" : "Nordic walking"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "364703007",
+        "display" : "arbeidssituatie"
+      }]
+    },
+    "valueString" : "ICT-er"
+  }]
+}

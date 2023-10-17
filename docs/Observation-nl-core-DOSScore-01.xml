@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-DOSScore-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-DOSScore"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-DOSScore-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-DOSScore-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-DOSScore.html">nl core DOSScore</a></p></div><p><b>status</b>: final</p><p><b>code</b>: 'Delirium observation screening'-beoordelingsschaal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#160591000146109)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2016-12-19 10:35:00+0100</p><p><b>value</b>: 4</p><p><b>note</b>: Patiënt is mogelijk delirant.</p><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore ZaktWeg <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007006)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore SnelAfgeleid <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007007)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore HeeftAandacht <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007008)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore VraagAntwoordNietAf <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007009)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore AntwoordenNietPassend <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007010)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore ReageertTraag <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007011)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore DenktErgensAnders <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007012)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore BeseftDagdeel <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007013)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore HerinnertRecent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007014)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore Rusteloos <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007015)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore TrektDraden <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007016)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore SnelGeemotioneerd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007017)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DOSScore Hallucinaties <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#18007018)</span></p><p><b>value</b>: 0</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="160591000146109"/>
+      <display value="'Delirium observation screening'-beoordelingsschaal"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <effectiveDateTime value="2016-12-19T10:35:00+01:00"/>
+  <valueInteger value="4"/>
+  <note>
+    <text value="Patiënt is mogelijk delirant."/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007006"/>
+        <display value="DOSScore ZaktWeg"/>
+      </coding>
+    </code>
+    <valueInteger value="1"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007007"/>
+        <display value="DOSScore SnelAfgeleid"/>
+      </coding>
+    </code>
+    <valueInteger value="1"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007008"/>
+        <display value="DOSScore HeeftAandacht"/>
+      </coding>
+    </code>
+    <valueInteger value="0"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007009"/>
+        <display value="DOSScore VraagAntwoordNietAf"/>
+      </coding>
+    </code>
+    <valueInteger value="1"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007010"/>
+        <display value="DOSScore AntwoordenNietPassend"/>
+      </coding>
+    </code>
+    <valueInteger value="1"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007011"/>
+        <display value="DOSScore ReageertTraag"/>
+      </coding>
+    </code>
+    <valueInteger value="0"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007012"/>
+        <display value="DOSScore DenktErgensAnders"/>
+      </coding>
+    </code>
+    <valueInteger value="0"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007013"/>
+        <display value="DOSScore BeseftDagdeel"/>
+      </coding>
+    </code>
+    <valueInteger value="0"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007014"/>
+        <display value="DOSScore HerinnertRecent"/>
+      </coding>
+    </code>
+    <valueInteger value="0"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007015"/>
+        <display value="DOSScore Rusteloos"/>
+      </coding>
+    </code>
+    <valueInteger value="0"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007016"/>
+        <display value="DOSScore TrektDraden"/>
+      </coding>
+    </code>
+    <valueInteger value="0"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007017"/>
+        <display value="DOSScore SnelGeemotioneerd"/>
+      </coding>
+    </code>
+    <valueInteger value="1"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1"/>
+        <code value="18007018"/>
+        <display value="DOSScore Hallucinaties"/>
+      </coding>
+    </code>
+    <valueInteger value="0"/>
+  </component>
+</Observation>

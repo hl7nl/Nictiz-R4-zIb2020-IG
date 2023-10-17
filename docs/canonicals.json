@@ -1,0 +1,1661 @@
+[
+  {
+    "id" : "zibs2020",
+    "type" : "ImplementationGuide",
+    "url" : "http://nictiz.nl/fhir/ImplementationGuide/zibs2020",
+    "version" : "0.9.0",
+    "name" : "zibs2020"
+  },
+  {
+    "id" : "ext-AdditionalCategory",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory",
+    "version" : "0.9.0",
+    "name" : "ExtAdditionalCategory"
+  },
+  {
+    "id" : "ext-AddressInformation.AddressType",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType",
+    "version" : "0.9.0",
+    "name" : "ExtAddressInformationAddressType"
+  },
+  {
+    "id" : "ext-AdvanceDirective.Disorder",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-AdvanceDirective.Disorder",
+    "version" : "0.9.0",
+    "name" : "ExtAdvanceDirectiveDisorder"
+  },
+  {
+    "id" : "ext-AnatomicalLocation.Laterality",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+    "version" : "0.9.0",
+    "name" : "ExtAnatomicalLocationLaterality"
+  },
+  {
+    "id" : "ext-CarePlan-MaterialUsed",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-CarePlan-MaterialUsed",
+    "version" : "0.9.0",
+    "name" : "ExtCarePlanMaterialUsed"
+  },
+  {
+    "id" : "ext-CodeSpecification",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification",
+    "version" : "0.9.0",
+    "name" : "ExtCodeSpecification"
+  },
+  {
+    "id" : "ext-Comment",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
+    "version" : "0.9.0",
+    "name" : "ExtComment"
+  },
+  {
+    "id" : "ext-Context-EpisodeOfCare",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-Context-EpisodeOfCare",
+    "version" : "0.9.0",
+    "name" : "ExtContextEpisodeOfCare"
+  },
+  {
+    "id" : "ext-CopyIndicator",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-CopyIndicator",
+    "version" : "0.9.0",
+    "name" : "ExtCopyIndicator"
+  },
+  {
+    "id" : "ext-EdifactReferenceNumber",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-EdifactReferenceNumber",
+    "version" : "0.9.0",
+    "name" : "ExtEdifactReferenceNumber"
+  },
+  {
+    "id" : "ext-EpisodeOfCare.EpisodeOfCareName",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-EpisodeOfCare.EpisodeOfCareName",
+    "version" : "0.9.0",
+    "name" : "ExtEpisodeOfCareEpisodeOfCareName"
+  },
+  {
+    "id" : "ext-FeedingPatternInfant.FeedingMethod",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-FeedingPatternInfant.FeedingMethod",
+    "version" : "0.9.0",
+    "name" : "ExtFeedingPatternInfantFeedingMethod"
+  },
+  {
+    "id" : "ext-FreedomRestrictingIntervention.Assent",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-FreedomRestrictingIntervention.Assent",
+    "version" : "0.9.0",
+    "name" : "ExtFreedomRestrictingInterventionAssent"
+  },
+  {
+    "id" : "ext-FreedomRestrictingIntervention.LegallyCapable",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-FreedomRestrictingIntervention.LegallyCapable",
+    "version" : "0.9.0",
+    "name" : "ExtFreedomRestrictingInterventionLegallyCapable"
+  },
+  {
+    "id" : "ext-LaboratoryTestResult.Specimen.Morphology",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-LaboratoryTestResult.Specimen.Morphology",
+    "version" : "0.9.0",
+    "name" : "ExtLaboratoryTestResultSpecimenMorphology"
+  },
+  {
+    "id" : "ext-LanguageProficiency.CommunicationDetails",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-LanguageProficiency.CommunicationDetails",
+    "version" : "0.9.0",
+    "name" : "ExtLanguageProficiencyCommunicationDetails"
+  },
+  {
+    "id" : "ext-MedicalDevice.HealthProfessional",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.HealthProfessional",
+    "version" : "0.9.0",
+    "name" : "ExtMedicalDeviceHealthProfessional"
+  },
+  {
+    "id" : "ext-MedicalDevice.Location",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.Location",
+    "version" : "0.9.0",
+    "name" : "ExtMedicalDeviceLocation"
+  },
+  {
+    "id" : "ext-MedicationContraIndication.ReasonClosure",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-MedicationContraIndication.ReasonClosure",
+    "version" : "0.9.0",
+    "name" : "ExtMedicationContraIndicationReasonClosure"
+  },
+  {
+    "id" : "ext-NursingIntervention-ContributorIsRequester",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-NursingIntervention-ContributorIsRequester",
+    "version" : "0.9.0",
+    "name" : "ExtNursingInterventionContributorIsRequester"
+  },
+  {
+    "id" : "ext-NursingInterventionReference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-NursingInterventionReference",
+    "version" : "0.9.0",
+    "name" : "ExtNursingInterventionReference"
+  },
+  {
+    "id" : "ext-Payer.BankInformation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-Payer.BankInformation",
+    "version" : "0.9.0",
+    "name" : "ExtPayerBankInformation"
+  },
+  {
+    "id" : "ext-PharmaceuticalProduct.Description",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalProduct.Description",
+    "version" : "0.9.0",
+    "name" : "ExtPharmaceuticalProductDescription"
+  },
+  {
+    "id" : "ext-Problem.FurtherSpecificationProblemName",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-Problem.FurtherSpecificationProblemName",
+    "version" : "0.9.0",
+    "name" : "ExtProblemFurtherSpecificationProblemName"
+  },
+  {
+    "id" : "ext-Procedure.ProcedureMethod",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-Procedure.ProcedureMethod",
+    "version" : "0.9.0",
+    "name" : "ExtProcedureProcedureMethod"
+  },
+  {
+    "id" : "ext-SOAPReport.SOAPLineCode",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-SOAPReport.SOAPLineCode",
+    "version" : "0.9.0",
+    "name" : "ExtSOAPReportSOAPLineCode"
+  },
+  {
+    "id" : "ext-StomaReference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-StomaReference",
+    "version" : "0.9.0",
+    "name" : "ExtStomaReference"
+  },
+  {
+    "id" : "ext-TimeInterval.Duration",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration",
+    "version" : "0.9.0",
+    "name" : "ExtTimeIntervalDuration"
+  },
+  {
+    "id" : "ext-TimeInterval.Period",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period",
+    "version" : "0.9.0",
+    "name" : "ExtTimeIntervalPeriod"
+  },
+  {
+    "id" : "ext-TreatmentDirective2.AdvanceDirective",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.AdvanceDirective",
+    "version" : "0.9.0",
+    "name" : "ExtTreatmentDirective2AdvanceDirective"
+  },
+  {
+    "id" : "ext-TreatmentDirective2.ReasonForEnding",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.ReasonForEnding",
+    "version" : "0.9.0",
+    "name" : "ExtTreatmentDirective2ReasonForEnding"
+  },
+  {
+    "id" : "ext-TreatmentDirective2.SpecificationOther",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.SpecificationOther",
+    "version" : "0.9.0",
+    "name" : "ExtTreatmentDirective2SpecificationOther"
+  },
+  {
+    "id" : "ext-Vaccination.PharmaceuticalProduct",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-Vaccination.PharmaceuticalProduct",
+    "version" : "0.9.0",
+    "name" : "ExtVaccinationPharmaceuticalProduct"
+  },
+  {
+    "id" : "nl-core-AbilityToDressOneself",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AbilityToDressOneself",
+    "version" : "0.9.0",
+    "name" : "NlcoreAbilityToDressOneself"
+  },
+  {
+    "id" : "nl-core-AbilityToDrink",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AbilityToDrink",
+    "version" : "0.9.0",
+    "name" : "NlcoreAbilityToDrink"
+  },
+  {
+    "id" : "nl-core-AbilityToEat",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AbilityToEat",
+    "version" : "0.9.0",
+    "name" : "NlcoreAbilityToEat"
+  },
+  {
+    "id" : "nl-core-AbilityToGroom",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AbilityToGroom",
+    "version" : "0.9.0",
+    "name" : "NlcoreAbilityToGroom"
+  },
+  {
+    "id" : "nl-core-AbilityToUseToilet",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AbilityToUseToilet",
+    "version" : "0.9.0",
+    "name" : "NlcoreAbilityToUseToilet"
+  },
+  {
+    "id" : "nl-core-AbilityToWashOneself",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AbilityToWashOneself",
+    "version" : "0.9.0",
+    "name" : "NlcoreAbilityToWashOneself"
+  },
+  {
+    "id" : "nl-core-AddressInformation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AddressInformation",
+    "version" : "0.9.0",
+    "name" : "NlcoreAddressInformation"
+  },
+  {
+    "id" : "nl-core-AdvanceDirective",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AdvanceDirective",
+    "version" : "0.9.0",
+    "name" : "NlcoreAdvanceDirective"
+  },
+  {
+    "id" : "nl-core-AlcoholUse",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AlcoholUse",
+    "version" : "0.9.0",
+    "name" : "NlcoreAlcoholUse"
+  },
+  {
+    "id" : "nl-core-Alert",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Alert",
+    "version" : "0.9.0",
+    "name" : "NlcoreAlert"
+  },
+  {
+    "id" : "nl-core-AllergyIntolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AllergyIntolerance",
+    "version" : "0.9.0",
+    "name" : "NlcoreAllergyIntolerance"
+  },
+  {
+    "id" : "nl-core-AnatomicalLocation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-AnatomicalLocation",
+    "version" : "0.9.0",
+    "name" : "NlcoreAnatomicalLocation"
+  },
+  {
+    "id" : "nl-core-ApgarScore-10Minute",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-ApgarScore-10Minute",
+    "version" : "0.9.0",
+    "name" : "NlcoreApgarScore10Minute"
+  },
+  {
+    "id" : "nl-core-ApgarScore-1Minute",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-ApgarScore-1Minute",
+    "version" : "0.9.0",
+    "name" : "NlcoreApgarScore1Minute"
+  },
+  {
+    "id" : "nl-core-ApgarScore-5Minute",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-ApgarScore-5Minute",
+    "version" : "0.9.0",
+    "name" : "NlcoreApgarScore5Minute"
+  },
+  {
+    "id" : "nl-core-BarthelADLIndex",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-BarthelADLIndex",
+    "version" : "0.9.0",
+    "name" : "NlcoreBarthelADLIndex"
+  },
+  {
+    "id" : "nl-core-BloodPressure",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-BloodPressure",
+    "version" : "0.9.0",
+    "name" : "NlcoreBloodPressure"
+  },
+  {
+    "id" : "nl-core-BodyHeight",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight",
+    "version" : "0.9.0",
+    "name" : "NlcoreBodyHeight"
+  },
+  {
+    "id" : "nl-core-BodyTemperature",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyTemperature",
+    "version" : "0.9.0",
+    "name" : "NlcoreBodyTemperature"
+  },
+  {
+    "id" : "nl-core-BodyWeight",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight",
+    "version" : "0.9.0",
+    "name" : "NlcoreBodyWeight"
+  },
+  {
+    "id" : "nl-core-BowelFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-BowelFunction",
+    "version" : "0.9.0",
+    "name" : "NlcoreBowelFunction"
+  },
+  {
+    "id" : "nl-core-CareTeam",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-CareTeam",
+    "version" : "0.9.0",
+    "name" : "NlcoreCareTeam"
+  },
+  {
+    "id" : "nl-core-ChecklistPainBehavior",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-ChecklistPainBehavior",
+    "version" : "0.9.0",
+    "name" : "NlcoreChecklistPainBehavior"
+  },
+  {
+    "id" : "nl-core-ComfortScale",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-ComfortScale",
+    "version" : "0.9.0",
+    "name" : "NlcoreComfortScale"
+  },
+  {
+    "id" : "nl-core-ContactInformation-EmailAddresses",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactInformation-EmailAddresses",
+    "version" : "0.9.0",
+    "name" : "NlcoreContactInformationEmailAddresses"
+  },
+  {
+    "id" : "nl-core-ContactInformation-TelephoneNumbers",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactInformation-TelephoneNumbers",
+    "version" : "0.9.0",
+    "name" : "NlcoreContactInformationTelephoneNumbers"
+  },
+  {
+    "id" : "nl-core-ContactPerson",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson",
+    "version" : "0.9.0",
+    "name" : "NlcoreContactPerson"
+  },
+  {
+    "id" : "nl-core-DOSScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-DOSScore",
+    "version" : "0.9.0",
+    "name" : "NlcoreDOSScore"
+  },
+  {
+    "id" : "nl-core-DevelopmentChild",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-DevelopmentChild",
+    "version" : "0.9.0",
+    "name" : "NlcoreDevelopmentChild"
+  },
+  {
+    "id" : "nl-core-DrugUse",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-DrugUse",
+    "version" : "0.9.0",
+    "name" : "NlcoreDrugUse"
+  },
+  {
+    "id" : "nl-core-Education",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Education",
+    "version" : "0.9.0",
+    "name" : "NlcoreEducation"
+  },
+  {
+    "id" : "nl-core-Encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter",
+    "version" : "0.9.0",
+    "name" : "NlcoreEncounter"
+  },
+  {
+    "id" : "nl-core-EpisodeOfCare",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-EpisodeOfCare",
+    "version" : "0.9.0",
+    "name" : "NlcoreEpisodeOfCare"
+  },
+  {
+    "id" : "nl-core-FLACCpainScale",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-FLACCpainScale",
+    "version" : "0.9.0",
+    "name" : "NlcoreFLACCpainScale"
+  },
+  {
+    "id" : "nl-core-FeedingPatternInfant",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-FeedingPatternInfant",
+    "version" : "0.9.0",
+    "name" : "NlcoreFeedingPatternInfant"
+  },
+  {
+    "id" : "nl-core-FluidBalance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-FluidBalance",
+    "version" : "0.9.0",
+    "name" : "NlcoreFluidBalance"
+  },
+  {
+    "id" : "nl-core-FreedomRestrictingIntervention",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-FreedomRestrictingIntervention",
+    "version" : "0.9.0",
+    "name" : "NlcoreFreedomRestrictingIntervention"
+  },
+  {
+    "id" : "nl-core-FunctionalOrMentalStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-FunctionalOrMentalStatus",
+    "version" : "0.9.0",
+    "name" : "NlcoreFunctionalOrMentalStatus"
+  },
+  {
+    "id" : "nl-core-HeadCircumference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HeadCircumference",
+    "version" : "0.9.0",
+    "name" : "NlcoreHeadCircumference"
+  },
+  {
+    "id" : "nl-core-HealthProfessional-Practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner",
+    "version" : "0.9.0",
+    "name" : "NlcoreHealthProfessionalPractitioner"
+  },
+  {
+    "id" : "nl-core-HealthProfessional-PractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole",
+    "version" : "0.9.0",
+    "name" : "NlcoreHealthProfessionalPractitionerRole"
+  },
+  {
+    "id" : "nl-core-HealthcareProvider",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider",
+    "version" : "0.9.0",
+    "name" : "NlcoreHealthcareProvider"
+  },
+  {
+    "id" : "nl-core-HealthcareProvider-Organization",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization",
+    "version" : "0.9.0",
+    "name" : "NlcoreHealthcareProviderOrganization"
+  },
+  {
+    "id" : "nl-core-HearingFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HearingFunction",
+    "version" : "0.9.0",
+    "name" : "NlcoreHearingFunction"
+  },
+  {
+    "id" : "nl-core-HearingFunction.HearingAid",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HearingFunction.HearingAid",
+    "version" : "0.9.0",
+    "name" : "NlcoreHearingFunctionHearingAid"
+  },
+  {
+    "id" : "nl-core-HearingFunction.HearingAid.Product",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HearingFunction.HearingAid.Product",
+    "version" : "0.9.0",
+    "name" : "NlcoreHearingFunctionHearingAidProduct"
+  },
+  {
+    "id" : "nl-core-HeartRate",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HeartRate",
+    "version" : "0.9.0",
+    "name" : "NlcoreHeartRate"
+  },
+  {
+    "id" : "nl-core-HelpFromOthers",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-HelpFromOthers",
+    "version" : "0.9.0",
+    "name" : "NlcoreHelpFromOthers"
+  },
+  {
+    "id" : "nl-core-IllnessPerception",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-IllnessPerception",
+    "version" : "0.9.0",
+    "name" : "NlcoreIllnessPerception"
+  },
+  {
+    "id" : "nl-core-LaboratoryTestResult",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-LaboratoryTestResult",
+    "version" : "0.9.0",
+    "name" : "NlcoreLaboratoryTestResult"
+  },
+  {
+    "id" : "nl-core-LaboratoryTestResult.Specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-LaboratoryTestResult.Specimen",
+    "version" : "0.9.0",
+    "name" : "NlcoreLaboratoryTestResultSpecimen"
+  },
+  {
+    "id" : "nl-core-LaboratoryTestResult.SpecimenSource",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-LaboratoryTestResult.SpecimenSource",
+    "version" : "0.9.0",
+    "name" : "NlcoreLaboratoryTestResultSpecimenSource"
+  },
+  {
+    "id" : "nl-core-LegalSituation-LegalStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-LegalSituation-LegalStatus",
+    "version" : "0.9.0",
+    "name" : "NlcoreLegalSituationLegalStatus"
+  },
+  {
+    "id" : "nl-core-LegalSituation-Representation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-LegalSituation-Representation",
+    "version" : "0.9.0",
+    "name" : "NlcoreLegalSituationRepresentation"
+  },
+  {
+    "id" : "nl-core-LifeStance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-LifeStance",
+    "version" : "0.9.0",
+    "name" : "NlcoreLifeStance"
+  },
+  {
+    "id" : "nl-core-LivingSituation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-LivingSituation",
+    "version" : "0.9.0",
+    "name" : "NlcoreLivingSituation"
+  },
+  {
+    "id" : "nl-core-MUSTScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-MUSTScore",
+    "version" : "0.9.0",
+    "name" : "NlcoreMUSTScore"
+  },
+  {
+    "id" : "nl-core-MedicalDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice",
+    "version" : "0.9.0",
+    "name" : "NlcoreMedicalDevice"
+  },
+  {
+    "id" : "nl-core-MedicalDevice.Product",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product",
+    "version" : "0.9.0",
+    "name" : "NlcoreMedicalDeviceProduct"
+  },
+  {
+    "id" : "nl-core-MedicationContraIndication",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationContraIndication",
+    "version" : "0.9.0",
+    "name" : "NlcoreMedicationContraIndication"
+  },
+  {
+    "id" : "nl-core-Mobility",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Mobility",
+    "version" : "0.9.0",
+    "name" : "NlcoreMobility"
+  },
+  {
+    "id" : "nl-core-NameInformation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-NameInformation",
+    "version" : "0.9.0",
+    "name" : "NlcoreNameInformation"
+  },
+  {
+    "id" : "nl-core-NameInformation.GivenName",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-NameInformation.GivenName",
+    "version" : "0.9.0",
+    "name" : "NlcoreNameInformationGivenName"
+  },
+  {
+    "id" : "nl-core-NursingIntervention",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-NursingIntervention",
+    "version" : "0.9.0",
+    "name" : "NlcoreNursingIntervention"
+  },
+  {
+    "id" : "nl-core-NutritionAdvice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-NutritionAdvice",
+    "version" : "0.9.0",
+    "name" : "NlcoreNutritionAdvice"
+  },
+  {
+    "id" : "nl-core-O2Saturation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-O2Saturation",
+    "version" : "0.9.0",
+    "name" : "NlcoreO2Saturation"
+  },
+  {
+    "id" : "nl-core-PainScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-PainScore",
+    "version" : "0.9.0",
+    "name" : "NlcorePainScore"
+  },
+  {
+    "id" : "nl-core-ParticipationInSociety",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-ParticipationInSociety",
+    "version" : "0.9.0",
+    "name" : "NlcoreParticipationInSociety"
+  },
+  {
+    "id" : "nl-core-Patient",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient",
+    "version" : "0.9.0",
+    "name" : "NlcorePatient"
+  },
+  {
+    "id" : "nl-core-Payer-Organization",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization",
+    "version" : "0.9.0",
+    "name" : "NlcorePayerOrganization"
+  },
+  {
+    "id" : "nl-core-Payer.InsuranceCompany",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany",
+    "version" : "0.9.0",
+    "name" : "NlcorePayerInsuranceCompany"
+  },
+  {
+    "id" : "nl-core-Payer.PayerPerson",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson",
+    "version" : "0.9.0",
+    "name" : "NlcorePayerPayerPerson"
+  },
+  {
+    "id" : "nl-core-PharmaceuticalProduct",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct",
+    "version" : "0.9.0",
+    "name" : "NlcorePharmaceuticalProduct"
+  },
+  {
+    "id" : "nl-core-Pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Pregnancy",
+    "version" : "0.9.0",
+    "name" : "NlcorePregnancy"
+  },
+  {
+    "id" : "nl-core-Pregnancy.DateLastMenstruation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Pregnancy.DateLastMenstruation",
+    "version" : "0.9.0",
+    "name" : "NlcorePregnancyDateLastMenstruation"
+  },
+  {
+    "id" : "nl-core-Pregnancy.EstimatedDateOfDelivery",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Pregnancy.EstimatedDateOfDelivery",
+    "version" : "0.9.0",
+    "name" : "NlcorePregnancyEstimatedDateOfDelivery"
+  },
+  {
+    "id" : "nl-core-Pregnancy.Gravidity",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Pregnancy.Gravidity",
+    "version" : "0.9.0",
+    "name" : "NlcorePregnancyGravidity"
+  },
+  {
+    "id" : "nl-core-Pregnancy.Parity",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Pregnancy.Parity",
+    "version" : "0.9.0",
+    "name" : "NlcorePregnancyParity"
+  },
+  {
+    "id" : "nl-core-Pregnancy.PregnancyDuration",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Pregnancy.PregnancyDuration",
+    "version" : "0.9.0",
+    "name" : "NlcorePregnancyPregnancyDuration"
+  },
+  {
+    "id" : "nl-core-Problem",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem",
+    "version" : "0.9.0",
+    "name" : "NlcoreProblem"
+  },
+  {
+    "id" : "nl-core-Procedure-event",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-event",
+    "version" : "0.9.0",
+    "name" : "NlcoreProcedureevent"
+  },
+  {
+    "id" : "nl-core-Procedure-request",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Procedure-request",
+    "version" : "0.9.0",
+    "name" : "NlcoreProcedurerequest"
+  },
+  {
+    "id" : "nl-core-PulseRate",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-PulseRate",
+    "version" : "0.9.0",
+    "name" : "NlcorePulseRate"
+  },
+  {
+    "id" : "nl-core-Refraction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Refraction",
+    "version" : "0.9.0",
+    "name" : "NlcoreRefraction"
+  },
+  {
+    "id" : "nl-core-SOAPReport",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-SOAPReport",
+    "version" : "0.9.0",
+    "name" : "NlcoreSOAPReport"
+  },
+  {
+    "id" : "nl-core-SOAPReport.SOAPLine",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-SOAPReport.SOAPLine",
+    "version" : "0.9.0",
+    "name" : "NlcoreSOAPReportSOAPLine"
+  },
+  {
+    "id" : "nl-core-SkinDisorder",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-SkinDisorder",
+    "version" : "0.9.0",
+    "name" : "NlcoreSkinDisorder"
+  },
+  {
+    "id" : "nl-core-Stoma",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Stoma",
+    "version" : "0.9.0",
+    "name" : "NlcoreStoma"
+  },
+  {
+    "id" : "nl-core-StrongKidsScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-StrongKidsScore",
+    "version" : "0.9.0",
+    "name" : "NlcoreStrongKidsScore"
+  },
+  {
+    "id" : "nl-core-TextResult",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-TextResult",
+    "version" : "0.9.0",
+    "name" : "NlcoreTextResult"
+  },
+  {
+    "id" : "nl-core-TextResult.VisualResult",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-TextResult.VisualResult",
+    "version" : "0.9.0",
+    "name" : "NlcoreTextResultVisualResult"
+  },
+  {
+    "id" : "nl-core-TimeInterval",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval",
+    "version" : "0.9.0",
+    "name" : "NlcoreTimeInterval"
+  },
+  {
+    "id" : "nl-core-TobaccoUse",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-TobaccoUse",
+    "version" : "0.9.0",
+    "name" : "NlcoreTobaccoUse"
+  },
+  {
+    "id" : "nl-core-TreatmentDirective2",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentDirective2",
+    "version" : "0.9.0",
+    "name" : "NlcoreTreatmentDirective2"
+  },
+  {
+    "id" : "nl-core-Vaccination-event",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Vaccination-event",
+    "version" : "0.9.0",
+    "name" : "NlcoreVaccinationevent"
+  },
+  {
+    "id" : "nl-core-Vaccination-request",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-Vaccination-request",
+    "version" : "0.9.0",
+    "name" : "NlcoreVaccinationrequest"
+  },
+  {
+    "id" : "nl-core-VisualFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-VisualFunction",
+    "version" : "0.9.0",
+    "name" : "NlcoreVisualFunction"
+  },
+  {
+    "id" : "nl-core-VisualFunction.VisualAid",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-VisualFunction.VisualAid",
+    "version" : "0.9.0",
+    "name" : "NlcoreVisualFunctionVisualAid"
+  },
+  {
+    "id" : "nl-core-VisualFunction.VisualAid.Product",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/nl-core-VisualFunction.VisualAid.Product",
+    "version" : "0.9.0",
+    "name" : "NlcoreVisualFunctionVisualAidProduct"
+  },
+  {
+    "id" : "pattern-GstdQuantity",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/pattern-GstdQuantity",
+    "version" : "0.9.0",
+    "name" : "PatternGstdQuantity"
+  },
+  {
+    "id" : "pattern-GstdSimpleQuantity",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity",
+    "version" : "0.9.0",
+    "name" : "PatternGstdSimpleQuantity"
+  },
+  {
+    "id" : "pattern-NlCoreHealthProfessionalReference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference",
+    "version" : "0.9.0",
+    "name" : "PatternNlCoreHealthProfessionalReference"
+  },
+  {
+    "id" : "pattern-VitalSigns",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/pattern-VitalSigns",
+    "version" : "0.9.0",
+    "name" : "PatternVitalSigns"
+  },
+  {
+    "id" : "pattern-ZibHealthProfessionalReference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/pattern-ZibHealthProfessionalReference",
+    "version" : "0.9.0",
+    "name" : "PatternZibHealthProfessionalReference"
+  },
+  {
+    "id" : "zib-AbilityToDressOneself",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToDressOneself",
+    "version" : "0.9.0",
+    "name" : "ZibAbilityToDressOneself"
+  },
+  {
+    "id" : "zib-AbilityToDrink",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToDrink",
+    "version" : "0.9.0",
+    "name" : "ZibAbilityToDrink"
+  },
+  {
+    "id" : "zib-AbilityToEat",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToEat",
+    "version" : "0.9.0",
+    "name" : "ZibAbilityToEat"
+  },
+  {
+    "id" : "zib-AbilityToGroom",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToGroom",
+    "version" : "0.9.0",
+    "name" : "ZibAbilityToGroom"
+  },
+  {
+    "id" : "zib-AbilityToUseToilet",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToUseToilet",
+    "version" : "0.9.0",
+    "name" : "ZibAbilityToUseToilet"
+  },
+  {
+    "id" : "zib-AbilityToWashOneself",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToWashOneself",
+    "version" : "0.9.0",
+    "name" : "ZibAbilityToWashOneself"
+  },
+  {
+    "id" : "zib-AddressInformation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation",
+    "version" : "0.9.0",
+    "name" : "ZibAddressInformation"
+  },
+  {
+    "id" : "zib-AdvanceDirective",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective",
+    "version" : "0.9.0",
+    "name" : "ZibAdvanceDirective"
+  },
+  {
+    "id" : "zib-AlcoholUse",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AlcoholUse",
+    "version" : "0.9.0",
+    "name" : "ZibAlcoholUse"
+  },
+  {
+    "id" : "zib-Alert",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Alert",
+    "version" : "0.9.0",
+    "name" : "ZibAlert"
+  },
+  {
+    "id" : "zib-AllergyIntolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance",
+    "version" : "0.9.0",
+    "name" : "ZibAllergyIntolerance"
+  },
+  {
+    "id" : "zib-AnatomicalLocation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AnatomicalLocation",
+    "version" : "0.9.0",
+    "name" : "ZibAnatomicalLocation"
+  },
+  {
+    "id" : "zib-ApgarScore-10Minute",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ApgarScore-10Minute",
+    "version" : "0.9.0",
+    "name" : "ZibApgarScore10Minute"
+  },
+  {
+    "id" : "zib-ApgarScore-1Minute",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ApgarScore-1Minute",
+    "version" : "0.9.0",
+    "name" : "ZibApgarScore1Minute"
+  },
+  {
+    "id" : "zib-ApgarScore-5Minute",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ApgarScore-5Minute",
+    "version" : "0.9.0",
+    "name" : "ZibApgarScore5Minute"
+  },
+  {
+    "id" : "zib-BarthelADLIndex",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BarthelADLIndex",
+    "version" : "0.9.0",
+    "name" : "ZibBarthelADLIndex"
+  },
+  {
+    "id" : "zib-BloodPressure",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure",
+    "version" : "0.9.0",
+    "name" : "ZibBloodPressure"
+  },
+  {
+    "id" : "zib-BodyHeight",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BodyHeight",
+    "version" : "0.9.0",
+    "name" : "ZibBodyHeight"
+  },
+  {
+    "id" : "zib-BodyTemperature",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature",
+    "version" : "0.9.0",
+    "name" : "ZibBodyTemperature"
+  },
+  {
+    "id" : "zib-BodyWeight",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight",
+    "version" : "0.9.0",
+    "name" : "ZibBodyWeight"
+  },
+  {
+    "id" : "zib-BowelFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BowelFunction",
+    "version" : "0.9.0",
+    "name" : "ZibBowelFunction"
+  },
+  {
+    "id" : "zib-CareTeam",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-CareTeam",
+    "version" : "0.9.0",
+    "name" : "ZibCareTeam"
+  },
+  {
+    "id" : "zib-ChecklistPainBehavior",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ChecklistPainBehavior",
+    "version" : "0.9.0",
+    "name" : "ZibChecklistPainBehavior"
+  },
+  {
+    "id" : "zib-ComfortScale",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ComfortScale",
+    "version" : "0.9.0",
+    "name" : "ZibComfortScale"
+  },
+  {
+    "id" : "zib-ContactInformation-EmailAddresses",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-EmailAddresses",
+    "version" : "0.9.0",
+    "name" : "ZibContactInformationEmailAddresses"
+  },
+  {
+    "id" : "zib-ContactInformation-TelephoneNumbers",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ContactInformation-TelephoneNumbers",
+    "version" : "0.9.0",
+    "name" : "ZibContactInformationTelephoneNumbers"
+  },
+  {
+    "id" : "zib-ContactPerson",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ContactPerson",
+    "version" : "0.9.0",
+    "name" : "ZibContactPerson"
+  },
+  {
+    "id" : "zib-DOSScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-DOSScore",
+    "version" : "0.9.0",
+    "name" : "ZibDOSScore"
+  },
+  {
+    "id" : "zib-DevelopmentChild",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-DevelopmentChild",
+    "version" : "0.9.0",
+    "name" : "ZibDevelopmentChild"
+  },
+  {
+    "id" : "zib-DrugUse",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-DrugUse",
+    "version" : "0.9.0",
+    "name" : "ZibDrugUse"
+  },
+  {
+    "id" : "zib-Education",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Education",
+    "version" : "0.9.0",
+    "name" : "ZibEducation"
+  },
+  {
+    "id" : "zib-Encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Encounter",
+    "version" : "0.9.0",
+    "name" : "ZibEncounter"
+  },
+  {
+    "id" : "zib-EpisodeOfCare",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-EpisodeOfCare",
+    "version" : "0.9.0",
+    "name" : "ZibEpisodeOfCare"
+  },
+  {
+    "id" : "zib-FLACCpainScale",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FLACCpainScale",
+    "version" : "0.9.0",
+    "name" : "ZibFLACCpainScale"
+  },
+  {
+    "id" : "zib-FeedingPatternInfant",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FeedingPatternInfant",
+    "version" : "0.9.0",
+    "name" : "ZibFeedingPatternInfant"
+  },
+  {
+    "id" : "zib-FluidBalance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance",
+    "version" : "0.9.0",
+    "name" : "ZibFluidBalance"
+  },
+  {
+    "id" : "zib-FreedomRestrictingIntervention",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingIntervention",
+    "version" : "0.9.0",
+    "name" : "ZibFreedomRestrictingIntervention"
+  },
+  {
+    "id" : "zib-FunctionalOrMentalStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus",
+    "version" : "0.9.0",
+    "name" : "ZibFunctionalOrMentalStatus"
+  },
+  {
+    "id" : "zib-HeadCircumference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HeadCircumference",
+    "version" : "0.9.0",
+    "name" : "ZibHeadCircumference"
+  },
+  {
+    "id" : "zib-HealthProfessional-Practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HealthProfessional-Practitioner",
+    "version" : "0.9.0",
+    "name" : "ZibHealthProfessionalPractitioner"
+  },
+  {
+    "id" : "zib-HealthProfessional-PractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HealthProfessional-PractitionerRole",
+    "version" : "0.9.0",
+    "name" : "ZibHealthProfessionalPractitionerRole"
+  },
+  {
+    "id" : "zib-HealthcareProvider",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HealthcareProvider",
+    "version" : "0.9.0",
+    "name" : "ZibHealthcareProvider"
+  },
+  {
+    "id" : "zib-HealthcareProvider-Organization",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HealthcareProvider-Organization",
+    "version" : "0.9.0",
+    "name" : "ZibHealthcareProviderOrganization"
+  },
+  {
+    "id" : "zib-HearingFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HearingFunction",
+    "version" : "0.9.0",
+    "name" : "ZibHearingFunction"
+  },
+  {
+    "id" : "zib-HearingFunction.HearingAid",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HearingFunction.HearingAid",
+    "version" : "0.9.0",
+    "name" : "ZibHearingFunctionHearingAid"
+  },
+  {
+    "id" : "zib-HearingFunction.HearingAid.Product",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HearingFunction.HearingAid.Product",
+    "version" : "0.9.0",
+    "name" : "ZibHearingFunctionHearingAidProduct"
+  },
+  {
+    "id" : "zib-HeartRate",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HeartRate",
+    "version" : "0.9.0",
+    "name" : "ZibHeartRate"
+  },
+  {
+    "id" : "zib-HelpFromOthers",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HelpFromOthers",
+    "version" : "0.9.0",
+    "name" : "ZibHelpFromOthers"
+  },
+  {
+    "id" : "zib-IllnessPerception",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-IllnessPerception",
+    "version" : "0.9.0",
+    "name" : "ZibIllnessPerception"
+  },
+  {
+    "id" : "zib-LaboratoryTestResult",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult",
+    "version" : "0.9.0",
+    "name" : "ZibLaboratoryTestResult"
+  },
+  {
+    "id" : "zib-LaboratoryTestResult.Specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult.Specimen",
+    "version" : "0.9.0",
+    "name" : "ZibLaboratoryTestResultSpecimen"
+  },
+  {
+    "id" : "zib-LaboratoryTestResult.SpecimenSource",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult.SpecimenSource",
+    "version" : "0.9.0",
+    "name" : "ZibLaboratoryTestResultSpecimenSource"
+  },
+  {
+    "id" : "zib-LegalSituation-LegalStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LegalSituation-LegalStatus",
+    "version" : "0.9.0",
+    "name" : "ZibLegalSituationLegalStatus"
+  },
+  {
+    "id" : "zib-LegalSituation-Representation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LegalSituation-Representation",
+    "version" : "0.9.0",
+    "name" : "ZibLegalSituationRepresentation"
+  },
+  {
+    "id" : "zib-LifeStance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LifeStance",
+    "version" : "0.9.0",
+    "name" : "ZibLifeStance"
+  },
+  {
+    "id" : "zib-LivingSituation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation",
+    "version" : "0.9.0",
+    "name" : "ZibLivingSituation"
+  },
+  {
+    "id" : "zib-MUSTScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MUSTScore",
+    "version" : "0.9.0",
+    "name" : "ZibMUSTScore"
+  },
+  {
+    "id" : "zib-MedicalDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice",
+    "version" : "0.9.0",
+    "name" : "ZibMedicalDevice"
+  },
+  {
+    "id" : "zib-MedicalDevice.Product",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice.Product",
+    "version" : "0.9.0",
+    "name" : "ZibMedicalDeviceProduct"
+  },
+  {
+    "id" : "zib-MedicationContraIndication",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationContraIndication",
+    "version" : "0.9.0",
+    "name" : "ZibMedicationContraIndication"
+  },
+  {
+    "id" : "zib-Mobility",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Mobility",
+    "version" : "0.9.0",
+    "name" : "ZibMobility"
+  },
+  {
+    "id" : "zib-NameInformation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NameInformation",
+    "version" : "0.9.0",
+    "name" : "ZibNameInformation"
+  },
+  {
+    "id" : "zib-NameInformation.GivenName",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NameInformation.GivenName",
+    "version" : "0.9.0",
+    "name" : "ZibNameInformationGivenName"
+  },
+  {
+    "id" : "zib-NursingIntervention",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NursingIntervention",
+    "version" : "0.9.0",
+    "name" : "ZibNursingIntervention"
+  },
+  {
+    "id" : "zib-NutritionAdvice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice",
+    "version" : "0.9.0",
+    "name" : "ZibNutritionAdvice"
+  },
+  {
+    "id" : "zib-O2Saturation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-O2Saturation",
+    "version" : "0.9.0",
+    "name" : "ZibO2Saturation"
+  },
+  {
+    "id" : "zib-PainScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-PainScore",
+    "version" : "0.9.0",
+    "name" : "ZibPainScore"
+  },
+  {
+    "id" : "zib-ParticipationInSociety",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ParticipationInSociety",
+    "version" : "0.9.0",
+    "name" : "ZibParticipationInSociety"
+  },
+  {
+    "id" : "zib-Patient",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Patient",
+    "version" : "0.9.0",
+    "name" : "ZibPatient"
+  },
+  {
+    "id" : "zib-Payer-Organization",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-Organization",
+    "version" : "0.9.0",
+    "name" : "ZibPayerOrganization"
+  },
+  {
+    "id" : "zib-Payer.InsuranceCompany",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Payer.InsuranceCompany",
+    "version" : "0.9.0",
+    "name" : "ZibPayerInsuranceCompany"
+  },
+  {
+    "id" : "zib-Payer.PayerPerson",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Payer.PayerPerson",
+    "version" : "0.9.0",
+    "name" : "ZibPayerPayerPerson"
+  },
+  {
+    "id" : "zib-PharmaceuticalProduct",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-PharmaceuticalProduct",
+    "version" : "0.9.0",
+    "name" : "ZibPharmaceuticalProduct"
+  },
+  {
+    "id" : "zib-Pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy",
+    "version" : "0.9.0",
+    "name" : "ZibPregnancy"
+  },
+  {
+    "id" : "zib-Pregnancy.DateLastMenstruation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy.DateLastMenstruation",
+    "version" : "0.9.0",
+    "name" : "ZibPregnancyDateLastMenstruation"
+  },
+  {
+    "id" : "zib-Pregnancy.EstimatedDateOfDelivery",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy.EstimatedDateOfDelivery",
+    "version" : "0.9.0",
+    "name" : "ZibPregnancyEstimatedDateOfDelivery"
+  },
+  {
+    "id" : "zib-Pregnancy.Gravidity",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy.Gravidity",
+    "version" : "0.9.0",
+    "name" : "ZibPregnancyGravidity"
+  },
+  {
+    "id" : "zib-Pregnancy.Parity",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy.Parity",
+    "version" : "0.9.0",
+    "name" : "ZibPregnancyParity"
+  },
+  {
+    "id" : "zib-Pregnancy.PregnancyDuration",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy.PregnancyDuration",
+    "version" : "0.9.0",
+    "name" : "ZibPregnancyPregnancyDuration"
+  },
+  {
+    "id" : "zib-Problem",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Problem",
+    "version" : "0.9.0",
+    "name" : "ZibProblem"
+  },
+  {
+    "id" : "zib-Procedure-event",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Procedure-event",
+    "version" : "0.9.0",
+    "name" : "ZibProcedureevent"
+  },
+  {
+    "id" : "zib-Procedure-request",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Procedure-request",
+    "version" : "0.9.0",
+    "name" : "ZibProcedurerequest"
+  },
+  {
+    "id" : "zib-PulseRate",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-PulseRate",
+    "version" : "0.9.0",
+    "name" : "ZibPulseRate"
+  },
+  {
+    "id" : "zib-Refraction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Refraction",
+    "version" : "0.9.0",
+    "name" : "ZibRefraction"
+  },
+  {
+    "id" : "zib-SOAPReport",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-SOAPReport",
+    "version" : "0.9.0",
+    "name" : "ZibSOAPReport"
+  },
+  {
+    "id" : "zib-SOAPReport.SOAPLine",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-SOAPReport.SOAPLine",
+    "version" : "0.9.0",
+    "name" : "ZibSOAPReportSOAPLine"
+  },
+  {
+    "id" : "zib-SkinDisorder",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-SkinDisorder",
+    "version" : "0.9.0",
+    "name" : "ZibSkinDisorder"
+  },
+  {
+    "id" : "zib-Stoma",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Stoma",
+    "version" : "0.9.0",
+    "name" : "ZibStoma"
+  },
+  {
+    "id" : "zib-StrongKidsScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-StrongKidsScore",
+    "version" : "0.9.0",
+    "name" : "ZibStrongKidsScore"
+  },
+  {
+    "id" : "zib-TextResult",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TextResult",
+    "version" : "0.9.0",
+    "name" : "ZibTextResult"
+  },
+  {
+    "id" : "zib-TextResult.VisualResult",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TextResult.VisualResult",
+    "version" : "0.9.0",
+    "name" : "ZibTextResultVisualResult"
+  },
+  {
+    "id" : "zib-TimeInterval",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TimeInterval",
+    "version" : "0.9.0",
+    "name" : "ZibTimeInterval"
+  },
+  {
+    "id" : "zib-TobaccoUse",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TobaccoUse",
+    "version" : "0.9.0",
+    "name" : "ZibTobaccoUse"
+  },
+  {
+    "id" : "zib-TreatmentDirective2",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective2",
+    "version" : "0.9.0",
+    "name" : "ZibTreatmentDirective2"
+  },
+  {
+    "id" : "zib-Vaccination-event",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination-event",
+    "version" : "0.9.0",
+    "name" : "ZibVaccinationevent"
+  },
+  {
+    "id" : "zib-Vaccination-request",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination-request",
+    "version" : "0.9.0",
+    "name" : "ZibVaccinationrequest"
+  },
+  {
+    "id" : "zib-VisualFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction",
+    "version" : "0.9.0",
+    "name" : "ZibVisualFunction"
+  },
+  {
+    "id" : "zib-VisualFunction.VisualAid",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction.VisualAid",
+    "version" : "0.9.0",
+    "name" : "ZibVisualFunctionVisualAid"
+  },
+  {
+    "id" : "zib-VisualFunction.VisualAid.Product",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction.VisualAid.Product",
+    "version" : "0.9.0",
+    "name" : "ZibVisualFunctionVisualAidProduct"
+  }
+]

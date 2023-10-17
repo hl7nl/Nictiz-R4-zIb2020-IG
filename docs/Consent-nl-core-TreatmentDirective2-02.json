@@ -1,0 +1,62 @@
+{
+  "resourceType" : "Consent",
+  "id" : "nl-core-TreatmentDirective2-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentDirective2"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"nl-core-TreatmentDirective2-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;nl-core-TreatmentDirective2-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-TreatmentDirective2.html\">nl core TreatmentDirective2</a></p></div><blockquote><p><b>modifierExtension[http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.SpecificationOther]</b></p></blockquote><p><b>status</b>: active</p><p><b>scope</b>: Treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#treatment)</span></p><p><b>category</b>: verrichting met expliciete context <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#129125009)</span></p><p><b>patient</b>: <a href=\"Patient-nl-core-TreatmentDirective2-02-Patient-01.html\">Patient/nl-core-TreatmentDirective2-02-Patient-01: Patient, Jan Pieter Mark (Piet) Pietersen</a> &quot; PIETERSEN&quot;</p><p><b>dateTime</b>: 2012-09-11</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://wetten.overheid.nl/\">https://wetten.overheid.nl/</a></td></tr></table><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td>consenter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#CONSENTER)</span></td><td><a href=\"Patient-nl-core-TreatmentDirective2-02-Patient-01.html\">Patient/nl-core-TreatmentDirective2-02-Patient-01: Patient, Jan Pieter Mark (Piet) Pietersen</a> &quot; PIETERSEN&quot;</td></tr></table><p><b>code</b>: Cardiopulmonale resuscitatie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#89666000)</span></p></blockquote></div>"
+  },
+  "modifierExtension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.SpecificationOther",
+    "valueString" : "eerst overleg met echtgenote"
+  }],
+  "status" : "active",
+  "scope" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "treatment",
+      "display" : "Treatment"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "129125009",
+      "display" : "verrichting met expliciete context"
+    }]
+  }],
+  "patient" : {
+    "reference" : "Patient/nl-core-TreatmentDirective2-02-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Jan Pieter Mark (Piet) Pietersen"
+  },
+  "dateTime" : "2012-09-11",
+  "policy" : [{
+    "uri" : "https://wetten.overheid.nl/"
+  }],
+  "provision" : {
+    "actor" : [{
+      "role" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CONSENTER",
+          "display" : "consenter"
+        }]
+      },
+      "reference" : {
+        "reference" : "Patient/nl-core-TreatmentDirective2-02-Patient-01",
+        "type" : "Patient",
+        "display" : "Patient, Jan Pieter Mark (Piet) Pietersen"
+      }
+    }],
+    "code" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "89666000",
+        "display" : "Cardiopulmonale resuscitatie"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Condition",
+  "id" : "nl-core-EpisodeOfCare-01-Condition-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"nl-core-EpisodeOfCare-01-Condition-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;nl-core-EpisodeOfCare-01-Condition-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-Problem.html\">nl core Problem</a></p></div><p><b>category</b>: Klinische bevinding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#404684003)</span></p><p><b>code</b>: Gestoorde glucosetolerantie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (icpc-1-nl#A91.05)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>onset</b>: 2014-04-05</p></div>"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "404684003",
+      "display" : "Klinische bevinding"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+      "code" : "A91.05",
+      "display" : "Gestoorde glucosetolerantie"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "onsetDateTime" : "2014-04-05"
+}

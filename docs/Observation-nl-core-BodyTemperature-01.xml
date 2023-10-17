@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-BodyTemperature-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyTemperature"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-BodyTemperature-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-BodyTemperature-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-BodyTemperature.html">nl core BodyTemperature</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Body temperature <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#8310-5; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#415974002 &quot;Tympanische temperatuur&quot;)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2013-02-08 06:43:00+0200</p><p><b>value</b>: 38.6 Cel<span style="background: LightGoldenRodYellow"> (Details: UCUM code Cel = 'Cel')</span></p><p><b>note</b>: Voeten voelen heel koud aan</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8310-5"/>
+      <display value="Body temperature"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="415974002"/>
+      <display value="Tympanische temperatuur"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <effectiveDateTime value="2013-02-08T06:43:00+02:00"/>
+  <valueQuantity>
+    <value value="38.6"/>
+    <unit value="Cel"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="Cel"/>
+  </valueQuantity>
+  <note>
+    <text value="Voeten voelen heel koud aan"/>
+  </note>
+</Observation>

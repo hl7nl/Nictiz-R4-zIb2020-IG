@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Consent/nl-core-AdvanceDirective-01> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-AdvanceDirective-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-AdvanceDirective"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-AdvanceDirective>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"nl-core-AdvanceDirective-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;nl-core-AdvanceDirective-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-AdvanceDirective.html\">nl core AdvanceDirective</a></p></div><p><b>ext AdvanceDirective.Disorder</b>: <a href=\"Condition-nl-core-AdvanceDirective-01-Condition-01.html\">Condition/nl-core-AdvanceDirective-01-Condition-01: Problem</a></p><p><b>ext Comment</b>: Niet-reanimerenpenning</p><p><b>status</b>: active</p><p><b>scope</b>: Advanced Care Directive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#adr)</span></p><p><b>category</b>: Advance Directive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentcategorycodes.html\">Consent Category Codes</a>#acd)</span></p><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>dateTime</b>: 2011-08-15</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://wetten.overheid.nl/\">https://wetten.overheid.nl/</a></td></tr></table><blockquote><p><b>provision</b></p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td>responsible party <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#RESPRSN)</span></td><td><a href=\"RelatedPerson-nl-core-AdvanceDirective-01-RelatedPerson-01.html\">RelatedPerson/nl-core-AdvanceDirective-01-RelatedPerson-01: Contact person, J.P.M. Pietersen</a> &quot; PIETERSEN&quot;</td></tr></table><p><b>code</b>: Niet reanimeren verklaring <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#NR)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-AdvanceDirective.Disorder"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Condition/nl-core-AdvanceDirective-01-Condition-01> ;
+       fhir:reference [ fhir:v "Condition/nl-core-AdvanceDirective-01-Condition-01" ] ;
+       fhir:type [ fhir:v "Condition"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Problem" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-Comment"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Niet-reanimerenpenning" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "adr" ] ;
+       fhir:display [ fhir:v "Advanced Care Directive" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "acd" ] ;
+       fhir:display [ fhir:v "Advance Directive" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2011-08-15"^^xsd:date] ; # 
+  fhir:policy ( [
+     fhir:uri [ fhir:v "https://wetten.overheid.nl/"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:provision [
+     fhir:actor ( [
+       fhir:role [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "RESPRSN" ] ;
+           fhir:display [ fhir:v "responsible party" ]
+         ] )
+       ] ;
+       fhir:reference [
+         fhir:link <http://nictiz.nl/fhir/RelatedPerson/nl-core-AdvanceDirective-01-RelatedPerson-01> ;
+         fhir:reference [ fhir:v "RelatedPerson/nl-core-AdvanceDirective-01-RelatedPerson-01" ] ;
+         fhir:type [ fhir:v "RelatedPerson"^^xsd:anyURI ] ;
+         fhir:display [ fhir:v "Contact person, J.P.M. Pietersen" ]
+       ]
+     ] ) ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NR" ] ;
+         fhir:display [ fhir:v "Niet reanimeren verklaring" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

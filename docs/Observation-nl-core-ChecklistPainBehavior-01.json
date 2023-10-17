@@ -1,0 +1,129 @@
+{
+  "resourceType" : "Observation",
+  "id" : "nl-core-ChecklistPainBehavior-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-ChecklistPainBehavior"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"nl-core-ChecklistPainBehavior-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;nl-core-ChecklistPainBehavior-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-ChecklistPainBehavior.html\">nl core ChecklistPainBehavior</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Pain Behaviour Checklist <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108331000146104)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2016-12-19 10:45:00+0100</p><p><b>value</b>: 6</p><p><b>note</b>: pijn gemeten i.v.m. toegenomen onrust</p><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag Gezicht <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017003)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag Mond <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017004)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag Grimas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017005)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag VerdrietigeBlik <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017006)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag Ogen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017007)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag Paniek <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017008)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag Kreunen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017009)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag Huilen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017010)</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag Onrustgeluiden <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017011)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ChecklistPijnGedrag Tranen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12017012)</span></p><p><b>value</b>: 0</p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108331000146104",
+      "display" : "Pain Behaviour Checklist"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "effectiveDateTime" : "2016-12-19T10:45:00+01:00",
+  "valueInteger" : 6,
+  "note" : [{
+    "text" : "pijn gemeten i.v.m. toegenomen onrust"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017003",
+        "display" : "ChecklistPijnGedrag Gezicht"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017004",
+        "display" : "ChecklistPijnGedrag Mond"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017005",
+        "display" : "ChecklistPijnGedrag Grimas"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017006",
+        "display" : "ChecklistPijnGedrag VerdrietigeBlik"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017007",
+        "display" : "ChecklistPijnGedrag Ogen"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017008",
+        "display" : "ChecklistPijnGedrag Paniek"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017009",
+        "display" : "ChecklistPijnGedrag Kreunen"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017010",
+        "display" : "ChecklistPijnGedrag Huilen"
+      }]
+    },
+    "valueInteger" : 0
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017011",
+        "display" : "ChecklistPijnGedrag Onrustgeluiden"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0.1",
+        "code" : "12017012",
+        "display" : "ChecklistPijnGedrag Tranen"
+      }]
+    },
+    "valueInteger" : 0
+  }]
+}

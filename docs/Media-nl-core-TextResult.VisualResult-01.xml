@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Media xmlns="http://hl7.org/fhir">
+  <id value="nl-core-TextResult.VisualResult-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TextResult.VisualResult"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Media</b><a name="nl-core-TextResult.VisualResult-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Media &quot;nl-core-TextResult.VisualResult-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-TextResult.VisualResult.html">nl core TextResult.VisualResult</a></p></div><p><b>status</b>: unknown</p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><h3>Contents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style="display: none">*</td><td>application/octet-stream</td><td>(base64 data - 3 bytes)</td></tr></table></div>
+  </text>
+  <status value="unknown"/>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <content>
+    <contentType value="application/octet-stream"/>
+    <data value="blob"/>
+  </content>
+</Media>

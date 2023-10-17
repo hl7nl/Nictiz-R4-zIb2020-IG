@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-FluidBalance-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-FluidBalance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-FluidBalance-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-FluidBalance-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-FluidBalance.html">nl core FluidBalance</a></p></div><p><b>status</b>: final</p><p><b>code</b>: evaluatie van vochtbalans <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#710853006)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2016-12-19 00:00:00+0100 --&gt; 2016-12-20 00:00:00+0100</p><p><b>note</b>: Moeite met aflezen</p><blockquote><p><b>component</b></p><p><b>code</b>: totale vochtinname <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#251852001)</span></p><p><b>value</b>: 1400 mL<span style="background: LightGoldenRodYellow"> (Details: UCUM code mL = 'mL')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: totale vochtuitscheiding <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#251841007)</span></p><p><b>value</b>: 1000 mL<span style="background: LightGoldenRodYellow"> (Details: UCUM code mL = 'mL')</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="710853006"/>
+      <display value="evaluatie van vochtbalans"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2016-12-19T00:00:00+01:00"/>
+    <end value="2016-12-20T00:00:00+01:00"/>
+  </effectivePeriod>
+  <note>
+    <text value="Moeite met aflezen"/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251852001"/>
+        <display value="totale vochtinname"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="1400"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251841007"/>
+        <display value="totale vochtuitscheiding"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="1000"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </valueQuantity>
+  </component>
+</Observation>

@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Consent/nl-core-TreatmentDirective2-01> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-TreatmentDirective2-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentDirective2"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentDirective2>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"nl-core-TreatmentDirective2-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;nl-core-TreatmentDirective2-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-TreatmentDirective2.html\">nl core TreatmentDirective2</a></p></div><p><b>status</b>: inactive</p><p><b>scope</b>: Treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#treatment)</span></p><p><b>category</b>: verrichting met expliciete context <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#129125009)</span></p><p><b>patient</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>dateTime</b>: 2012-09-11</p><p><b>source</b>: <a href=\"Consent-nl-core-TreatmentDirective2-01-Consent-01.html\">Consent/nl-core-TreatmentDirective2-01-Consent-01: Wilsverklaring, Volmacht, 2010-05-06</a></p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://wetten.overheid.nl/\">https://wetten.overheid.nl/</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>ext TreatmentDirective2.ReasonForEnding</b>: hersteld en ontslagen</p><p><b>type</b>: permit</p><p><b>period</b>: ?? --&gt; 2012-10-15</p><blockquote><p><b>actor</b></p><p><b>role</b>: consenter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#CONSENTER)</span></p><p><b>reference</b>: <a href=\"RelatedPerson-nl-core-TreatmentDirective2-01-RelatedPerson-01.html\">RelatedPerson/nl-core-TreatmentDirective2-01-RelatedPerson-01: Contact person, Jan Pieter Mark (Piet) van Putten</a> &quot; VAN PUTTEN&quot;</p></blockquote><blockquote><p><b>actor</b></p><p><b>role</b>: consenter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#CONSENTER)</span></p><p><b>reference</b>: <a href=\"PractitionerRole-nl-core-TreatmentDirective2-01-PractitionerRole-01.html\">PractitionerRole/nl-core-TreatmentDirective2-01-PractitionerRole-01: Healthcare professional (role), J.H.R. Peters, Arts</a></p></blockquote><p><b>code</b>: Opname op intensive care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#305351004)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "inactive"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "treatment" ] ;
+       fhir:display [ fhir:v "Treatment" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:129125009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "129125009" ] ;
+       fhir:display [ fhir:v "verrichting met expliciete context" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-Patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-Patient-01" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2012-09-11"^^xsd:date] ; # 
+  fhir:source [
+     a fhir:Reference ;
+     fhir:link <http://nictiz.nl/fhir/Consent/nl-core-TreatmentDirective2-01-Consent-01> ;
+     fhir:reference [ fhir:v "Consent/nl-core-TreatmentDirective2-01-Consent-01" ] ;
+     fhir:type [ fhir:v "Consent"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Wilsverklaring, Volmacht, 2010-05-06" ]
+  ] ; # 
+  fhir:policy ( [
+     fhir:uri [ fhir:v "https://wetten.overheid.nl/"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:provision [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/ext-TreatmentDirective2.ReasonForEnding"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hersteld en ontslagen" ]
+     ] ) ;
+     fhir:type [ fhir:v "permit" ] ;
+     fhir:period [
+       fhir:end [ fhir:v "2012-10-15"^^xsd:date ]
+     ] ;
+     fhir:actor ( [
+       fhir:role [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CONSENTER" ] ;
+           fhir:display [ fhir:v "consenter" ]
+         ] )
+       ] ;
+       fhir:reference [
+         fhir:link <http://nictiz.nl/fhir/RelatedPerson/nl-core-TreatmentDirective2-01-RelatedPerson-01> ;
+         fhir:reference [ fhir:v "RelatedPerson/nl-core-TreatmentDirective2-01-RelatedPerson-01" ] ;
+         fhir:type [ fhir:v "RelatedPerson"^^xsd:anyURI ] ;
+         fhir:display [ fhir:v "Contact person, Jan Pieter Mark (Piet) van Putten" ]
+       ]
+     ] [
+       fhir:role [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CONSENTER" ] ;
+           fhir:display [ fhir:v "consenter" ]
+         ] )
+       ] ;
+       fhir:reference [
+         fhir:link <http://nictiz.nl/fhir/PractitionerRole/nl-core-TreatmentDirective2-01-PractitionerRole-01> ;
+         fhir:reference [ fhir:v "PractitionerRole/nl-core-TreatmentDirective2-01-PractitionerRole-01" ] ;
+         fhir:type [ fhir:v "PractitionerRole"^^xsd:anyURI ] ;
+         fhir:display [ fhir:v "Healthcare professional (role), J.H.R. Peters, Arts" ]
+       ]
+     ] ) ;
+     fhir:code ( [
+       fhir:coding ( [
+         a sct:305351004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "305351004" ] ;
+         fhir:display [ fhir:v "Opname op intensive care" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

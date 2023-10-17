@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Location/nl-core-MedicalDevice-02-Location-01> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-MedicalDevice-02-Location-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"^^xsd:anyURI ;
+       fhir:link <http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"nl-core-MedicalDevice-02-Location-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;nl-core-MedicalDevice-02-Location-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-HealthcareProvider.html\">nl core HealthcareProvider</a></p></div><p><b>managingOrganization</b>: <a href=\"Organization-nl-core-MedicalDevice-02-Organization-01.html\">Organization/nl-core-MedicalDevice-02-Organization-01: Healthcare provider (organization), St. Franciscus Gasthuis</a> &quot;St. Franciscus Gasthuis&quot;</p></div>"
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://nictiz.nl/fhir/Organization/nl-core-MedicalDevice-02-Organization-01> ;
+     fhir:reference [ fhir:v "Organization/nl-core-MedicalDevice-02-Organization-01" ] ;
+     fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Healthcare provider (organization), St. Franciscus Gasthuis" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

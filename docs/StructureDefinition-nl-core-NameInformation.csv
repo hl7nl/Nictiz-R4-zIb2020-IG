@@ -1,0 +1,178 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: zib NameInformation-v1.1(2020EN)","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: ServD"
+"HumanName","HumanName","","Naamgegevens
+nl-core-NameInformation","",0,*,"","","","null {[]} {[]}
+","NameInformation","This slice represents the person's official name information, including given names, last name and possibly the partner's last name.","This `.name` element represents a Dutch name according to the [zib NameInformation (v1.1, 2020)](https://zibs.nl/wiki/NameInformation-v1.1(2020EN)) (except for the GivenName concept). A Dutch name is represented in FHIR as an ordinary international name, but is augmented using extensions to specify how the last name is built up according to the Dutch rules. See the guidance on `.family` and on `.extension:nameUsage` for more information. Systems that need to work in a Dutch context SHOULD support these extensions as specified here. In addition, systems SHOULD use the core elements according to the FHIR specifications to provide compatibility outside Dutch contexts. It is encouraged to provide a representation of the full name in the `.text` element.
+
+**Note 1**: The zib cannot be represented straightforward in FHIR. Especially note the guidance on `.given` on how to map the FirstNames and Initials concepts, and on `.prefix`/`.suffix` on how to map the Titles concept.
+
+**Note 2**: This element should only contain a person's _official_ names. The GivenName concept is represented in another `.name` element with `.name.use` = _usual_.
+
+**Note 3**: The examples illustrate how the zib is mapped to FHIR.","","","","","","","","",,,,,"",,,,"HumanName",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+zib-NameInformation-1:If a prefix for a family name is specified, the family name is expected as well {family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()}zib-NameInformation-2:If the prefix for a partner family name is specified, the partner family name is expected as well {family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()}","NL-CM:20.4.1","XPN","n/a","EN (actually, PN)","ProviderName"
+"HumanName.id","HumanName.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HumanName.extension","HumanName.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"HumanName.extension:nameUsage","HumanName.extension","nameUsage","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/humanname-assembly-order]]} {[]}
+","Preferred display order of name parts","A code that represents the preferred display order of the components of this human name.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HumanName.extension:nameUsage.id","HumanName.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HumanName.extension:nameUsage.extension","HumanName.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HumanName.extension:nameUsage.url","HumanName.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/humanname-assembly-order""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"HumanName.extension:nameUsage.value[x]","HumanName.extension.value[x]","","Naamgebruik
+","",1,1,"","","","code {[]} {[]}
+","NameUsage","This concept indicates the last name or order of last names with which the person is to be addressed.","","","","","","","","","",,"required","Use ConceptMap NaamgebruikCodelijst-to-HumanNameAssemblyOrder to translate terminology from the functional model to profile terminology in ValueSet HumanNameAssemblyOrder.","http://hl7.org/fhir/ValueSet/name-assembly-order|4.0.1","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NL-CM:20.4.7","N/A"
+"HumanName.use","HumanName.use","","","",1,1,"","Y","Y","code {[]} {[]}
+","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""official""/>","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XPN.7, but often indicated by which field contains the name","unique(./use)","./NamePurpose"
+"HumanName.text","HumanName.text","","","",0,1,"","","Y","string {[]} {[]}
+","Text representation of the full name","Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","","","",,,,,"",,,,"HumanName.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","implied by XPN.11","./formatted"
+"HumanName.family","HumanName.family","","surname
+","",0,1,"","","Y","string {[]} {[]}
+","Family name (often called 'Surname')","The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.","Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).","","","","","","","","",,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XPN.1/FN.1","./part[partType = FAM]","./FamilyName"
+"HumanName.family.id","HumanName.family.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HumanName.family.extension","HumanName.family.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HumanName.family.extension:prefix","HumanName.family.extension","prefix","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/humanname-own-prefix]]} {[]}
+","Voorvoegsel derived from person's own surname","The prefix portion (e.g. voorvoegsel) of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse.","An example of a voorvoegsel is the ""van"" in ""Ludwig van Beethoven"". Since the voorvoegsel doesn't sort completely alphabetically, it is reasonable to specify it as a separate sub-component.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","FN.2","ENXP where Qualifiers = (VV, R)"
+"HumanName.family.extension:prefix.id","HumanName.family.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HumanName.family.extension:prefix.extension","HumanName.family.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HumanName.family.extension:prefix.url","HumanName.family.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/humanname-own-prefix""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"HumanName.family.extension:prefix.value[x]","HumanName.family.extension.value[x]","","Voorvoegsels
+","",1,1,"","","","string {[]} {[]}
+","Prefix","Prefix to the person’s own last name.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NL-CM:20.4.11","N/A"
+"HumanName.family.extension:lastName","HumanName.family.extension","lastName","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/humanname-own-name]]} {[]}
+","Portion derived from person's own surname","The portion of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse.","If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's ""maiden name"".","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","FN.3","ENXP where Qualifiers = (BR)"
+"HumanName.family.extension:lastName.id","HumanName.family.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HumanName.family.extension:lastName.extension","HumanName.family.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HumanName.family.extension:lastName.url","HumanName.family.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/humanname-own-name""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"HumanName.family.extension:lastName.value[x]","HumanName.family.extension.value[x]","","Achternaam
+","",1,1,"","","","string {[]} {[]}
+","LastName","The person’s official last name","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NL-CM:20.4.10","N/A"
+"HumanName.family.extension:partnerPrefix","HumanName.family.extension","partnerPrefix","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix]]} {[]}
+","Voorvoegsel derived from person's partner's surname","The prefix portion (e.g. voorvoegsel) of the family name that is derived from the person's partner's surname, as distinguished from any portion that is derived from the surname of the person's own.","An example of a voorvoegsel is the ""van"" in ""Ludwig van Beethoven"". Since the voorvoegsel doesn't sort completely alphabetically, it is reasonable to identify it as a separate sub-component.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","FN.4","ENXP where Qualifiers = (VV, SP)"
+"HumanName.family.extension:partnerPrefix.id","HumanName.family.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HumanName.family.extension:partnerPrefix.extension","HumanName.family.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HumanName.family.extension:partnerPrefix.url","HumanName.family.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"HumanName.family.extension:partnerPrefix.value[x]","HumanName.family.extension.value[x]","","VoorvoegselsPartner
+","",1,1,"","","","string {[]} {[]}
+","PartnerPrefix","Prefix to the partner’s last name.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NL-CM:20.4.9","N/A"
+"HumanName.family.extension:partnerLastName","HumanName.family.extension","partnerLastName","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/humanname-partner-name]]} {[]}
+","Portion derived from person's partner's surname","The portion of the family name that is derived from the person's partner's surname, as distinguished from any portion that is derived from the surname of the person's own name.","If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's ""maiden name"".","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","FN.5","ENXP where Qualifiers = (SP)"
+"HumanName.family.extension:partnerLastName.id","HumanName.family.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"HumanName.family.extension:partnerLastName.extension","HumanName.family.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HumanName.family.extension:partnerLastName.url","HumanName.family.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/humanname-partner-name""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"HumanName.family.extension:partnerLastName.value[x]","HumanName.family.extension.value[x]","","AchternaamPartner
+","",1,1,"","","","string {[]} {[]}
+","PartnerLastName","Partner’s official last name.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NL-CM:20.4.8","N/A"
+"HumanName.family.value","HumanName.family.value","","","",0,1,"","","","string {[]} {[]}
+","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
+"HumanName.given","HumanName.given","","first name
+middle nameVoornaamInitiaal","",0,*,"","","Y","string {[]} {[]}
+","FirstName / Initial","One of a person’s official first names or the initial if the full name is not known.","This element represents the FirstNames and Initials concepts of zib NameInformation, but the FHIR implementation deviates from the zib model. The zib defines these concepts as a list of official first names (as a single string) and a list of initials (as a single string), both optional. They both represent the official name(s) of a person and thus represent the same concept. In FHIR however, each first name is either a complete name or an initial, but not both. In addition, each name may be defined separately.
+
+Therefore, the zib concepts are implemented here in the following way:
+
+* Systems SHOULD use a `.given` element for each official first name that they know of (either as a full name or an initial), in order of appearance (as specified by FHIR).
+* Each of these elements:
+  * SHOULD be populated with the complete name if it is known, or with the initial if no more information is available.
+  * SHALL be augmented with `extension:givenOrInitial` with code _BR_ when it represents a full name or code _IN_ when it represents an initial.
+
+Initials should thus not be communicated for each complete first name that is known, in contrast to what is specified by the zib. Receiving systems can recreate initials from the full names if needed.
+
+If a system _does_ however only have a list of official first names and a separate list of official initials, without knowing the relationship between these two, only the full names SHOULD be communicated, while an additional `.name` instance MAY be used to communicate the initials. It is expected that the second instance just contains the initials and no other information from the zib. Receiving systems MAY ignore the second instance.
+
+**Note 1:** The GivenName concept should not be included here but in a separate `.name` instance where `.use` = _usual_.
+
+**Note 2**: As specified by FHIR, multiple official first names MAY be combined in a single `.given` element (separated by spaces), as long as the `.given` elements can be concatenated to form the full first name representation, and the 'extension:givenOrInitial` is used to mark the element as containing either full names or the initials. This pattern is strongly discouraged as it is hard to determine if the value pertains multiple names or a single combined name containing spaces.","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NL-CM:20.4.4","NL-CM:20.4.5","XPN.2 + XPN.3","./part[partType = GIV]","./GivenNames"
+"HumanName.given.id","HumanName.given.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"HumanName.given.extension","HumanName.given.extension","","","",1,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"HumanName.given.extension:givenOrInitial","HumanName.given.extension","givenOrInitial","","",1,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier]]} {[]}
+","LS | AC | NB | PR | HON | BR | AD | SP | MID | CL | IN | VV","A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type.","Used to indicate additional information about the name part and how it should be used.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","ENXP.qualifier"
+"HumanName.given.value","HumanName.given.value","","","",0,1,"","","","string {[]} {[]}
+","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
+"HumanName.prefix","HumanName.prefix","","Titels
+","",0,*,"","","Y","string {[]} {[]}
+","Titles","Noble and scientific titles. These can assist in formulating oral and formal addresing titles.","The zib concept 'titles' is mapped to elements `HumanName.prefix` and `HumanName.suffix`. Semantically this mapping is not complete: the zib uses a single concept that contains all the required information about noble and scientific titles, while FHIR captures the same information in a structured way.
+
+**Export:**
+
+Systems are expected to transform as much as possible to the FHIR datamodel and thereby to be as explicit as possible. Note that in order to mark the type of a prefix, you can use the FHIR standard extension for ISO 21090 EN Qualifiers. Examples include the use of the qualifier _HON_ to indicate honorific prefixes and _AC_ for academic prefixes.
+
+If it is not possible to breakup the zib concept titles to positioned prefixes and suffixes, the prefix element is used to store all information.
+
+**Import:**
+
+Systems need to expect and be resilient for a broader range of information stored in the prefix element than stated by it's definition.","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NL-CM:20.4.12","XPN.5","./part[partType = PFX]","./TitleCode"
+"HumanName.suffix","HumanName.suffix","","Titels
+","",0,*,"","","Y","string {[]} {[]}
+","Titles","Noble and scientific titles. These can assist in formulating oral and formal addresing titles.","The zib concept 'titles' is mapped to elements `HumanName.prefix` and `HumanName.suffix`. Semantically this mapping is not complete: the zib uses a single concept that contains all the required information about noble and scientific titles, while FHIR captures the same information in a structured way.
+
+**Export:**
+
+Systems are expected to transform as much as possible to the FHIR datamodel and thereby to be as explicit as possible. Note that in order to mark the type of a prefix, you can use the FHIR standard extension for ISO 21090 EN Qualifiers. Examples include the use of the qualifier _HON_ to indicate honorific prefixes and _AC_ for academic prefixes.
+
+If it is not possible to breakup the zib concept titles to positioned prefixes and suffixes, the prefix element is used to store all information.
+
+**Import:**
+
+Systems need to expect and be resilient for a broader range of information stored in the prefix element than stated by it's definition.","","","","","","","","",,,,,"",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","NL-CM:20.4.12","XPN/4","./part[partType = SFX]"
+"HumanName.period","HumanName.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XPN.13 + XPN.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"

@@ -1,0 +1,59 @@
+{
+  "resourceType" : "DeviceUseStatement",
+  "id" : "nl-core-MedicalDevice-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DeviceUseStatement</b><a name=\"nl-core-MedicalDevice-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DeviceUseStatement &quot;nl-core-MedicalDevice-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-MedicalDevice.html\">nl core MedicalDevice</a></p></div><p><b>ext MedicalDevice.Location</b>: <a href=\"Location-nl-core-MedicalDevice-02-Location-01.html\">Location/nl-core-MedicalDevice-02-Location-01: Healthcare provider (location), St. Franciscus Gasthuis</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-nl-core-Patient-01.html\">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>timing</b>: 2007-01-01 --&gt; 2021-10-01</p><p><b>device</b>: <a href=\"Device-nl-core-MedicalDevice.Product-02.html\">Device/nl-core-MedicalDevice.Product-02: TuneAmp gehoortoestel</a></p><p><b>reasonReference</b>: <a href=\"Condition-nl-core-MedicalDevice-02-Condition-01.html\">Condition/nl-core-MedicalDevice-02-Condition-01: Problem</a></p><p><b>bodySite</b>: Oor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#117590005)</span></p><p><b>note</b>: Apparaat niet zichtbaar (diep in de gehooringang)</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-MedicalDevice.Location",
+    "valueReference" : {
+      "reference" : "Location/nl-core-MedicalDevice-02-Location-01",
+      "type" : "Location",
+      "display" : "Healthcare provider (location), St. Franciscus Gasthuis"
+    }
+  }],
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/nl-core-Patient-01",
+    "type" : "Patient",
+    "display" : "Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"
+  },
+  "timingPeriod" : {
+    "start" : "2007-01-01",
+    "end" : "2021-10-01"
+  },
+  "device" : {
+    "reference" : "Device/nl-core-MedicalDevice.Product-02",
+    "type" : "Device",
+    "display" : "TuneAmp gehoortoestel"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/nl-core-MedicalDevice-02-Condition-01",
+    "type" : "Condition",
+    "display" : "Problem"
+  }],
+  "bodySite" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "24028007",
+          "display" : "Rechts"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "117590005",
+      "display" : "Oor"
+    }]
+  },
+  "note" : [{
+    "text" : "Apparaat niet zichtbaar (diep in de gehooringang)"
+  }]
+}

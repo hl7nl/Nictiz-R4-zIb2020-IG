@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Location",
+  "id" : "nl-core-Procedure-01-Location-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"nl-core-Procedure-01-Location-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;nl-core-Procedure-01-Location-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-core-HealthcareProvider.html\">nl core HealthcareProvider</a></p></div><p><b>managingOrganization</b>: <a href=\"Organization-nl-core-Procedure-01-Organization-01.html\">Organization/nl-core-Procedure-01-Organization-01: Healthcare provider (organization), UMCG</a> &quot;UMCG&quot;</p></div>"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/nl-core-Procedure-01-Organization-01",
+    "type" : "Organization",
+    "display" : "Healthcare provider (organization), UMCG"
+  }
+}

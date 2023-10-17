@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="nl-core-LaboratoryTestResult-02"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-LaboratoryTestResult"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="nl-core-LaboratoryTestResult-02"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;nl-core-LaboratoryTestResult-02&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-LaboratoryTestResult.html">nl core LaboratoryTestResult</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory)</span>, Serumtest <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#275711006)</span></p><p><b>code</b>: Chloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#2069-3)</span></p><p><b>subject</b>: <a href="Patient-nl-core-Patient-01.html">Patient/nl-core-Patient-01: Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen</a> &quot; VAN PUTTEN-VAN DER GIESSEN&quot;</p><p><b>effective</b>: 2012-05-23 08:08:00+0200</p><p><b>value</b>: 109 mmol/l<span style="background: LightGoldenRodYellow"> (Details: UCUM code mmol/l = 'mmol/l')</span></p><p><b>interpretation</b>: Boven referentiebereik <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#281302008; <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#H &quot;High&quot;)</span></p><p><b>specimen</b>: <a href="Specimen-nl-core-LaboratoryTestResult.Specimen-02.html">Specimen/nl-core-LaboratoryTestResult.Specimen-02: monster</a></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>99 mmol/l<span style="background: LightGoldenRodYellow"> (Details: UCUM code mmol/l = 'mmol/l')</span></td><td>108 mmol/l<span style="background: LightGoldenRodYellow"> (Details: UCUM code mmol/l = 'mmol/l')</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="275711006"/>
+      <display value="Serumtest"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2069-3"/>
+      <display value="Chloride"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-Patient-01"/>
+    <type value="Patient"/>
+    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+  </subject>
+  <effectiveDateTime value="2012-05-23T08:08:00+02:00"/>
+  <valueQuantity>
+    <value value="109"/>
+    <unit value="mmol/l"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mmol/l"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="281302008"/>
+      <display value="Boven referentiebereik"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="H"/>
+      <display value="High"/>
+    </coding>
+  </interpretation>
+  <specimen>
+    <reference value="Specimen/nl-core-LaboratoryTestResult.Specimen-02"/>
+    <type value="Specimen"/>
+    <display value="monster"/>
+  </specimen>
+  <referenceRange>
+    <low>
+      <value value="99"/>
+      <unit value="mmol/l"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mmol/l"/>
+    </low>
+    <high>
+      <value value="108"/>
+      <unit value="mmol/l"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mmol/l"/>
+    </high>
+  </referenceRange>
+</Observation>
